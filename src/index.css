@@ -1,2 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  cursor: url("./assets/cursor.png"), pointer;
+}
+
+
+@theme {
+  --primaryBlue: #368be0;
+  --primayGray: #888888;
+  --font-roboto-slab: "Roboto Slab", serif;
+}
+
+.active {
+  @apply font-extrabold underline decoration-[#368BE0] decoration-4 decoration-wavy underline-offset-[6px];
+}
