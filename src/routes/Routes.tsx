@@ -7,6 +7,7 @@ import Services from "../pages/Services";
 import Achievements from "../pages/Achievements";
 import Blogs from "../pages/Blogs";
 import Apply from "../pages/Apply";
+import LanguageProvider from "../contexts/LanguageProvider";
 
 const routes = createBrowserRouter([
   {
@@ -58,7 +59,11 @@ const routes = createBrowserRouter([
 ]);
 
 const Routes = () => {
-  return <RouterProvider router={routes} />;
+  return (
+    <LanguageProvider>
+      <RouterProvider router={routes} />
+    </LanguageProvider>
+  );
 };
 
 export default Routes;

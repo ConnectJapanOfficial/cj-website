@@ -1,0 +1,1 @@
+export type Language = "bn" | "en" | "ja";
