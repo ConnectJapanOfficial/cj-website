@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import type { Language } from "../utilities/types";
+import type { LanguageType } from "../utilities/types";
 import { LanguageContext } from "./LanguageContext";
 
 const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<LanguageType>("en");
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext value={{ language, setLanguage }}>
       {children}
-    </LanguageContext.Provider>
+    </LanguageContext>
   );
 };
 
