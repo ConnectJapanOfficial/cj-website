@@ -6,7 +6,7 @@ import { LanguageContext } from "../../contexts/LanguageContext";
 import type { LanguageType } from "../../utilities/types";
 const NavBar = () => {
   const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
-    `hover:bg-transparent hover:font-extrabold pb-2 ${
+    `hover:bg-transparent hover:font-extrabold hover:drop-shadow-[0_4px_10px_#368BE0] pb-2 ${
       isActive ? "active" : ""
     }`;
 
@@ -75,7 +75,7 @@ const NavBar = () => {
             <img
               src={ConnectJapanLogo}
               alt="Connect Japan Logo"
-              className="w-20 h-20"
+              className="w-10 h-10 md:w-20 md:h-20 ring-1 ring-[#368BE0] rounded-full transition-all duration-300 hover:scale-105 drop-shadow-[0_4px_10px_#368BE0]"
             />
           </NavLink>
         </div>
@@ -85,7 +85,7 @@ const NavBar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex ml-auto">
-            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center md:justify-center text-lg gap-4">
+            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center md:justify-center text-lg gap-8 font-bold">
               {links}
             </div>
           </div>
