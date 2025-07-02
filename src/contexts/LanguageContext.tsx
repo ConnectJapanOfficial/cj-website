@@ -7,4 +7,5 @@ export const LanguageContext = createContext<ILanguageContextType>({
   showLanguageDialog: false,
   setShowLanguageDialog: () => {},
   isInitialized: false,
+  languages: [],
 });

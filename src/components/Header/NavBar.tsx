@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { NavLink } from "react-router";
 import ConnectJapanLogo from "../../assets/cj-logo.png";
 import { LanguageContext } from "../../contexts/LanguageContext";
-import type { LanguageType } from "../../utilities/types";
 const NavBar = () => {
   const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
     `hover:bg-transparent hover:font-extrabold hover:drop-shadow-[0_4px_10px_#368BE0] pb-2 ${
@@ -12,13 +11,7 @@ const NavBar = () => {
 
   const applyButtonClassName = () => "no-underline !decoration-none";
 
-  const { language, setLanguage } = useContext(LanguageContext);
-
-  const languages = [
-    { code: "bn" as LanguageType, name: "Bengali" },
-    { code: "en" as LanguageType, name: "English" },
-    { code: "ja" as LanguageType, name: "Japanese" },
-  ];
+  const { language, setLanguage, languages } = useContext(LanguageContext);
 
   const languageSwitcher = (
     <div className="flex items-center gap-0.5 sm:gap-1 bg-gray-100 rounded-full p-0.5 sm:p-1 mr-1 sm:mr-2">
@@ -31,7 +24,7 @@ const NavBar = () => {
               ? "bg-[#368BE0] text-white shadow-md"
               : "text-gray-600 hover:bg-gray-200"
           }`}
-          title={lang.name}
+          title={lang.englishName}
         >
           {lang.code === "bn" ? "বাং" : lang.code === "en" ? "EN" : "日本"}
         </button>
