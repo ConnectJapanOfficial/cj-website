@@ -5,9 +5,11 @@ import Home from "../pages/Home";
 import Root from "../pages/Root";
 import Services from "../pages/Services";
 import Achievements from "../pages/Achievements";
-import Blogs from "../pages/Blogs";
 import Apply from "../pages/Apply";
 import LanguageProvider from "../contexts/LanguageProvider";
+import Guides from "../pages/guides";
+import About from "../pages/About";
+
 
 const routes = createBrowserRouter([
   {
@@ -41,10 +43,15 @@ const routes = createBrowserRouter([
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },
-
       {
-        path: "blogs",
-        Component: Blogs,
+        path: "guides",
+        Component: Guides,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "about",
+        Component: About,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

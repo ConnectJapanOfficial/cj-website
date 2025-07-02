@@ -38,13 +38,16 @@ const NavBar = () => {
         Home
       </NavLink>
       <NavLink to={"/services"} className={navLinkClassName}>
-        Services
+        Services & Fees
       </NavLink>
       <NavLink to={"/achievements"} className={navLinkClassName}>
         Achievements
       </NavLink>
-      <NavLink to={"/blogs"} className={navLinkClassName}>
-        Blogs
+      <NavLink to={"/guides"} className={navLinkClassName}>
+        Guides
+      </NavLink>
+      <NavLink to={"/about"} className={navLinkClassName}>
+        About Us
       </NavLink>
       <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-3xl bg-(--primaryBlue) text-white">
         <NavLink to={"/apply"} className={applyButtonClassName}>
@@ -78,7 +81,7 @@ const NavBar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex ml-auto">
-            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center md:justify-center text-lg gap-8 font-bold">
+            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center md:justify-center text-lg gap-4 xl:gap-8 font-bold">
               {links}
             </div>
           </div>
