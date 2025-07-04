@@ -7,7 +7,7 @@ import Services from "../pages/Services";
 import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
 import LanguageProvider from "../contexts/LanguageProvider";
-import Guides from "../pages/guides";
+import Guides from "../pages/Guides";
 import About from "../pages/About";
 
 

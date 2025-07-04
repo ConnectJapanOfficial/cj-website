@@ -20,5 +20,95 @@
       "bn": "কানেক্ট জাপান টিম",
       "ja": "コネクトジャパンチーム"
     }
-  }
+  },
+  "universities": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Tokyo University",
+        "bn": "টোকিও বিশ্ববিদ্যালয়",
+        "ja": "東京大学"
+      },
+      "logo": "/assets/universities/tokyo-university.png",
+      "candidate_name": {
+        "en": "Sarah Ahmed",
+        "bn": "সারাহ আহমেদ",
+        "ja": "サラ・アハメド"
+      },
+      "candidate_pic": "/assets/candidates/sarah-ahmed.png"
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "Keio University",
+        "bn": "কেইও বিশ্ববিদ্যালয়",
+        "ja": "慶應義塾大学"
+      },
+      "logo": "/assets/universities/keio-university.png",
+      "candidate_name": {
+        "en": "Mohammad Rahman",
+        "bn": "মোহাম্মদ রহমান",
+        "ja": "モハマド・ラフマン"
+      },
+      "candidate_pic": "/assets/candidates/mohammad-rahman.png"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Tokyo International University",
+        "bn": "টোকিও আন্তর্জাতিক বিশ্ববিদ্যালয়",
+        "ja": "東京国際大学"
+      },
+      "logo": "/assets/universities/tokyo-international-university.png",
+      "candidate_name": {
+        "en": "Fatima Khan",
+        "bn": "ফাতিমা খান",
+        "ja": "ファティマ・カーン"
+      },
+      "candidate_pic": "/assets/candidates/fatima-khan.png"
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "Ritsumeikan University",
+        "bn": "রিতসুমেইকান বিশ্ববিদ্যালয়",
+        "ja": "立命館大学"
+      },
+      "logo": "/assets/universities/ritsumeikan-university.png",
+      "candidate_name": {
+        "en": "Arif Hassan",
+        "bn": "আরিফ হাসান",
+        "ja": "アリフ・ハサン"
+      }
+    }
+  ],
+  "slider": {
+    "logo": "https://connectjapan.org/images/xyz-logo.png"
+  },
+  "statistics": [
+    {
+      "title": {
+        "en": "Student Community",
+        "bn": "শিক্ষার্থী সম্প্রদায়",
+        "ja": "学生コミュニティ"
+      },
+      "total": 56000
+    },
+    {
+      "title": {
+        "en": "Universities",
+        "bn": "বিশ্ববিদ্যালয়",
+        "ja": "大学"
+      },
+      "total": 6
+    },
+    {
+      "title": {
+        "en": "Students Served",
+        "bn": "সেবাপ্রাপ্ত শিক্ষার্থী",
+        "ja": "サービス提供学生"
+      },
+      "total": 30
+    }
+  ]
 }

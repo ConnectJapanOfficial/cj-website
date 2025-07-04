@@ -1,9 +1,11 @@
 import { Suspense, useContext, useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import Bars from "../components/Loaders/Bars";
+import Spinner from "../components/Loaders/Spinner";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { usePageTitle } from "../utilities/hooks";
 import type { IHomepage } from "../utilities/interface";
+import Statistics from "../components/Statistics/Statistics";
 
 const Home = () => {
   const [homepageData, setHomepageData] = useState<IHomepage | null>(null);
@@ -29,20 +31,28 @@ const Home = () => {
   }, []);
 
   if (loading) {
-    return <Bars />;
+    return <Spinner />;
   }
 
   return (
     <Suspense fallback={<Bars />}>
       <div className="home-page">
         {homepageData && (
-          <Banner
-            title={homepageData.banner.title[language]}
-            categories={homepageData.banner.categories[language]}
-            quote={homepageData.banner.quote[language]}
-            author={homepageData.banner.author[language]}
-          />
+          <>
+            <Banner
+              title={homepageData.banner.title[language]}
+              categories={homepageData.banner.categories[language]}
+              quote={homepageData.banner.quote[language]}
+              author={homepageData.banner.author[language]}
+            />
+            {/* <Slider
+              universities={homepageData.universities}
+              language={language}
+            /> */}
+          
+          </>
         )}
+        <Statistics/>
       </div>
     </Suspense>
   );

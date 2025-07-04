@@ -23,25 +23,21 @@ body {
   @apply font-extrabold underline decoration-[#368BE0] decoration-4 decoration-wavy underline-offset-[6px] text-[var(--primaryBlue)];
 }
 
-  
 .banner-gradient {
-    @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600;
-  }
-
+  @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600;
+}
 
 .banner-grain {
-    @apply absolute inset-0;
-  }
+  @apply absolute inset-0;
+}
 
 .banner-grain::before {
-    @apply content-[''] absolute inset-0 opacity-30;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  }
-
-
+  @apply content-[''] absolute inset-0 opacity-30;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+}
 
 .animate-fade-up {
-    animation: fadeInUp 0.8s ease-out;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .animate-fade-up-delay {
@@ -72,6 +68,26 @@ body {
   --delay: 0.5s;
 }
 
+/* Slider/Carousel Styles */
+.carousel-item {
+  scroll-snap-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
 
 @keyframes fadeInUp {
   from {
