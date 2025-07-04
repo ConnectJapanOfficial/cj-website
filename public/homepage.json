@@ -1,0 +1,14 @@
+{
+  "banner": {
+    "title": {
+      "en": "Apply to Japan",
+      "bn": "জাপানে আবেদন করুন",
+      "ja": "日本に申し込む"
+    },
+    "categories": {
+      "en": ["Undergraduate", "Postgraduate", "Japanese Language School"],
+      "bn": ["স্নাতক", "স্নাতকোত্তর", "জাপানি ভাষা স্কুল"],
+      "ja": ["学部", "大学院", "日本語学校"]
+    }
+  }
+}

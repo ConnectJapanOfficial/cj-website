@@ -31,3 +31,17 @@ export interface ILanguageSelectionDialog {
   onSelect: (language: LanguageType) => void;
   languages: ILanguageData[];
 }
+
+export interface IBanner {
+  title: Record<LanguageType, string>;
+  categories: Record<LanguageType, string[]>;
+}
+
+export interface IBannerProps {
+  title: string;
+  categories: string[];
+}
+
+export interface IHomepage {
+  banner: IBanner;
+}

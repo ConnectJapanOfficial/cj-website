@@ -1,18 +1,49 @@
-import { Suspense } from 'react';
-import Bars from '../components/Loaders/Bars';
-import { usePageTitle } from '../utilities/hooks';
-
+import { Suspense, useContext, useEffect, useState } from "react";
+import Banner from "../components/Banner/Banner";
+import Bars from "../components/Loaders/Bars";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { usePageTitle } from "../utilities/hooks";
+import type { IHomepage } from "../utilities/interface";
 
 const Home = () => {
+  const [homepageData, setHomepageData] = useState<IHomepage | null>(null);
+  const [loading, setLoading] = useState(true);
+  const { language } = useContext(LanguageContext);
 
-    usePageTitle('Home');
-    
-    return (
-        <Suspense fallback={<Bars/>}>
-            
-        </Suspense>
-            
-    );
+  usePageTitle("Home");
+
+  useEffect(() => {
+    const fetchHomepageData = async () => {
+      try {
+        const response = await fetch("/homepage.json");
+        const data: IHomepage = await response.json();
+        setHomepageData(data);
+      } catch (error) {
+        console.error("Error fetching homepage data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchHomepageData();
+  }, []);
+
+  if (loading) {
+    return <Bars />;
+  }
+
+  return (
+    <Suspense fallback={<Bars />}>
+      <div className="home-page">
+        {homepageData && (
+          <Banner
+            title={homepageData.banner.title[language]}
+            categories={homepageData.banner.categories[language]}
+          />
+        )}
+      </div>
+    </Suspense>
+  );
 };
 
 export default Home;
