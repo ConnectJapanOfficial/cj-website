@@ -6,6 +6,17 @@ export interface ILanguageData {
   englishName: string;
 }
 
+export interface INavigation {
+  navigation: {
+    home: Record<LanguageType, string>;
+    services: Record<LanguageType, string>;
+    achievements: Record<LanguageType, string>;
+    guides: Record<LanguageType, string>;
+    about: Record<LanguageType, string>;
+    apply: Record<LanguageType, string>;
+  };
+}
+
 export interface ILanguageContextType {
   language: LanguageType;
   setLanguage: (language: LanguageType) => void;
@@ -13,6 +24,7 @@ export interface ILanguageContextType {
   setShowLanguageDialog: (show: boolean) => void;
   isInitialized: boolean;
   languages: ILanguageData[];
+  navigations: INavigation;
 }
 
 export interface ILanguageSelectionDialog {

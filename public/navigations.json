@@ -1,0 +1,34 @@
+{
+  "navigation": {
+    "home": {
+      "en": "Home",
+      "bn": "হোম",
+      "ja": "ホーム"
+    },
+    "services": {
+      "en": "Services & Fees",
+      "bn": "সেবা ও ফি",
+      "ja": "サービス・料金"
+    },
+    "achievements": {
+      "en": "Achievements",
+      "bn": "অর্জন",
+      "ja": "実績"
+    },
+    "guides": {
+      "en": "Guides",
+      "bn": "গাইড",
+      "ja": "ガイド"
+    },
+    "about": {
+      "en": "About Us",
+      "bn": "আমাদের সম্পর্কে",
+      "ja": "会社概要"
+    },
+    "apply": {
+      "en": "Apply",
+      "bn": "আবেদন",
+      "ja": "申し込み"
+    }
+  }
+}

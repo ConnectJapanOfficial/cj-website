@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import type { ILanguageContextType } from "../utilities/interface";
+import type { ILanguageContextType, INavigation } from "../utilities/interface";
 
 export const LanguageContext = createContext<ILanguageContextType>({
   language: "en",
@@ -8,4 +8,5 @@ export const LanguageContext = createContext<ILanguageContextType>({
   setShowLanguageDialog: () => {},
   isInitialized: false,
   languages: [],
+  navigations: {} as INavigation,
 });

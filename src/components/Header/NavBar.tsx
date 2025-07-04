@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router";
 import ConnectJapanLogo from "../../assets/cj-logo.png";
 import { LanguageContext } from "../../contexts/LanguageContext";
+import type { INavigation } from "../../utilities/interface";
 const NavBar = () => {
   const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
     `hover:bg-transparent hover:font-extrabold hover:drop-shadow-[0_4px_10px_#368BE0] pb-2 ${
@@ -11,7 +12,25 @@ const NavBar = () => {
 
   const applyButtonClassName = () => "no-underline !decoration-none";
 
-  const { language, setLanguage, languages } = useContext(LanguageContext);
+  const { language, setLanguage, languages, navigations } =
+    useContext(LanguageContext);
+
+  // Helper function to get translated text
+  const getTranslation = (key: keyof INavigation["navigation"]): string => {
+    if (!navigations || !navigations.navigation) {
+      // If navigations not loaded, return empty string or handle as needed
+      return "";
+    }
+
+    // Try current language first
+    const translation = navigations.navigation[key]?.[language];
+    if (translation) {
+      return translation;
+    }
+
+    // Fallback to English - this is the only fallback
+    return navigations.navigation[key]?.["en"] || "";
+  };
 
   const languageSwitcher = (
     <div className="flex items-center gap-0.5 sm:gap-1 bg-gray-100 rounded-full p-0.5 sm:p-1 mr-1 sm:mr-2">
@@ -35,23 +54,23 @@ const NavBar = () => {
   const links = (
     <>
       <NavLink to={"/"} className={navLinkClassName}>
-        Home
+        {getTranslation("home")}
       </NavLink>
       <NavLink to={"/services"} className={navLinkClassName}>
-        Services & Fees
+        {getTranslation("services")}
       </NavLink>
       <NavLink to={"/achievements"} className={navLinkClassName}>
-        Achievements
+        {getTranslation("achievements")}
       </NavLink>
       <NavLink to={"/guides"} className={navLinkClassName}>
-        Guides
+        {getTranslation("guides")}
       </NavLink>
       <NavLink to={"/about"} className={navLinkClassName}>
-        About Us
+        {getTranslation("about")}
       </NavLink>
       <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-3xl bg-(--primaryBlue) text-white">
         <NavLink to={"/apply"} className={applyButtonClassName}>
-          Apply
+          {getTranslation("apply")}
         </NavLink>
       </button>
     </>
