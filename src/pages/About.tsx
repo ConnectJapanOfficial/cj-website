@@ -1,5 +1,8 @@
+import { usePageTitle } from "../utilities/hooks";
 
 const About = () => {
+
+    usePageTitle("About Us");
     return (
         <div>
             <h1>About Us</h1>

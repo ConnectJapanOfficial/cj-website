@@ -1,5 +1,9 @@
+import { usePageTitle } from "../utilities/hooks";
 
 const Achievements = () => {
+
+    usePageTitle("Achievements");
+
     return (
         <div>
             
