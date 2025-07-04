@@ -39,6 +39,8 @@ const Home = () => {
           <Banner
             title={homepageData.banner.title[language]}
             categories={homepageData.banner.categories[language]}
+            quote={homepageData.banner.quote[language]}
+            author={homepageData.banner.author[language]}
           />
         )}
       </div>

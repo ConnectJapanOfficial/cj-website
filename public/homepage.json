@@ -9,6 +9,16 @@
       "en": ["Undergraduate", "Postgraduate", "Japanese Language School"],
       "bn": ["স্নাতক", "স্নাতকোত্তর", "জাপানি ভাষা স্কুল"],
       "ja": ["学部", "大学院", "日本語学校"]
+    },
+    "quote": {
+      "en": "100% of our students get scholarships to study in Japan. Are you ready?",
+      "bn": "আমাদের ১০০% শিক্ষার্থী জাপানে পড়াশোনার জন্য বৃত্তি পেয়ে থাকে। আপনি কি প্রস্তুত?",
+      "ja": "私たちの学生の100%が日本留学の奨学金を受けています。あなたは準備できていますか？"
+    },
+    "author": {
+      "en": "ConnectJapan Team",
+      "bn": "কানেক্ট জাপান টিম",
+      "ja": "コネクトジャパンチーム"
     }
   }
 }

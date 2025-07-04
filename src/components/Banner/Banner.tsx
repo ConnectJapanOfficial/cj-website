@@ -1,6 +1,6 @@
 import type { IBannerProps } from "../../utilities/interface";
 
-const Banner = ({ title, categories }: IBannerProps) => {
+const Banner = ({ title, categories, quote, author }: IBannerProps) => {
   const delayClasses = [
     "delay-0",
     "delay-100",
@@ -28,6 +28,15 @@ const Banner = ({ title, categories }: IBannerProps) => {
               {category}
             </span>
           ))}
+
+          <div className="animate-fade-up-delay text-lg md:text-xl lg:text-2xl font-medium mt-6">
+            <blockquote className=" border-white pl-4 italic">
+              "{quote}"
+            </blockquote>
+            <cite className="block mt-2 text-lg md:text-xl lg:text-2xl">
+              - {author}
+            </cite>
+          </div>
         </div>
       </div>
     </section>

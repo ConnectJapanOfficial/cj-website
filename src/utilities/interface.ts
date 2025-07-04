@@ -35,11 +35,15 @@ export interface ILanguageSelectionDialog {
 export interface IBanner {
   title: Record<LanguageType, string>;
   categories: Record<LanguageType, string[]>;
+  quote: Record<LanguageType, string>;
+  author: Record<LanguageType, string>;
 }
 
 export interface IBannerProps {
   title: string;
   categories: string[];
+  quote: string;
+  author: string;
 }
 
 export interface IHomepage {
