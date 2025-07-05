@@ -68,21 +68,6 @@ body {
   --delay: 0.5s;
 }
 
-/* Slider/Carousel Styles */
-.carousel-item {
-  scroll-snap-align: center;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 /* Card hover effects */
 .card:hover {
   transform: translateY(-4px);
@@ -99,5 +84,3 @@ body {
     transform: translateY(0);
   }
 }
-
-
