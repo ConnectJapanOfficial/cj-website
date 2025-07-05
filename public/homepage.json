@@ -29,13 +29,13 @@
         "bn": "টোকিও বিশ্ববিদ্যালয়",
         "ja": "東京大学"
       },
-      "logo": "/assets/universities/tokyo-university.png",
+      "logo": "../src/assets/universities/utokyo.png",
       "candidate_name": {
         "en": "Sarah Ahmed",
         "bn": "সারাহ আহমেদ",
         "ja": "サラ・アハメド"
       },
-      "candidate_pic": "/assets/candidates/sarah-ahmed.png"
+      "candidate_pic": "../src/assets/candidates/sarah-ahmed.png"
     },
     {
       "id": 2,
@@ -44,7 +44,7 @@
         "bn": "কেইও বিশ্ববিদ্যালয়",
         "ja": "慶應義塾大学"
       },
-      "logo": "/assets/universities/keio-university.png",
+      "logo": "../src/assets/universities/ukeio.png",
       "candidate_name": {
         "en": "Mohammad Rahman",
         "bn": "মোহাম্মদ রহমান",
@@ -59,7 +59,7 @@
         "bn": "টোকিও আন্তর্জাতিক বিশ্ববিদ্যালয়",
         "ja": "東京国際大学"
       },
-      "logo": "/assets/universities/tokyo-international-university.png",
+      "logo": "../src/assets/universities/tiu.png",
       "candidate_name": {
         "en": "Fatima Khan",
         "bn": "ফাতিমা খান",
@@ -74,7 +74,7 @@
         "bn": "রিতসুমেইকান বিশ্ববিদ্যালয়",
         "ja": "立命館大学"
       },
-      "logo": "/assets/universities/ritsumeikan-university.png",
+      "logo": "../src/assets/universities/ru.png",
       "candidate_name": {
         "en": "Arif Hassan",
         "bn": "আরিফ হাসান",
@@ -82,33 +82,38 @@
       }
     }
   ],
-  "slider": {
-    "logo": "https://connectjapan.org/images/xyz-logo.png"
-  },
-  "statistics": [
-    {
-      "title": {
-        "en": "Student Community",
-        "bn": "শিক্ষার্থী কমিউনিটি",
-        "ja": "学生コミュニティ"
-      },
-      "total": 56000
+
+  "statistics": {
+    "title": {
+      "en": "ConnectJapan by Numbers",
+      "bn": "সংখ্যায় কানেক্ট জাপান",
+      "ja": "数字で見るコネクトジャパン"
     },
-    {
-      "title": {
-        "en": "Running",
-        "bn": "চলমান",
-        "ja": "実行中"
+    "items": [
+      {
+        "title": {
+          "en": "Student Community",
+          "bn": "শিক্ষার্থী কমিউনিটি",
+          "ja": "学生コミュニティ"
+        },
+        "total": 56000
       },
-      "total": 6
-    },
-    {
-      "title": {
-        "en": "Students Served",
-        "bn": "সেবাপ্রাপ্ত শিক্ষার্থী",
-        "ja": "サービス提供学生"
+      {
+        "title": {
+          "en": "Running",
+          "bn": "চলমান",
+          "ja": "実行中"
+        },
+        "total": 6
       },
-      "total": 30
-    }
-  ]
+      {
+        "title": {
+          "en": "Students Served",
+          "bn": "সেবাপ্রাপ্ত শিক্ষার্থী",
+          "ja": "サービス提供学生"
+        },
+        "total": 30
+      }
+    ]
+  }
 }

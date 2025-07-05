@@ -50,7 +50,7 @@ export interface IBannerProps {
 export interface IHomepage {
   banner: IBanner;
   universities: IUniversity[];
-  statistics: IStatistic[];
+  statistics: IStatisticsSection;
 }
 
 export interface IUniversity {
@@ -64,6 +64,11 @@ export interface IUniversity {
 export interface ISliderProps {
   universities: IUniversity[];
   language: LanguageType;
+}
+
+export interface IStatisticsSection {
+  title: Record<LanguageType, string>;
+  items: IStatistic[];
 }
 
 export interface IStatistic {

@@ -2,10 +2,11 @@ import { Suspense, useContext, useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import Bars from "../components/Loaders/Bars";
 import Spinner from "../components/Loaders/Spinner";
+import Carousel from "../components/Slider/Carousel";
+import Statistics from "../components/Statistics/Statistics";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { usePageTitle } from "../utilities/hooks";
 import type { IHomepage } from "../utilities/interface";
-import Statistics from "../components/Statistics/Statistics";
 
 const Home = () => {
   const [homepageData, setHomepageData] = useState<IHomepage | null>(null);
@@ -45,14 +46,10 @@ const Home = () => {
               quote={homepageData.banner.quote[language]}
               author={homepageData.banner.author[language]}
             />
-            {/* <Slider
-              universities={homepageData.universities}
-              language={language}
-            /> */}
-          
+            <Carousel />
+            <Statistics statistics={homepageData.statistics} />
           </>
         )}
-        <Statistics/>
       </div>
     </Suspense>
   );
