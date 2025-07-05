@@ -1,5 +1,9 @@
 import { createContext } from "react";
-import type { ILanguageContextType, INavigation } from "../utilities/interface";
+import type {
+  IFooter,
+  ILanguageContextType,
+  INavigation,
+} from "../utilities/interface";
 
 export const LanguageContext = createContext<ILanguageContextType>({
   language: "en",
@@ -9,4 +13,5 @@ export const LanguageContext = createContext<ILanguageContextType>({
   isInitialized: false,
   languages: [],
   navigations: {} as INavigation,
+  footerData: {} as IFooter,
 });
