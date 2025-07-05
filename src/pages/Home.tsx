@@ -46,7 +46,10 @@ const Home = () => {
               quote={homepageData.banner.quote[language]}
               author={homepageData.banner.author[language]}
             />
-            <Carousel />
+            <Carousel
+              universities={homepageData.universities}
+              language={language}
+            />
             <Statistics statistics={homepageData.statistics} />
           </>
         )}

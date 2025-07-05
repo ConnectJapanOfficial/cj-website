@@ -29,13 +29,13 @@
         "bn": "টোকিও বিশ্ববিদ্যালয়",
         "ja": "東京大学"
       },
-      "logo": "../src/assets/universities/utokyo.png",
+      "logo": "/src/assets/universities/utokyo.png",
       "candidate_name": {
         "en": "Sarah Ahmed",
         "bn": "সারাহ আহমেদ",
         "ja": "サラ・アハメド"
       },
-      "candidate_pic": "../src/assets/candidates/sarah-ahmed.png"
+      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
     {
       "id": 2,
@@ -44,13 +44,13 @@
         "bn": "কেইও বিশ্ববিদ্যালয়",
         "ja": "慶應義塾大学"
       },
-      "logo": "../src/assets/universities/ukeio.png",
+      "logo": "/src/assets/universities/ukeio.png",
       "candidate_name": {
         "en": "Mohammad Rahman",
         "bn": "মোহাম্মদ রহমান",
         "ja": "モハマド・ラフマン"
       },
-      "candidate_pic": "/assets/candidates/mohammad-rahman.png"
+      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
     {
       "id": 3,
@@ -59,13 +59,13 @@
         "bn": "টোকিও আন্তর্জাতিক বিশ্ববিদ্যালয়",
         "ja": "東京国際大学"
       },
-      "logo": "../src/assets/universities/tiu.png",
+      "logo": "/src/assets/universities/tiu.png",
       "candidate_name": {
         "en": "Fatima Khan",
         "bn": "ফাতিমা খান",
         "ja": "ファティマ・カーン"
       },
-      "candidate_pic": "/assets/candidates/fatima-khan.png"
+      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
     {
       "id": 4,
@@ -74,12 +74,13 @@
         "bn": "রিতসুমেইকান বিশ্ববিদ্যালয়",
         "ja": "立命館大学"
       },
-      "logo": "../src/assets/universities/ru.png",
+      "logo": "/src/assets/universities/ru.png",
       "candidate_name": {
         "en": "Arif Hassan",
         "bn": "আরিফ হাসান",
         "ja": "アリフ・ハサン"
-      }
+      },
+      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     }
   ],
 
