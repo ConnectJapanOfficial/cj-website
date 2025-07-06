@@ -13,9 +13,13 @@ const ServicesDetails = () => {
 
   const services = serviceData.services[language] || [];
   const seeDetailsText = serviceData.seeDetailsText[language] || "See Details";
-  const heroTitle = serviceData.heroSection.title[language] || "Our Services & Solutions";
-  const heroSubtitle = serviceData.heroSection.subtitle[language] || "Discover our comprehensive range of services designed to help you achieve your Japanese education goals";
-  const sectionHeaderTitle = serviceData.sectionHeader.title[language] || "Choose Your Path to Success";
+  const heroTitle =
+    serviceData.heroSection.title[language] || "Our Services & Solutions";
+  const heroSubtitle =
+    serviceData.heroSection.subtitle[language] ||
+    "Discover our comprehensive range of services designed to help you achieve your Japanese education goals";
+  const sectionHeaderTitle =
+    serviceData.sectionHeader.title[language] || "Choose Your Path to Success";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -93,8 +97,6 @@ const ServicesDetails = () => {
             </div>
           </div>
         </div> */}
-
-      
       </div>
     </div>
   );
