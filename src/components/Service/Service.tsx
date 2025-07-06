@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { IServiceProps } from "../../utilities/interface";
 
 const Service = ({ service, seeDetailsText }: IServiceProps) => {
@@ -7,7 +8,9 @@ const Service = ({ service, seeDetailsText }: IServiceProps) => {
         <h2 className="card-title">{service.title}</h2>
         <p>{service.description}</p>
         <div className="justify-center card-actions">
-          <button className="btn btn-primary">{seeDetailsText}</button>
+          <Link to={`/${service.path}`}>
+            <button className="btn btn-primary">{seeDetailsText}</button>
+          </Link>
         </div>
       </div>
     </div>

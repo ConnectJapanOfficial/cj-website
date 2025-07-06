@@ -1,5 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Bars from "../components/Loaders/Bars";
+import JapaneseLanguageCourse from "../components/Service/JapaneseLanguageCourse";
+import JapaneseLangSchool from "../components/Service/JapaneseLanguageSchool";
+import UniversityApplication from "../components/Service/UniversityApplication";
 import About from "../pages/About";
 import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
@@ -12,6 +15,7 @@ import {
   appDataLoader,
   homepageLoader,
   servicesLoader,
+  universityApplicationLoader,
 } from "../utilities/loaders";
 
 const routes = createBrowserRouter([
@@ -41,6 +45,32 @@ const routes = createBrowserRouter([
         loader: servicesLoader,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
+      },
+      {
+        path: "service",
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+        children: [
+          {
+            path: "university-application",
+            Component: UniversityApplication,
+            loader: universityApplicationLoader,
+            errorElement: <ErrorPage />,
+            HydrateFallback: Bars,
+          },
+          {
+            path: "language-course",
+            Component: JapaneseLanguageCourse,
+            errorElement: <ErrorPage />,
+            HydrateFallback: Bars,
+          },
+          {
+            path: "language-school",
+            Component: JapaneseLangSchool,
+            errorElement: <ErrorPage />,
+            HydrateFallback: Bars,
+          },
+        ],
       },
 
       {

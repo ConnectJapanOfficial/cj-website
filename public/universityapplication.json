@@ -1,0 +1,298 @@
+{
+  "premiumPackage": {
+    "en": {
+      "title": "University Application Package",
+      "price": "50,000 BDT / 65000 JPY",
+      "subtitle": "Complete End-to-End Support",
+      "description": "Our most comprehensive package providing complete guidance from application to arrival in Japan.",
+      "premiumBadge": "PREMIUM",
+      "beforeApplication": {
+        "title": "Before Application",
+        "services": [
+          {
+            "name": "Personal Background & Goals Planning",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Profile Evaluation",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "University & Major Selection",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Application Roadmap & Timeline",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          }
+        ]
+      },
+      "applicationSupport": {
+        "title": "Application Support",
+        "services": [
+          {
+            "name": "Document Reviewing",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "SOP (Guidance + Editing)",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Essay/Personal Statement (Guidance + Editing)",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Research Proposal (Guidance + Editing)",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Email to Professors (Guidance + Editing)",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "CV/Resume Review",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Recommendation Letter Guidance",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Final Application Review",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          },
+          {
+            "name": "Interview Preparation & Practice",
+            "sessions": "Unlimited",
+            "duration": "30 minutes each"
+          }
+        ]
+      },
+      "postApplication": {
+        "title": "Post-Application Support",
+        "services": [
+          { "name": "Visa Application Support", "included": "Included" },
+          { "name": "Airport Pickup Coordination", "included": "Included" },
+          { "name": "Accommodation Search", "included": "Included" },
+          { "name": "Part-time Job Search + Coaching", "included": "Included" }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Start Your Journey?",
+        "description": "Get complete end-to-end support for your Japanese university application",
+        "primaryButton": "Apply Now",
+        "secondaryButton": "Learn More"
+      }
+    },
+    "ja": {
+      "title": "大学出願パッケージ",
+      "price": "50,000 BDT / 65,000円",
+      "subtitle": "完全エンドツーエンドサポート",
+      "description": "出願から日本到着まで完全ガイダンスを提供する最も包括的なパッケージです。",
+      "premiumBadge": "プレミアム",
+      "beforeApplication": {
+        "title": "出願前",
+        "services": [
+          {
+            "name": "個人背景・目標計画",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "プロフィール評価",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "大学・専攻選択",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "出願ロードマップ・タイムライン",
+            "sessions": "無制限",
+            "duration": "各30分"
+          }
+        ]
+      },
+      "applicationSupport": {
+        "title": "出願サポート",
+        "services": [
+          {
+            "name": "書類審査",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "志望理由書（ガイダンス+編集）",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "エッセイ/個人声明（ガイダンス+編集）",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "研究提案書（ガイダンス+編集）",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "教授へのメール（ガイダンス+編集）",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "履歴書レビュー",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "推薦状ガイダンス",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "最終出願レビュー",
+            "sessions": "無制限",
+            "duration": "各30分"
+          },
+          {
+            "name": "面接準備・練習",
+            "sessions": "無制限",
+            "duration": "各30分"
+          }
+        ]
+      },
+      "postApplication": {
+        "title": "出願後サポート",
+        "services": [
+          { "name": "ビザ申請サポート", "included": "含まれています" },
+          { "name": "空港送迎調整", "included": "含まれています" },
+          { "name": "住居探し", "included": "含まれています" },
+          { "name": "アルバイト探し+コーチング", "included": "含まれています" }
+        ]
+      },
+      "cta": {
+        "title": "あなたの旅を始めませんか？",
+        "description": "日本の大学出願に向けた完全なエンドツーエンドサポートを受けましょう",
+        "primaryButton": "今すぐ申し込む",
+        "secondaryButton": "詳しく見る"
+      }
+    },
+    "bn": {
+      "title": "বিশ্ববিদ্যালয় আবেদন প্যাকেজ",
+      "price": "৫০,০০০ টাকা / ৬৫,০০০ জাপানি ইয়েন",
+      "subtitle": "সম্পূর্ণ এন্ড-টু-এন্ড সাপোর্ট",
+      "description": "আবেদন থেকে জাপানে পৌঁছানো পর্যন্ত সম্পূর্ণ গাইডেন্স প্রদানকারী আমাদের সবচেয়ে ব্যাপক প্যাকেজ।",
+      "premiumBadge": "প্রিমিয়াম",
+      "beforeApplication": {
+        "title": "আবেদনের আগে",
+        "services": [
+          {
+            "name": "ব্যক্তিগত পটভূমি ও লক্ষ্য পরিকল্পনা",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "প্রোফাইল মূল্যায়ন",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "বিশ্ববিদ্যালয় ও বিষয় নির্বাচন",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "আবেদন রোডম্যাপ ও সময়সূচী",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          }
+        ]
+      },
+      "applicationSupport": {
+        "title": "আবেদন সাপোর্ট",
+        "services": [
+          {
+            "name": "নথিপত্র পর্যালোচনা",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "SOP (গাইডেন্স + সম্পাদনা)",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "প্রবন্ধ/ব্যক্তিগত বিবৃতি (গাইডেন্স + সম্পাদনা)",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "গবেষণা প্রস্তাব (গাইডেন্স + সম্পাদনা)",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "প্রফেসরদের ইমেইল (গাইডেন্স + সম্পাদনা)",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "CV/জীবনবৃত্তান্ত পর্যালোচনা",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "সুপারিশপত্র গাইডেন্স",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "চূড়ান্ত আবেদন পর্যালোচনা",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          },
+          {
+            "name": "ইন্টারভিউ প্রস্তুতি ও অনুশীলন",
+            "sessions": "আনলিমিটেড",
+            "duration": "প্রতিটি ৩০ মিনিট"
+          }
+        ]
+      },
+      "postApplication": {
+        "title": "আবেদন পরবর্তী সাপোর্ট",
+        "services": [
+          { "name": "ভিসা আবেদন সাপোর্ট", "included": "অন্তর্ভুক্ত" },
+          { "name": "এয়ারপোর্ট পিকআপ সমন্বয়", "included": "অন্তর্ভুক্ত" },
+          { "name": "থাকার জায়গা খোঁজা", "included": "অন্তর্ভুক্ত" },
+          {
+            "name": "পার্ট-টাইম চাকরি খোঁজা + কোচিং",
+            "included": "অন্তর্ভুক্ত"
+          }
+        ]
+      },
+      "cta": {
+        "title": "আপনার যাত্রা শুরু করতে প্রস্তুত?",
+        "description": "জাপানি বিশ্ববিদ্যালয়ে আবেদনের জন্য সম্পূর্ণ এন্ড-টু-এন্ড সাপোর্ট পান",
+        "primaryButton": "এখনই আবেদন করুন",
+        "secondaryButton": "আরও জানুন"
+      }
+    }
+  }
+}

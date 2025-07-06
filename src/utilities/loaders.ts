@@ -6,9 +6,14 @@ import type {
   ILanguageData,
   INavigation,
   IServiceData,
+  IUniversityApplicationData,
 } from "./interface";
 
-import {DEFAULT_FOOTER, DEFAULT_LANGUAGES, DEFAULT_NAVIGATION} from "./constants";
+import {
+  DEFAULT_FOOTER,
+  DEFAULT_LANGUAGES,
+  DEFAULT_NAVIGATION,
+} from "./constants";
 
 // Homepage loader
 export const homepageLoader: LoaderFunction = async () => {
@@ -36,6 +41,23 @@ export const servicesLoader: LoaderFunction = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching services data:", error);
+    throw error;
+  }
+};
+
+// University Application loader
+export const universityApplicationLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/universityapplication.json");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch university application data: ${response.status}`
+      );
+    }
+    const data: IUniversityApplicationData = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching university application data:", error);
     throw error;
   }
 };
@@ -75,4 +97,3 @@ export const appDataLoader: LoaderFunction = async (): Promise<AppData> => {
     } as AppData;
   }
 };
-

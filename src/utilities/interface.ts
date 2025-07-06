@@ -102,6 +102,7 @@ export interface IFooter {
 export interface IService {
   title: string;
   description: string;
+  path: string;
 }
 
 export interface IServiceData {
@@ -118,6 +119,41 @@ export interface AppData {
   languages: ILanguageData[];
   navigations: INavigation;
   footerData: IFooter;
+}
+
+export interface IUniversityApplicationService {
+  name: string;
+  sessions?: string;
+  duration?: string;
+  included?: string;
+}
+
+export interface IUniversityApplicationSection {
+  title: string;
+  services: IUniversityApplicationService[];
+}
+
+export interface IUniversityApplicationCTA {
+  title: string;
+  description: string;
+  primaryButton: string;
+  secondaryButton: string;
+}
+
+export interface IUniversityApplicationPackage {
+  title: string;
+  price: string;
+  subtitle: string;
+  description: string;
+  premiumBadge: string;
+  beforeApplication: IUniversityApplicationSection;
+  applicationSupport: IUniversityApplicationSection;
+  postApplication: IUniversityApplicationSection;
+  cta: IUniversityApplicationCTA;
+}
+
+export interface IUniversityApplicationData {
+  premiumPackage: Record<LanguageType, IUniversityApplicationPackage>;
 }
 
 export interface LanguageProviderProps {
