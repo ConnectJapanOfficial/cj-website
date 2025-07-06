@@ -1,5 +1,5 @@
 
-const JapaneseLangSchool = () => {
+const JapaneseLanguageSchool = () => {
     return (
         <div>
         
@@ -7,4 +7,4 @@ const JapaneseLangSchool = () => {
     );
 };
 
-export default JapaneseLangSchool;
+export default JapaneseLanguageSchool;

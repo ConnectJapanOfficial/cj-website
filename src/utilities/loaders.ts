@@ -1,6 +1,7 @@
 import type { LoaderFunction } from "react-router";
 import type {
   AppData,
+  IApplicationData,
   IFooter,
   IHomepage,
   ILanguageData,
@@ -58,6 +59,21 @@ export const universityApplicationLoader: LoaderFunction = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching university application data:", error);
+    throw error;
+  }
+};
+
+// Application loader
+export const applicationLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/application.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch application data: ${response.status}`);
+    }
+    const data: IApplicationData = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching application data:", error);
     throw error;
   }
 };

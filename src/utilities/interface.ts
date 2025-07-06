@@ -156,6 +156,27 @@ export interface IUniversityApplicationData {
   premiumPackage: Record<LanguageType, IUniversityApplicationPackage>;
 }
 
+export interface IApplicationService {
+  title: string;
+  description: string;
+  buttonText: string;
+  path: string;
+}
+
+export interface IApplicationContent {
+  title: string;
+  subtitle: string;
+  universityApplication: IApplicationService;
+  japaneseLanguageCourse: IApplicationService;
+  japaneseLanguageSchool: IApplicationService;
+}
+
+export interface IApplicationData {
+  en: IApplicationContent;
+  ja: IApplicationContent;
+  bn: IApplicationContent;
+}
+
 export interface LanguageProviderProps {
   children: React.ReactNode;
   initialData?: {

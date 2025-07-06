@@ -1,0 +1,68 @@
+{
+  "en": {
+    "title": "Choose Your Path",
+    "subtitle": "Select the service that best fits your goals and start your journey to Japan",
+    "universityApplication": {
+      "title": "University Application",
+      "description": "Apply to top Japanese universities with our comprehensive guidance and support.",
+      "buttonText": "Join!!!",
+      "path": "/apply/university-application-form"
+    },
+    "japaneseLanguageCourse": {
+      "title": "Japanese Language Course",
+      "description": "Master the Japanese language with our structured courses and expert instructors.",
+      "buttonText": "Join!!!",
+      "path": "/apply/language-course-form"
+    },
+    "japaneseLanguageSchool": {
+      "title": "Japanese Language School",
+      "description": "Enroll in accredited Japanese language schools for immersive learning experience.",
+      "buttonText": "Join!!!",
+      "path": "/apply/language-school-form"
+    }
+  },
+  "ja": {
+    "title": "あなたの道を選んでください",
+    "subtitle": "あなたの目標に最も適したサービスを選択し、日本への旅を始めましょう",
+    "universityApplication": {
+      "title": "大学出願",
+      "description": "包括的なガイダンスとサポートで日本のトップ大学に出願しましょう。",
+      "buttonText": "参加!!!",
+      "path": "/apply/university-application-form"
+    },
+    "japaneseLanguageCourse": {
+      "title": "日本語コース",
+      "description": "体系的なコースと専門講師で日本語をマスターしましょう。",
+      "buttonText": "参加!!!",
+      "path": "/apply/language-course-form"
+    },
+    "japaneseLanguageSchool": {
+      "title": "日本語学校",
+      "description": "認定された日本語学校で没入型の学習体験にご参加ください。",
+      "buttonText": "参加!!!",
+      "path": "/apply/language-school-form"
+    }
+  },
+  "bn": {
+    "title": "আপনার পথ বেছে নিন",
+    "subtitle": "আপনার লক্ষ্যের সাথে সবচেয়ে মানানসই সেবা নির্বাচন করুন এবং জাপানে আপনার যাত্রা শুরু করুন",
+    "universityApplication": {
+      "title": "বিশ্ববিদ্যালয়ে আবেদন",
+      "description": "আমাদের ব্যাপক নির্দেশনা ও সহায়তায় জাপানের শীর্ষ বিশ্ববিদ্যালয়ে আবেদন করুন।",
+      "buttonText": "জয়েন!!!",
+      "path": "/apply/university-application-form"
+    },
+    "japaneseLanguageCourse": {
+      "title": "জাপানি ভাষা কোর্স",
+      "description": "আমাদের কাঠামোগত কোর্স এবং দক্ষ প্রশিক্ষকদের সাথে জাপানি ভাষায় দক্ষতা অর্জন করুন।",
+      "buttonText": "জয়েন!!!",
+      "path": "/apply/language-course-form"
+    },
+    "japaneseLanguageSchool": {
+      "title": "জাপানি ভাষা স্কুল",
+      "description": "নিবন্ধিত জাপানি ভাষা স্কুলে নিমজ্জনকারী শিক্ষার অভিজ্ঞতার জন্য ভর্তি হন।",
+      "buttonText": "জয়েন!!!",
+      "path": "/apply/language-school-form"
+    }
+  }
+}

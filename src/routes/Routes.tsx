@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
+import JapaneseLanguageCourseForm from "../components/FormComponents/JapaneseLanguageCourseForm";
+import JapaneseLanguageSchoolForm from "../components/FormComponents/JapaneseLanguageSchoolForm";
+import UniversityApplicationForm from "../components/FormComponents/UniversityApplicationForm";
 import Bars from "../components/Loaders/Bars";
 import JapaneseLanguageCourse from "../components/Service/JapaneseLanguageCourse";
-import JapaneseLangSchool from "../components/Service/JapaneseLanguageSchool";
+import JapaneseLanguageSchool from "../components/Service/JapaneseLanguageSchool";
 import UniversityApplication from "../components/Service/UniversityApplication";
 import About from "../pages/About";
 import Achievements from "../pages/Achievements";
@@ -13,6 +16,7 @@ import Root from "../pages/Root";
 import ServicesDetails from "../pages/ServicesDetails";
 import {
   appDataLoader,
+  applicationLoader,
   homepageLoader,
   servicesLoader,
   universityApplicationLoader,
@@ -66,7 +70,7 @@ const routes = createBrowserRouter([
           },
           {
             path: "language-school",
-            Component: JapaneseLangSchool,
+            Component: JapaneseLanguageSchool,
             errorElement: <ErrorPage />,
             HydrateFallback: Bars,
           },
@@ -94,6 +98,25 @@ const routes = createBrowserRouter([
       {
         path: "apply",
         Component: Apply,
+        loader: applicationLoader,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "apply/university-application-form",
+        Component: UniversityApplicationForm,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "apply/language-course-form",
+        Component: JapaneseLanguageCourseForm,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "apply/language-school-form",
+        Component: JapaneseLanguageSchoolForm,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },
