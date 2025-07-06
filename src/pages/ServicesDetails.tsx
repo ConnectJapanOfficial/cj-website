@@ -13,6 +13,9 @@ const ServicesDetails = () => {
 
   const services = serviceData.services[language] || [];
   const seeDetailsText = serviceData.seeDetailsText[language] || "See Details";
+  const heroTitle = serviceData.heroSection.title[language] || "Our Services & Solutions";
+  const heroSubtitle = serviceData.heroSection.subtitle[language] || "Discover our comprehensive range of services designed to help you achieve your Japanese education goals";
+  const sectionHeaderTitle = serviceData.sectionHeader.title[language] || "Choose Your Path to Success";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -20,11 +23,10 @@ const ServicesDetails = () => {
       <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6 animate-fade-in-up">
-            Our Services & Solutions
+            {heroTitle}
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fade-in">
-            Discover our comprehensive range of services designed to help you
-            achieve your Japanese education goals
+            {heroSubtitle}
           </p>
 
           {/* Decorative elements */}
@@ -41,7 +43,7 @@ const ServicesDetails = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Choose Your Path to Success
+            {sectionHeaderTitle}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
         </div>

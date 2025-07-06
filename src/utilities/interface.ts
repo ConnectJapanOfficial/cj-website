@@ -108,6 +108,13 @@ export interface IService {
 export interface IServiceData {
   services: Record<LanguageType, IService[]>;
   seeDetailsText: Record<LanguageType, string>;
+  heroSection: {
+    title: Record<LanguageType, string>;
+    subtitle: Record<LanguageType, string>;
+  };
+  sectionHeader: {
+    title: Record<LanguageType, string>;
+  };
 }
 
 export interface IServiceProps {
