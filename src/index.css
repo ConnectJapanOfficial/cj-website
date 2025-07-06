@@ -25,10 +25,6 @@ body {
   @apply font-extrabold underline decoration-[#368BE0] decoration-4 decoration-wavy underline-offset-[6px] text-[var(--primaryBlue)];
 }
 
-.banner-gradient {
-  @apply bg-gradient-to-br from-indigo-500 via-purple-500 to-purple-600;
-}
-
 .banner-grain {
   @apply absolute inset-0;
 }
