@@ -1,3 +1,4 @@
+import ComingSoon from "../components/ComingSoon/ComingSoon";
 import { usePageTitle } from "../utilities/hooks";
 
 const Guides = () => {
@@ -6,7 +7,7 @@ const Guides = () => {
     
     return (
         <div>
-            
+            <ComingSoon/>
         </div>
     );
 };

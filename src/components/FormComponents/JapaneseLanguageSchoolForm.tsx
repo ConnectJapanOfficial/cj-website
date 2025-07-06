@@ -1,10 +1,7 @@
+import ComingSoon from "../ComingSoon/ComingSoon";
 
 const JapaneseLanguageSchoolForm = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+    return <ComingSoon />;
 };
 
 export default JapaneseLanguageSchoolForm;

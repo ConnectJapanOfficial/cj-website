@@ -1,3 +1,4 @@
+import ComingSoon from "../components/ComingSoon/ComingSoon";
 import { usePageTitle } from "../utilities/hooks";
 
 const About = () => {
@@ -5,8 +6,7 @@ const About = () => {
     usePageTitle("About Us");
     return (
         <div>
-            <h1>About Us</h1>
-            <p>Welcome to the About Us page!</p>
+        <ComingSoon />
         </div>
     );
 };

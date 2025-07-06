@@ -1,10 +1,7 @@
+import ComingSoon from "../ComingSoon/ComingSoon";
 
 const JapaneseLanguageCourse = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+    return <ComingSoon/>
 };
 
 export default JapaneseLanguageCourse;
