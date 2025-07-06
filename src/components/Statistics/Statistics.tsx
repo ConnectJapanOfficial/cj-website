@@ -13,7 +13,7 @@ const Statistics = ({ statistics }: StatisticsProps) => {
   return (
     <div className="py-40 px-5 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 italic underline decoration-gray-800 decoration-4 decoration-wavy underline-offset-12 leading-loose">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 underline decoration-gray-800 decoration-4 decoration-wavy underline-offset-12 leading-loose">
           {statistics.title[language]}
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
