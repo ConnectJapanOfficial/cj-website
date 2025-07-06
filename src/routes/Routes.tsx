@@ -3,12 +3,12 @@ import ErrorPage from "../pages/ErrorPage";
 import Bars from "../components/Loaders/Bars";
 import Home from "../pages/Home";
 import Root from "../pages/Root";
-import Services from "../pages/Services";
 import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
 import LanguageProvider from "../contexts/LanguageProvider";
 import Guides from "../pages/Guides";
 import About from "../pages/About";
+import ServicesDetails from "../pages/ServicesDetails";
 
 
 const routes = createBrowserRouter([
@@ -32,7 +32,7 @@ const routes = createBrowserRouter([
 
       {
         path: "services",
-        Component: Services,
+        Component: ServicesDetails,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

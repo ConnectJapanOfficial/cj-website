@@ -97,3 +97,18 @@ export interface IFooter {
     apply: Record<LanguageType, string>;
   };
 }
+
+export interface IService {
+  title: string;
+  description: string;
+}
+
+export interface IServiceData {
+  services: Record<LanguageType, IService[]>;
+  seeDetailsText: Record<LanguageType, string>;
+}
+
+export interface IServiceProps {
+  service: IService;
+  seeDetailsText: string;
+}

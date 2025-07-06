@@ -1,0 +1,51 @@
+{
+  "services": {
+    "en": [
+      {
+        "title": "University Application",
+        "description": "Details about the university application process."
+      },
+      {
+        "title": "Japanese Language School",
+        "description": "Information on the Japanese language school."
+      },
+      {
+        "title": "Japanese Language Course",
+        "description": "Details about the Japanese language course."
+      }
+    ],
+    "ja": [
+      {
+        "title": "大学出願",
+        "description": "大学出願プロセスの詳細について。"
+      },
+      {
+        "title": "日本語学校",
+        "description": "日本語学校に関する情報。"
+      },
+      {
+        "title": "日本語コース",
+        "description": "日本語コースの詳細について。"
+      }
+    ],
+    "bn": [
+      {
+        "title": "বিশ্ববিদ্যালয়ে আবেদন",
+        "description": "বিশ্ববিদ্যালয়ে আবেদন প্রক্রিয়া সম্পর্কে বিস্তারিত।"
+      },
+      {
+        "title": "জাপানি ভাষা স্কুল",
+        "description": "জাপানি ভাষা স্কুল সম্পর্কে তথ্য।"
+      },
+      {
+        "title": "জাপানি ভাষা কোর্স",
+        "description": "জাপানি ভাষা কোর্স সম্পর্কে বিস্তারিত।"
+      }
+    ]
+  },
+  "seeDetailsText": {
+    "en": "See Details",
+    "ja": "詳細を見る",
+    "bn": "বিস্তারিত দেখুন"
+  }
+}
