@@ -68,7 +68,7 @@ const NavBar = () => {
       <NavLink to={"/about"} className={navLinkClassName}>
         {getTranslation("about")}
       </NavLink>
-      <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-3xl bg-(--primaryBlue) text-white">
+      <button className="btn btn-md lg:btn-lg rounded-3xl bg-(--primaryBlue) text-white">
         <NavLink to={"/apply"} className={applyButtonClassName}>
           {getTranslation("apply")}
         </NavLink>
@@ -123,7 +123,7 @@ const NavBar = () => {
               </div>
               <div
                 tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-1 w-fit p-2 shadow-sm font-bold grid gap-2"
+                className="dropdown-content menu bg-base-100 rounded-box z-1 w-fit p-4 sm:p-6 shadow-sm font-bold grid gap-3 sm:gap-4 min-w-[200px]"
               >
                 {links}
               </div>

@@ -1,0 +1,52 @@
+import type { IFooter, ILanguageData, INavigation } from "./interface";
+
+export const DEFAULT_NAVIGATION: INavigation = {
+  navigation: {
+    home: { en: "Home", bn: "হোম", ja: "ホーム" },
+    services: {
+      en: "Services & Fees",
+      bn: "সেবা ও ফি",
+      ja: "サービス・料金",
+    },
+    achievements: { en: "Achievements", bn: "অর্জন", ja: "実績" },
+    guides: { en: "Guides", bn: "গাইড", ja: "ガイド" },
+    about: {
+      en: "About Us",
+      bn: "আমাদের সম্পর্কে",
+      ja: "私たちについて",
+    },
+    apply: { en: "Apply", bn: "আবেদন", ja: "申し込み" },
+  },
+};
+
+export const DEFAULT_FOOTER: IFooter = {
+  contact: { en: "Contact", bn: "যোগাযোগ", ja: "お問い合わせ" },
+  email: { en: "Email", bn: "ইমেইল", ja: "メール" },
+  address: { en: "Address", bn: "ঠিকানা", ja: "住所" },
+  navigationTitle: { en: "Navigation", bn: "নেভিগেশন", ja: "ナビগেーション" },
+  social: { en: "Social", bn: "সামাজিক", ja: "ソーシャル" },
+  company: {
+    name: { en: "ConnectJapan", bn: "কানেক্ট জাপান", ja: "コネクトジャパン" },
+    email: "contact@connectjapanofficial.com",
+    phone: "",
+    address: {
+      en: "Flat# 2B, House# 104, Road# 19, Sector# 11, Uttara, Dhaka – 1230, Bangladesh",
+      bn: "ফ্ল্যাট# ২বি, বাড়ি# ১০৪, রোড# ১৯, সেক্টর# ১১, উত্তরা, ঢাকা – ১২৩০, বাংলাদেশ",
+      ja: "フラット# 2B、ハウス# 104、ロード# 19、セクター# 11、ウッタラ、ダッカ – 1230、バングラデシュ",
+    },
+  },
+  navigation: {
+    home: { en: "Home", bn: "হোম", ja: "ホーム" },
+    services: { en: "Services & Fees", bn: "সেবা ও ফি", ja: "サービス・料金" },
+    achievements: { en: "Achievements", bn: "অর্জন", ja: "実績" },
+    guides: { en: "Guides", bn: "গাইড", ja: "ガイド" },
+    about: { en: "About Us", bn: "আমাদের সম্পর্কে", ja: "会社概要" },
+    apply: { en: "Apply", bn: "আবেদন", ja: "申し込み" },
+  },
+};
+
+export const DEFAULT_LANGUAGES: ILanguageData[] = [
+  { code: "bn", name: "বাংলা", englishName: "Bengali" },
+  { code: "en", name: "English", englishName: "English" },
+  { code: "ja", name: "日本語", englishName: "Japanese" },
+];

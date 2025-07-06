@@ -1,3 +1,4 @@
+import React from "react";
 import type { LanguageType } from "./types";
 
 export interface ILanguageData {
@@ -111,4 +112,19 @@ export interface IServiceData {
 export interface IServiceProps {
   service: IService;
   seeDetailsText: string;
+}
+
+export interface AppData {
+  languages: ILanguageData[];
+  navigations: INavigation;
+  footerData: IFooter;
+}
+
+export interface LanguageProviderProps {
+  children: React.ReactNode;
+  initialData?: {
+    languages: ILanguageData[];
+    navigations: INavigation;
+    footerData: IFooter;
+  };
 }
