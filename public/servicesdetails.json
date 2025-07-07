@@ -20,7 +20,7 @@
     "ja": [
       {
         "title": "大学出願",
-        "description": "大学出願プロセスの詳細について。",
+        "description": "大学出願手続きの詳細",
         "path": "service/university-application"
       },
       {
@@ -30,7 +30,7 @@
       },
       {
         "title": "日本語コース",
-        "description": "日本語コースの詳細について。",
+        "description": "日本語コースの詳細",
         "path": "service/language-course"
       }
     ],
@@ -65,14 +65,14 @@
     },
     "subtitle": {
       "en": "Discover our comprehensive range of services designed to help you achieve your Japanese education goals",
-      "ja": "あなたの日本教育目標を達成するために設計された包括的なサービスの範囲を発見してください",
+      "ja": "日本語教育の目標達成を支援する充実のサービスをご覧ください。",
       "bn": "আপনার জাপানি শিক্ষার লক্ষ্য অর্জনে সহায়তা করার জন্য ডিজাইন করা আমাদের ব্যাপক সেবার পরিসর আবিষ্কার করুন"
     }
   },
   "sectionHeader": {
     "title": {
       "en": "Choose Your Path to Success",
-      "ja": "成功への道を選択してください",
+      "ja": "成功への道を選ぼう",
       "bn": "সাফল্যের পথ বেছে নিন"
     }
   }
