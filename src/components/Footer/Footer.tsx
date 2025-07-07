@@ -298,6 +298,20 @@ const Footer = () => {
               © {new Date().getFullYear()} {getCompanyInfo("name")}. All rights
               reserved.
             </div>
+
+            {/* Developer Credit */}
+            <div className="text-gray-400 text-sm">
+              Developed by{" "}
+              <a
+                href="https://www.linkedin.com/in/mdmzs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-300"
+              >
+                SNIGDHO
+              </a>
+            </div>
+
             <div className="flex space-x-6 text-sm text-gray-400">
               <a
                 href="#"
@@ -310,12 +324,6 @@ const Footer = () => {
                 className="hover:text-white transition-colors duration-300"
               >
                 Terms of Service
-              </a>
-              <a
-                href="#"
-                className="hover:text-white transition-colors duration-300"
-              >
-                Cookie Policy
               </a>
             </div>
           </div>
