@@ -1,0 +1,44 @@
+{
+  "title": {
+    "en": "Join our FREE community",
+    "bn": "আমাদের বিনামূল্যে কমিউনিটিতে যোগ দিন",
+    "jp": "無料コミュニティに参加する"
+  },
+  "description": {
+    "en": "ConnectJapan helps answer your questions for free in our Facebook group.",
+    "bn": "কানেক্ট জাপান আমাদের ফেসবুক গ্রুপে বিনামূল্যে আপনার প্রশ্নের উত্তর দিতে সাহায্য করে।",
+    "jp": "ConnectJapanは、Facebookグループで無料であなたの質問にお答えします。"
+  },
+  "joinCommunityButton": {
+    "en": "Join Our Community",
+    "bn": "আমাদের কমিউনিটিতে যোগ দিন",
+    "jp": "コミュニティに参加"
+  },
+  "socialMediaTitles": {
+    "linkedin": {
+      "en": "Follow us on LinkedIn",
+      "bn": "লিংকডইনে আমাদের ফলো করুন",
+      "jp": "LinkedInでフォローする"
+    },
+    "youtube": {
+      "en": "Subscribe to our YouTube channel",
+      "bn": "আমাদের ইউটিউব চ্যানেল সাবস্ক্রাইব করুন",
+      "jp": "YouTubeチャンネルを登録する"
+    },
+    "facebook": {
+      "en": "Like our Facebook page",
+      "bn": "আমাদের ফেসবুক পেজ লাইক করুন",
+      "jp": "Facebookページにいいね"
+    },
+    "instagram": {
+      "en": "Follow us on Instagram",
+      "bn": "ইনস্টাগ্রামে আমাদের ফলো করুন",
+      "jp": "Instagramでフォローする"
+    },
+    "facebookCommunity": {
+      "en": "Join our Facebook Community",
+      "bn": "আমাদের ফেসবুক কমিউনিটিতে যোগ দিন",
+      "jp": "Facebookコミュニティに参加"
+    }
+  }
+}

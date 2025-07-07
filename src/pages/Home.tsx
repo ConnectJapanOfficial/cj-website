@@ -7,6 +7,7 @@ import Statistics from "../components/Statistics/Statistics";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { usePageTitle } from "../utilities/hooks";
 import type { IHomepage } from "../utilities/interface";
+import Community from "../components/Community/Community";
 
 const Home = () => {
   const homepageData = useLoaderData() as IHomepage;
@@ -16,7 +17,6 @@ const Home = () => {
 
   return (
     <Suspense fallback={<Bars />}>
-      <div className="home-page">
         <Banner
           title={homepageData.banner.title[language]}
           categories={homepageData.banner.categories[language]}
@@ -28,7 +28,7 @@ const Home = () => {
           language={language}
         />
         <Statistics statistics={homepageData.statistics} />
-      </div>
+        <Community/>
     </Suspense>
   );
 };

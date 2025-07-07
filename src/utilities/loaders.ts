@@ -2,6 +2,7 @@ import type { LoaderFunction } from "react-router";
 import type {
   AppData,
   IApplicationData,
+  ICommunity,
   IFooter,
   IHomepage,
   ILanguageData,
@@ -59,6 +60,21 @@ export const universityApplicationLoader: LoaderFunction = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching university application data:", error);
+    throw error;
+  }
+};
+
+// Community loader
+export const communityLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/community.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch community data: ${response.status}`);
+    }
+    const data: ICommunity = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching community data:", error);
     throw error;
   }
 };

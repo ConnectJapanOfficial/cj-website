@@ -187,6 +187,19 @@ export interface IApplicationData {
   bn: IApplicationContent;
 }
 
+export interface ICommunity {
+  title: Record<LanguageType, string>;
+  description: Record<LanguageType, string>;
+  joinCommunityButton: Record<LanguageType, string>;
+  socialMediaTitles: {
+    linkedin: Record<LanguageType, string>;
+    youtube: Record<LanguageType, string>;
+    facebook: Record<LanguageType, string>;
+    instagram: Record<LanguageType, string>;
+    facebookCommunity: Record<LanguageType, string>;
+  };
+}
+
 export interface LanguageProviderProps {
   children: React.ReactNode;
   initialData?: {
