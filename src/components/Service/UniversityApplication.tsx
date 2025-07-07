@@ -145,7 +145,7 @@ const UniversityApplication = () => {
               {currentContent.cta.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/apply">
+              <Link to="/apply/university-application-form">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition-colors shadow-lg">
                   {currentContent.cta.primaryButton}
                 </button>
