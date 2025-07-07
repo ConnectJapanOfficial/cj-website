@@ -3,22 +3,22 @@
     "title": {
       "en": "Apply to Japan",
       "bn": "জাপানে আবেদন করুন",
-      "ja": "日本に申し込む"
+      "jp": "日本に申し込む"
     },
     "categories": {
       "en": ["Undergraduate", "Postgraduate", "Japanese Language School"],
       "bn": ["স্নাতক", "স্নাতকোত্তর", "জাপানি ভাষা স্কুল"],
-      "ja": ["学部", "大学院", "日本語学校"]
+      "jp": ["学部", "大学院", "日本語学校"]
     },
     "quote": {
       "en": "100% of our students get scholarships to study in Japan. Are you ready?",
       "bn": "আমাদের ১০০% শিক্ষার্থী জাপানে পড়াশোনার জন্য বৃত্তি পেয়ে থাকে । আপনি কি প্রস্তুত?",
-      "ja": "私たちの学生の100%が日本留学の奨学金を受けています。あなたは準備できていますか？"
+      "jp": "私たちの学生の100%が日本留学の奨学金を受けています。あなたは準備できていますか？"
     },
     "author": {
       "en": "ConnectJapan Team",
       "bn": "কানেক্ট জাপান টিম",
-      "ja": "コネクトジャパンチーム"
+      "jp": "コネクトジャパンチーム"
     }
   },
   "universities": [
@@ -27,13 +27,13 @@
       "name": {
         "en": "Tokyo University",
         "bn": "টোকিও বিশ্ববিদ্যালয়",
-        "ja": "東京大学"
+        "jp": "東京大学"
       },
       "logo": "/src/assets/universities/utokyo.png",
       "candidate_name": {
         "en": "Sarah Ahmed",
         "bn": "সারাহ আহমেদ",
-        "ja": "サラ・アハメド"
+        "jp": "サラ・アハメド"
       },
       "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
@@ -42,13 +42,13 @@
       "name": {
         "en": "Keio University",
         "bn": "কেইও বিশ্ববিদ্যালয়",
-        "ja": "慶應義塾大学"
+        "jp": "慶應義塾大学"
       },
       "logo": "/src/assets/universities/ukeio.png",
       "candidate_name": {
         "en": "Mohammad Rahman",
         "bn": "মোহাম্মদ রহমান",
-        "ja": "モハマド・ラフマン"
+        "jp": "モハマド・ラフマン"
       },
       "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
@@ -57,13 +57,13 @@
       "name": {
         "en": "Tokyo International University",
         "bn": "টোকিও ইন্টারন্যাশনাল বিশ্ববিদ্যালয়",
-        "ja": "東京国際大学"
+        "jp": "東京国際大学"
       },
       "logo": "/src/assets/universities/tiu.png",
       "candidate_name": {
         "en": "Fatima Khan",
         "bn": "ফাতিমা খান",
-        "ja": "ファティマ・カーン"
+        "jp": "ファティマ・カーン"
       },
       "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     },
@@ -72,13 +72,13 @@
       "name": {
         "en": "Ritsumeikan University",
         "bn": "রিতসুমেইকান বিশ্ববিদ্যালয়",
-        "ja": "立命館大学"
+        "jp": "立命館大学"
       },
       "logo": "/src/assets/universities/ru.png",
       "candidate_name": {
         "en": "Arif Hassan",
         "bn": "আরিফ হাসান",
-        "ja": "アリフ・ハサン"
+        "jp": "アリフ・ハサン"
       },
       "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
     }
@@ -88,14 +88,14 @@
     "title": {
       "en": "ConnectJapan by Numbers",
       "bn": "সংখ্যায় কানেক্ট জাপান",
-      "ja": "数字で見るコネクトジャパン"
+      "jp": "数字で見るコネクトジャパン"
     },
     "items": [
       {
         "title": {
           "en": "Student Community",
           "bn": "শিক্ষার্থী কমিউনিটি",
-          "ja": "学生コミュニティ"
+          "jp": "学生コミュニティ"
         },
         "total": 56000
       },
@@ -103,7 +103,7 @@
         "title": {
           "en": "Years of Experience",
           "bn": "বছরের অভিজ্ঞতা",
-          "ja": "年の経験"
+          "jp": "年の経験"
         },
         "total": 6
       },
@@ -111,7 +111,7 @@
         "title": {
           "en": "Students Served",
           "bn": "সেবাপ্রাপ্ত শিক্ষার্থী",
-          "ja": "サービス提供学生"
+          "jp": "サービス提供学生"
         },
         "total": 30
       }

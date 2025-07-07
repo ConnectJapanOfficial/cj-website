@@ -183,7 +183,7 @@ export interface IApplicationContent {
 
 export interface IApplicationData {
   en: IApplicationContent;
-  ja: IApplicationContent;
+  jp: IApplicationContent;
   bn: IApplicationContent;
 }
 

@@ -2,72 +2,72 @@
   "contact": {
     "en": "Contact",
     "bn": "যোগাযোগ",
-    "ja": "お問い合わせ"
+    "jp": "お問い合わせ"
   },
   "email": {
     "en": "Email",
     "bn": "ইমেইল",
-    "ja": "メール"
+    "jp": "メール"
   },
   "address": {
     "en": "Address",
     "bn": "ঠিকানা",
-    "ja": "住所"
+    "jp": "住所"
   },
   "navigationTitle": {
     "en": "Explore",
     "bn": "এক্সপ্লোর",
-    "ja": "Menu"
+    "jp": "Menu"
   },
   "social": {
     "en": "Social",
     "bn": "সামাজিক",
-    "ja": "SNS リンク"
+    "jp": "SNS リンク"
   },
   "company": {
     "name": {
       "en": "ConnectJapan",
       "bn": "কানেক্ট জাপান",
-      "ja": "コネクトジャパン"
+      "jp": "コネクトジャパン"
     },
     "email": "contact@connectjapanofficial.com",
     "phone": "",
     "address": {
       "en": "Flat# 2B, House# 104, Road# 19, Sector# 11, Uttara, Dhaka – 1230, Bangladesh",
       "bn": "ফ্ল্যাট# ২বি, বাড়ি# ১০৪, রোড# ১৯, সেক্টর# ১১, উত্তরা, ঢাকা – ১২৩০, বাংলাদেশ",
-      "ja": "バングラデシュ 1230 ダッカ市ウットラ11区19番通り104番地2B号室"
+      "jp": "バングラデシュ 1230 ダッカ市ウットラ11区19番通り104番地2B号室"
     }
   },
   "navigation": {
     "home": {
       "en": "Home",
       "bn": "হোম",
-      "ja": "ホーム"
+      "jp": "ホーম"
     },
     "services": {
       "en": "Services & Fees",
       "bn": "সেবা ও ফি",
-      "ja": "サービス・料金"
+      "jp": "サービス・料金"
     },
     "achievements": {
       "en": "Achievements",
       "bn": "অর্জন",
-      "ja": "実績"
+      "jp": "実績"
     },
     "guides": {
       "en": "Guides",
       "bn": "গাইড",
-      "ja": "ガイド"
+      "jp": "ガイド"
     },
     "about": {
       "en": "About Us",
       "bn": "আমাদের সম্পর্কে",
-      "ja": "会社概要"
+      "jp": "会社概要"
     },
     "apply": {
       "en": "Apply",
       "bn": "আবেদন",
-      "ja": "申し込み"
+      "jp": "申し込み"
     }
   }
 }
