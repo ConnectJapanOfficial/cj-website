@@ -171,8 +171,11 @@ export interface IApplicationService {
 }
 
 export interface IApplicationContent {
+  pageTitle: string;
   title: string;
   subtitle: string;
+  sectionTitle: string;
+  sectionDescription: string;
   universityApplication: IApplicationService;
   japaneseLanguageCourse: IApplicationService;
   japaneseLanguageSchool: IApplicationService;

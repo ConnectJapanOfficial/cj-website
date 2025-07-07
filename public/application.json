@@ -1,7 +1,10 @@
 {
   "en": {
+    "pageTitle": "Apply",
     "title": "Choose Your Path",
     "subtitle": "Select the service that best fits your goals and start your journey to Japan",
+    "sectionTitle": "Start Your Application Journey",
+    "sectionDescription": "Take the first step towards your Japanese education dream. Choose your preferred pathway below.",
     "universityApplication": {
       "title": "University Application",
       "description": "Apply to top Japanese universities with our comprehensive guidance and support.",
@@ -22,8 +25,11 @@
     }
   },
   "ja": {
+    "pageTitle": "申請",
     "title": "あなたの道を選んでください",
     "subtitle": "あなたの目標に最も適したサービスを選択し、日本への旅を始めましょう",
+    "sectionTitle": "申請の旅を始めましょう",
+    "sectionDescription": "日本の教育の夢への第一歩を踏み出しましょう。以下からご希望の進路をお選びください。",
     "universityApplication": {
       "title": "大学出願",
       "description": "包括的なガイダンスとサポートで日本のトップ大学に出願しましょう。",
@@ -44,8 +50,11 @@
     }
   },
   "bn": {
+    "pageTitle": "আবেদন",
     "title": "আপনার পথ বেছে নিন",
     "subtitle": "আপনার লক্ষ্যের সাথে সবচেয়ে মানানসই সেবা নির্বাচন করুন এবং জাপানে আপনার যাত্রা শুরু করুন",
+    "sectionTitle": "আপনার আবেদনের যাত্রা শুরু করুন",
+    "sectionDescription": "আপনার জাপানি শিক্ষার স্বপ্নের দিকে প্রথম পদক্ষেপ নিন। নিচে থেকে আপনার পছন্দের পথ বেছে নিন।",
     "universityApplication": {
       "title": "বিশ্ববিদ্যালয়ে আবেদন",
       "description": "আমাদের ব্যাপক নির্দেশনা ও সহায়তায় জাপানের শীর্ষ বিশ্ববিদ্যালয়ে আবেদন করুন।",
