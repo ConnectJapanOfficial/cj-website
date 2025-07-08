@@ -298,25 +298,12 @@ const Footer = () => {
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-400 text-sm order-1 md:order-1">
               © {new Date().getFullYear()} {getCompanyInfo("name")}. All rights
               reserved.
             </div>
 
-            {/* Developer Credit */}
-            <div className="text-gray-400 text-sm">
-              Developed by{" "}
-              <a
-                href="https://www.linkedin.com/in/mdmzs/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors duration-300"
-              >
-                SNIGDHO
-              </a>
-            </div>
-
-            <div className="flex space-x-6 text-sm text-gray-400">
+            <div className="flex space-x-6 text-sm text-gray-400 order-2 md:order-3">
               <Link
                 to={"/privacy-policy"}
                 className="hover:text-white transition-colors duration-300"
@@ -329,6 +316,19 @@ const Footer = () => {
               >
                 {getTranslation("termsOfServices")}
               </Link>
+            </div>
+
+            {/* Developer Credit - Bottom on mobile, middle on desktop */}
+            <div className="text-gray-400 text-sm order-3 md:order-2">
+              Developed by{" "}
+              <a
+                href="https://www.linkedin.com/in/mdmzs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-300"
+              >
+                SNIGDHO
+              </a>
             </div>
           </div>
         </div>
