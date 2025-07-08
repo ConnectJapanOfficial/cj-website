@@ -21,6 +21,8 @@ import {
   servicesLoader,
   universityApplicationLoader,
 } from "../utilities/loaders";
+import PrivacyPolicy from "../components/PrivacyPolicy.tsx/PrivacyPolicy";
+import TermsServices from "../components/Terms of Services/TermsServices";
 
 const routes = createBrowserRouter([
   {
@@ -117,6 +119,18 @@ const routes = createBrowserRouter([
       {
         path: "apply/language-school-form",
         Component: JapaneseLanguageSchoolForm,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "privacy-policy",
+        Component: PrivacyPolicy,
+        errorElement: <ErrorPage />,
+        HydrateFallback: Bars,
+      },
+      {
+        path: "terms-of-services",
+        Component: TermsServices,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

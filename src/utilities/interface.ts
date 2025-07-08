@@ -96,6 +96,8 @@ export interface IFooter {
     guides: Record<LanguageType, string>;
     about: Record<LanguageType, string>;
     apply: Record<LanguageType, string>;
+    privacyPolicy: Record<string, string>;
+    termsOfServices: Record<string, string>;
   };
 }
 

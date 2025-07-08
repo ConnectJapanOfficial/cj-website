@@ -68,6 +68,16 @@
       "en": "Apply",
       "bn": "আবেদন",
       "jp": "申し込み"
+    },
+    "privacyPolicy": {
+      "en": "Privacy Policy",
+      "bn": "গোপনীয়তা নীতি",
+      "jp": "プライバシーポリシー"
+    },
+    "termsOfServices": {
+      "en": "Terms of Services",
+      "bn": "পরিষেবার শর্তাবলী",
+      "jp": "利用規約"
     }
   }
 }

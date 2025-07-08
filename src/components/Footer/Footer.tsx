@@ -1,13 +1,14 @@
 import { useContext } from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { LanguageContext } from "../../contexts/LanguageContext";
 
-import type { IFooter } from "../../utilities/interface";
 import { SocialMediaContext } from "../../contexts/SocialMediaContext";
+import type { IFooter } from "../../utilities/interface";
 
 const Footer = () => {
   const { language, footerData } = useContext(LanguageContext);
-  const {facebookPage, instagram, linkedin, youtube} = useContext(SocialMediaContext);
+  const { facebookPage, instagram, linkedin, youtube } =
+    useContext(SocialMediaContext);
 
   // Helper function to get section title translations
   const getSectionTitle = (
@@ -316,18 +317,18 @@ const Footer = () => {
             </div>
 
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a
-                href="#"
+              <Link
+                to={"/privacy-policy"}
                 className="hover:text-white transition-colors duration-300"
               >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
+                {getTranslation("privacyPolicy")}
+              </Link>
+              <Link
+                to={"/terms-of-services"}
                 className="hover:text-white transition-colors duration-300"
               >
-                Terms of Service
-              </a>
+                {getTranslation("termsOfServices")}
+              </Link>
             </div>
           </div>
         </div>

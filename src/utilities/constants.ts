@@ -42,6 +42,16 @@ export const DEFAULT_FOOTER: IFooter = {
     guides: { en: "Guides", bn: "গাইড", jp: "ガイド" },
     about: { en: "About Us", bn: "আমাদের সম্পর্কে", jp: "会社概要" },
     apply: { en: "Apply", bn: "আবেদন", jp: "申し込み" },
+    privacyPolicy: {
+      en: "Privacy Policy",
+      bn: "গোপনীয়তা নীতি",
+      jp: "プライバシーポリシー",
+    },
+    termsOfServices: {
+      en: "Terms of Services",
+      bn: "পরিষেবার শর্তাবলী",
+      jp: "利用規約",
+    },
   },
 };
 
