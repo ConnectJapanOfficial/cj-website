@@ -3,7 +3,7 @@ import JapaneseLanguageCourseForm from "../components/FormComponents/JapaneseLan
 import JapaneseLanguageSchoolForm from "../components/FormComponents/JapaneseLanguageSchoolForm";
 import UniversityApplicationForm from "../components/FormComponents/UniversityApplicationForm";
 import Bars from "../components/Loaders/Bars";
-import PrivacyPolicy from "../components/PrivacyPolicy.tsx/PrivacyPolicy";
+import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
 import JapaneseLanguageCourse from "../components/Service/JapaneseLanguageCourse";
 import JapaneseLanguageSchool from "../components/Service/JapaneseLanguageSchool";
 import UniversityApplication from "../components/Service/UniversityApplication";
@@ -22,6 +22,7 @@ import {
   homepageLoader,
   privacyPolicyLoader,
   servicesLoader,
+  termsOfServicesLoader,
   universityApplicationLoader,
 } from "../utilities/loaders";
 
@@ -133,6 +134,7 @@ const routes = createBrowserRouter([
       {
         path: "terms-of-services",
         Component: TermsServices,
+        loader: termsOfServicesLoader,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

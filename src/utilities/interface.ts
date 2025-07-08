@@ -219,12 +219,12 @@ export interface ISocialMediaLinks {
   facebookGroup: string;
 }
 
-export interface IPolicySection {
+export interface IPolicyTermsSection {
   heading: string;
   content: string[];
 }
 
-export interface IPolicyData {
+export interface IPolicyTermsData {
   title: string;
-  sections: IPolicySection[];
+  sections: IPolicyTermsSection[];
 }

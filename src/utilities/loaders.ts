@@ -1,3 +1,17 @@
+// Terms of Services loader (returns all translations)
+export const termsOfServicesLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/termsofservices.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch terms of services: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching terms of services:", error);
+    throw error;
+  }
+};
 import type { LoaderFunction } from "react-router";
 import type {
   IAppData,
