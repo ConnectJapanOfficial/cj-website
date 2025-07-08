@@ -3,9 +3,11 @@ import JapaneseLanguageCourseForm from "../components/FormComponents/JapaneseLan
 import JapaneseLanguageSchoolForm from "../components/FormComponents/JapaneseLanguageSchoolForm";
 import UniversityApplicationForm from "../components/FormComponents/UniversityApplicationForm";
 import Bars from "../components/Loaders/Bars";
+import PrivacyPolicy from "../components/PrivacyPolicy.tsx/PrivacyPolicy";
 import JapaneseLanguageCourse from "../components/Service/JapaneseLanguageCourse";
 import JapaneseLanguageSchool from "../components/Service/JapaneseLanguageSchool";
 import UniversityApplication from "../components/Service/UniversityApplication";
+import TermsServices from "../components/Terms of Services/TermsServices";
 import About from "../pages/About";
 import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
@@ -18,11 +20,10 @@ import {
   appDataLoader,
   applicationLoader,
   homepageLoader,
+  privacyPolicyLoader,
   servicesLoader,
   universityApplicationLoader,
 } from "../utilities/loaders";
-import PrivacyPolicy from "../components/PrivacyPolicy.tsx/PrivacyPolicy";
-import TermsServices from "../components/Terms of Services/TermsServices";
 
 const routes = createBrowserRouter([
   {
@@ -125,6 +126,7 @@ const routes = createBrowserRouter([
       {
         path: "privacy-policy",
         Component: PrivacyPolicy,
+        loader: privacyPolicyLoader,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

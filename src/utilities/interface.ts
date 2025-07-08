@@ -218,3 +218,13 @@ export interface ISocialMediaLinks {
   linkedin: string;
   facebookGroup: string;
 }
+
+export interface IPolicySection {
+  heading: string;
+  content: string[];
+}
+
+export interface IPolicyData {
+  title: string;
+  sections: IPolicySection[];
+}

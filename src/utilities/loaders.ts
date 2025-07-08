@@ -11,6 +11,21 @@ import type {
   IUniversityApplicationData,
 } from "./interface";
 
+// Privacy Policy loader (returns all translations)
+export const privacyPolicyLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/privacypolicy.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch privacy policy: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching privacy policy:", error);
+    throw error;
+  }
+};
+
 import {
   DEFAULT_FOOTER,
   DEFAULT_LANGUAGES,
