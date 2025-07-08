@@ -77,7 +77,7 @@ const NavBar = () => {
   );
 
   return (
-    <nav className="font-roboto-slab">
+    <nav className="font-poppins">
       <div className="navbar bg-base-200 shadow-sm shadow-[#368BE0] px-10 py-10">
         <div className="navbar-start">
           <NavLink
@@ -100,7 +100,7 @@ const NavBar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex ml-auto">
-            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center md:justify-center text-lg gap-4 xl:gap-8 font-bold">
+            <div className="menu menu-horizontal px-1 grid md:flex md:flex-row items-center align-middle md:justify-center text-lg gap-4 xl:gap-8 font-bold">
               {links}
             </div>
           </div>
