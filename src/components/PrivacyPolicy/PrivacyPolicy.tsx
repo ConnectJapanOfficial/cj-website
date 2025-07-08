@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router";
 import { LanguageContext } from "../../contexts/LanguageContext";
-import type { IPolicyData } from "../../utilities/interface";
+import type { IPolicyTermsData } from "../../utilities/interface";
 
 const PrivacyPolicy = () => {
-  const allPolicies = useLoaderData() as Record<string, IPolicyData>;
+  const allPolicies = useLoaderData() as Record<string, IPolicyTermsData>;
   const { language } = useContext(LanguageContext);
   const policy = allPolicies[language] || allPolicies["en"];
 
