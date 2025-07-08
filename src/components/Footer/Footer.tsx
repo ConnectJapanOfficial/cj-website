@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { NavLink } from "react-router";
 import { LanguageContext } from "../../contexts/LanguageContext";
+
 import type { IFooter } from "../../utilities/interface";
+import { SocialMediaContext } from "../../contexts/SocialMediaContext";
 
 const Footer = () => {
   const { language, footerData } = useContext(LanguageContext);
+  const {facebookPage, instagram, linkedin, youtube} = useContext(SocialMediaContext);
 
   // Helper function to get section title translations
   const getSectionTitle = (
@@ -187,7 +190,7 @@ const Footer = () => {
             </h3>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://www.linkedin.com/company/connectjapanofficial/"
+                href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-gray-800 rounded-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105"
@@ -205,7 +208,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.youtube.com/@ConnectJapanOfficial"
+                href={youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-gray-800 rounded-lg hover:bg-red-600 transition-all duration-300 transform hover:scale-105"
@@ -223,7 +226,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.facebook.com/ConnectJapanOfficial"
+                href={facebookPage}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-gray-800 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
@@ -241,7 +244,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/ConnectJapanOfficial"
+                href={instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-gray-800 rounded-lg hover:bg-pink-600 transition-all duration-300 transform hover:scale-105"

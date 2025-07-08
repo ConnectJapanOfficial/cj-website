@@ -1,9 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../contexts/LanguageContext";
 import type { ICommunity } from "../../utilities/interface";
+import { SocialMediaContext } from "../../contexts/SocialMediaContext";
 
 const Community = () => {
   const { language } = useContext(LanguageContext);
+  const {facebookGroup, facebookPage, instagram, youtube, linkedin} = useContext(SocialMediaContext);
   const [communityData, setCommunityData] = useState<ICommunity | null>(null);
 
   useEffect(() => {
@@ -53,7 +55,7 @@ const Community = () => {
 
             {/* Facebook Group CTA */}
             <a
-              href="https://www.facebook.com/groups/connectjapanofficial"
+              href={facebookGroup}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 mb-8 lg:mb-0"
@@ -85,7 +87,7 @@ const Community = () => {
           {/* Social Icons */}
           <div className="flex gap-4">
             <a
-              href="https://www.linkedin.com/company/connectjapanofficial/"
+              href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-blue-600 transition-all duration-300 transform hover:scale-105"
@@ -103,7 +105,7 @@ const Community = () => {
             </a>
 
             <a
-              href="https://www.youtube.com/@ConnectJapanOfficial"
+              href={youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-red-600 transition-all duration-300 transform hover:scale-105"
@@ -121,7 +123,7 @@ const Community = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/ConnectJapanOfficial"
+              href={facebookPage}
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
@@ -139,7 +141,7 @@ const Community = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/ConnectJapanOfficial"
+              href={instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white rounded-xl shadow-lg hover:shadow-xl hover:bg-pink-600 transition-all duration-300 transform hover:scale-105"

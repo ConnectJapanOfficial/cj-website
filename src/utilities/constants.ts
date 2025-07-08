@@ -50,3 +50,11 @@ export const DEFAULT_LANGUAGES: ILanguageData[] = [
   { code: "en", name: "English", englishName: "English" },
   { code: "jp", name: "日本語", englishName: "Japanese" },
 ];
+
+export const DEFAULT_SOCIAL_MEDIA_LINKS = {
+  facebookPage: "",
+  instagram: "",
+  youtube: "",
+  linkedin: "",
+  facebookGroup: "",
+};

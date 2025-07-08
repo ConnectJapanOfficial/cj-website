@@ -122,7 +122,7 @@ export interface IServiceProps {
   seeDetailsText: string;
 }
 
-export interface AppData {
+export interface IAppData {
   languages: ILanguageData[];
   navigations: INavigation;
   footerData: IFooter;
@@ -207,4 +207,12 @@ export interface LanguageProviderProps {
     navigations: INavigation;
     footerData: IFooter;
   };
+}
+
+export interface ISocialMediaLinks {
+  facebookPage: string;
+  instagram: string;
+  youtube: string;
+  linkedin: string;
+  facebookGroup: string;
 }

@@ -1,6 +1,6 @@
 import type { LoaderFunction } from "react-router";
 import type {
-  AppData,
+  IAppData,
   IApplicationData,
   ICommunity,
   IFooter,
@@ -95,7 +95,7 @@ export const applicationLoader: LoaderFunction = async () => {
 };
 
 // App data loader (for shared data like languages, navigation, footer)
-export const appDataLoader: LoaderFunction = async (): Promise<AppData> => {
+export const appDataLoader: LoaderFunction = async (): Promise<IAppData> => {
   try {
     const [languagesResponse, navigationResponse, footerResponse] =
       await Promise.all([
@@ -118,7 +118,7 @@ export const appDataLoader: LoaderFunction = async (): Promise<AppData> => {
       languages,
       navigations,
       footerData,
-    } as AppData;
+    } as IAppData;
   } catch (error) {
     console.error("Error fetching app data:", error);
     // Return default data as fallback
@@ -126,6 +126,6 @@ export const appDataLoader: LoaderFunction = async (): Promise<AppData> => {
       languages: DEFAULT_LANGUAGES,
       navigations: DEFAULT_NAVIGATION,
       footerData: DEFAULT_FOOTER,
-    } as AppData;
+    } as IAppData;
   }
 };
