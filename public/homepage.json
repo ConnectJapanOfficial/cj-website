@@ -25,35 +25,30 @@
     {
       "id": 1,
       "name": {
-        "en": "Tokyo University",
+        "en": "The University of Tokyo",
         "bn": "টোকিও বিশ্ববিদ্যালয়",
         "jp": "東京大学"
       },
       "logo": "/src/assets/universities/utokyo.png",
       "candidate_name": {
-        "en": "Sarah Ahmed",
-        "bn": "সারাহ আহমেদ",
-        "jp": "サラ・アハメド"
+        "en": "Syed Turja",
+        "bn": "সৈয়দ তুর্জা",
+        "jp": "サイード・トゥルジャ"
       },
-      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
+      "successful_applicants_pic": "/src/assets/successful_applicants/Turja.jpg",
+      "scholarship": {
+        "en": "MEXT Scholarship",
+        "bn": "মেক্সট বৃত্তি",
+        "jp": "文部科学省奨学金"
+      },
+      "location": {
+        "en": "Dhaka, Bangladesh",
+        "bn": "ঢাকা, বাংলাদেশ",
+        "jp": "ダッカ、バングラデシュ"
+      }
     },
     {
       "id": 2,
-      "name": {
-        "en": "Keio University",
-        "bn": "কেইও বিশ্ববিদ্যালয়",
-        "jp": "慶應義塾大学"
-      },
-      "logo": "/src/assets/universities/ukeio.png",
-      "candidate_name": {
-        "en": "Mohammad Rahman",
-        "bn": "মোহাম্মদ রহমান",
-        "jp": "モハマド・ラフマン"
-      },
-      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
-    },
-    {
-      "id": 3,
       "name": {
         "en": "Tokyo International University",
         "bn": "টোকিও ইন্টারন্যাশনাল বিশ্ববিদ্যালয়",
@@ -61,14 +56,124 @@
       },
       "logo": "/src/assets/universities/tiu.png",
       "candidate_name": {
-        "en": "Fatima Khan",
-        "bn": "ফাতিমা খান",
-        "jp": "ファティマ・カーン"
+        "en": "Sujoy Barua Donel",
+        "bn": "সুজয় বড়ুয়া ডোনেল",
+        "jp": "スジョイ・バルア・ドネル"
       },
-      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
+      "successful_applicants_pic": "/src/assets/successful_applicants/Sujoy.JPG",
+      "scholarship": {
+        "en": "100% Scholarship",
+        "bn": "১০০% বৃত্তি",
+        "jp": "100%奨学金"
+      },
+      "location": {
+        "en": "Jamalkhan, Chittagong",
+        "bn": "জামালখান, চট্টগ্রাম",
+        "jp": "ジャマルカーン、チッタゴン"
+      }
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "The University of Tokyo",
+        "bn": "টোকিও বিশ্ববিদ্যালয়",
+        "jp": "東京大学"
+      },
+      "logo": "/src/assets/universities/utokyo.png",
+      "candidate_name": {
+        "en": "Muhammad Soyaib",
+        "bn": "মুহাম্মদ সোয়াইব",
+        "jp": "ムハンマド・ソイয়াイブ"
+      },
+      "successful_applicants_pic": "/src/assets/successful_applicants/Soyaib.jpg",
+      "scholarship": {
+        "en": "MEXT Scholarship",
+        "bn": "মেক্সট বৃত্তি",
+        "jp": "文部科学省奨学金"
+      },
+      "location": {
+        "en": "Dhaka, Bangladesh",
+        "bn": "ঢাকা, বাংলাদেশ",
+        "jp": "ダッカ、バングラデシュ"
+      }
     },
     {
       "id": 4,
+      "name": {
+        "en": "Keio University",
+        "bn": "কেইও বিশ্ববিদ্যালয়",
+        "jp": "慶應義塾大学"
+      },
+      "logo": "/src/assets/universities/ukeio.png",
+      "candidate_name": {
+        "en": "Rakib Hasan Ovi",
+        "bn": "রাকিব হাসান ওভি",
+        "jp": "ラキブ・ハサン・オヴィ"
+      },
+      "successful_applicants_pic": "/src/assets/successful_applicants/Ovi.jpg",
+      "scholarship": {
+        "en": "",
+        "bn": "",
+        "jp": ""
+      },
+      "location": {
+        "en": "Shibbari, Khulna",
+        "bn": "শিববাড়ী, খুলনা",
+        "jp": "シブバリ、クルナ"
+      }
+    },
+    {
+      "id": 5,
+      "name": {
+        "en": "Tokyo International University",
+        "bn": "টোকিও ইন্টারন্যাশনাল বিশ্ববিদ্যালয়",
+        "jp": "東京国際大学"
+      },
+      "logo": "/src/assets/universities/tiu.png",
+      "candidate_name": {
+        "en": "Mahidul Islam",
+        "bn": "মাহিদুল ইসলাম",
+        "jp": "マヒドゥル・イスラム"
+      },
+      "successful_applicants_pic": "/src/assets/successful_applicants/Mahidul.JPG",
+      "scholarship": {
+        "en": "80% Scholarship",
+        "bn": "৮০% বৃত্তি",
+        "jp": "80%奨学金"
+      },
+      "location": {
+        "en": "Dagonbhuiyan, Feni",
+        "bn": "দাগনভূঞান, ফেনী",
+        "jp": "ダゴンブイヤン、フェニ"
+      }
+    },
+    {
+      "id": 6,
+      "name": {
+        "en": "The International College of Liberal Arts (Yamanashi Gakuin University)",
+        "bn": "দ্য ইন্টারন্যাশনাল কলেজ অব লিবারেল আর্টস (ইয়ামনাশি গাকুইন ইউনিভার্সিটি)",
+        "jp": "山梨学院大学 国際教養学部"
+      },
+      "logo": "/src/assets/universities/icla.png",
+      "candidate_name": {
+        "en": "Md Nurul Huda Niloy",
+        "bn": "মোঃ নূরুল হুদা নিলয়",
+        "jp": "モハンマド・ヌルル・フダ・ニロイ"
+      },
+      "successful_applicants_pic": "/src/assets/successful_applicants/Niloy.JPEG",
+      "scholarship": {
+        "en": "30% Scholarship",
+        "bn": "৩০% বৃত্তি",
+        "jp": "30%奨学金"
+      },
+      "location": {
+        "en": "Feni Sador, Feni",
+        "bn": "ফেনী সদর, ফেনী",
+        "jp": "フェニ・サドル、フェニ"
+      }
+    },
+    {
+      "id": 7,
       "name": {
         "en": "Ritsumeikan University",
         "bn": "রিতসুমেইকান বিশ্ববিদ্যালয়",
@@ -76,11 +181,21 @@
       },
       "logo": "/src/assets/universities/ru.png",
       "candidate_name": {
-        "en": "Arif Hassan",
-        "bn": "আরিফ হাসান",
-        "jp": "アリフ・ハサン"
+        "en": "Muntasir Ahmed Adnan",
+        "bn": "মুনতাসির আহমেদ আদনান",
+        "jp": "ムンタシル・アハメド・アドナン"
       },
-      "candidate_pic": "https://i.ibb.co/Mk6wRP0z/Ashampoo-Snap-Sunday-June-19-2022-10h59m47s-007.png"
+      "successful_applicants_pic": "/src/assets/successful_applicants/Muntasir.jpg",
+      "scholarship": {
+        "en": "30% Scholarship",
+        "bn": "৩০% বৃত্তি",
+        "jp": "30%奨学金"
+      },
+      "location": {
+        "en": "Kishoreganj, Dhaka",
+        "bn": "কিশোরগঞ্জ, ঢাকা",
+        "jp": "キショルガンジ、ダッカ"
+      }
     }
   ],
 

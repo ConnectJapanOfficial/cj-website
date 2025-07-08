@@ -59,11 +59,18 @@ export interface IUniversity {
   name: Record<LanguageType, string>;
   logo: string;
   candidate_name: Record<LanguageType, string>;
-  candidate_pic: string;
+  successful_applicants_pic: string;
+  location: Record<LanguageType, string>;
+  scholarship: Record<LanguageType, string>;
 }
 
 export interface ISliderProps {
   universities: IUniversity[];
+  language: LanguageType;
+}
+
+export interface ISlideProps {
+  university: IUniversity;
   language: LanguageType;
 }
 
