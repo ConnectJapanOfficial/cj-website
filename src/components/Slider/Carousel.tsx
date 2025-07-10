@@ -14,7 +14,7 @@ const Carousel = ({ universities, language }: ISliderProps) => {
     speed: 4000,
     autoplaySpeed: 4000,
     cssEase: "linear",
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
