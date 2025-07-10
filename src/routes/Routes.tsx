@@ -4,9 +4,9 @@ import JapaneseLanguageSchoolForm from "../components/FormComponents/JapaneseLan
 import UniversityApplicationForm from "../components/FormComponents/UniversityApplicationForm";
 import Bars from "../components/Loaders/Bars";
 import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
-import JapaneseLanguageCourse from "../components/Service/JapaneseLanguageCourse";
-import JapaneseLanguageSchool from "../components/Service/JapaneseLanguageSchool";
-import UniversityApplication from "../components/Service/UniversityApplication";
+import JapaneseLanguageCourse from "../components/Services/JapaneseLanguageCourse";
+import JapaneseLanguageSchool from "../components/Services/JapaneseLanguageSchool";
+import UniversityApplication from "../components/Services/UniversityApplication";
 import TermsServices from "../components/Terms of Services/TermsServices";
 import About from "../pages/About";
 import Achievements from "../pages/Achievements";

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router";
-import Service from "../components/Service/Service";
+import Service from "../components/Services/Service";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { usePageTitle } from "../utilities/hooks";
 import type { IServiceData } from "../utilities/interface";

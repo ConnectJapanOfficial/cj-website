@@ -1,8 +1,13 @@
 import { useContext, useState } from "react";
-import { Link, useLoaderData } from "react-router";
+import { useLoaderData } from "react-router";
 import { LanguageContext } from "../../contexts/LanguageContext";
 import { usePageTitle } from "../../utilities/hooks";
 import type { ILanguageProgramData } from "../../utilities/interface";
+import PriceBadge from "./PriceBadge";
+import ServiceCTA from "./ServiceCTA";
+import ServiceHeader from "./ServiceHeader";
+import ServiceInfoCard from "./ServiceInfoCard";
+import ServiceSection from "./ServiceSection";
 
 const JapaneseLanguageCourse = () => {
   const { language } = useContext(LanguageContext);
@@ -15,37 +20,21 @@ const JapaneseLanguageCourse = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-12">
-          <div className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
-            {data.courseOverview.courseLevel[language]}
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-loose">
-            {data.courseOverview.courseName[language]}
-          </h1>
-          <p className="text-xl text-gray-600 mb-6">
-            {data.howItWorks.description[language]}
-          </p>
-          <p className="text-lg max-w-3xl mx-auto mb-8">
-            {data.courseOverview.durationDetails[language]}
-          </p>
-
-          {/* Price Badge */}
-          <div className="inline-flex items-center bg-white shadow-lg rounded-2xl px-8 py-4 border border-gray-200 mb-6">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold text-blue-600 mr-2">
-                  {data.feesAndEnrollment.earlyBirdDiscount.amount[language]}
-                </span>
-                <span className="text-lg text-gray-400 line-through">
-                  {data.feesAndEnrollment.courseFee.amount[language]}
-                </span>
-              </div>
-              <span className="text-sm text-yellow-600 font-medium">
-                {data.feesAndEnrollment.earlyBirdDiscount.validity[language]}
-              </span>
-            </div>
-          </div>
-        </div>
+        <ServiceHeader
+          badge={data.courseOverview.courseLevel[language]}
+          title={data.courseOverview.courseName[language]}
+          description={data.howItWorks.description[language]}
+          detailsText={data.courseOverview.durationDetails[language]}
+          priceSection={
+            <PriceBadge
+              price={data.feesAndEnrollment.earlyBirdDiscount.amount[language]}
+              originalPrice={data.feesAndEnrollment.courseFee.amount[language]}
+              discountText={
+                data.feesAndEnrollment.earlyBirdDiscount.validity[language]
+              }
+            />
+          }
+        />
 
         {/* Course Overview Sections */}
         <div className="space-y-12">
@@ -236,99 +225,78 @@ const JapaneseLanguageCourse = () => {
           </div>
 
           {/* Learning Objectives */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-green-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.learningObjectives.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="🎯"
+            iconBgColor="bg-green-100"
+            title={data.learningObjectives.title[language]}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {data.learningObjectives.objectives.grammar.title[language]}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {
-                    data.learningObjectives.objectives.grammar.description[
-                      language
-                    ]
-                  }
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl border border-purple-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {
-                    data.learningObjectives.objectives.vocabulary.title[
-                      language
-                    ]
-                  }
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {
-                    data.learningObjectives.objectives.vocabulary.description[
-                      language
-                    ]
-                  }
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl border border-green-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {data.learningObjectives.objectives.kanji.title[language]}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {
-                    data.learningObjectives.objectives.kanji.description[
-                      language
-                    ]
-                  }
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl border border-yellow-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {data.learningObjectives.objectives.skills.title[language]}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {
-                    data.learningObjectives.objectives.skills.description[
-                      language
-                    ]
-                  }
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-2xl border border-red-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {data.learningObjectives.objectives.culture.title[language]}
-                </h3>
-                <p className="text-sm text-gray-600">
-                  {
-                    data.learningObjectives.objectives.culture.description[
-                      language
-                    ]
-                  }
-                </p>
-              </div>
+              <ServiceInfoCard
+                title={
+                  data.learningObjectives.objectives.grammar.title[language]
+                }
+                description={
+                  data.learningObjectives.objectives.grammar.description[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-blue-50 to-indigo-50"
+                borderColor="border-blue-100"
+              />
+              <ServiceInfoCard
+                title={
+                  data.learningObjectives.objectives.vocabulary.title[language]
+                }
+                description={
+                  data.learningObjectives.objectives.vocabulary.description[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-purple-50 to-pink-50"
+                borderColor="border-purple-100"
+              />
+              <ServiceInfoCard
+                title={data.learningObjectives.objectives.kanji.title[language]}
+                description={
+                  data.learningObjectives.objectives.kanji.description[language]
+                }
+                bgGradient="bg-gradient-to-r from-green-50 to-emerald-50"
+                borderColor="border-green-100"
+              />
+              <ServiceInfoCard
+                title={
+                  data.learningObjectives.objectives.skills.title[language]
+                }
+                description={
+                  data.learningObjectives.objectives.skills.description[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-yellow-50 to-orange-50"
+                borderColor="border-yellow-100"
+              />
+              <ServiceInfoCard
+                title={
+                  data.learningObjectives.objectives.culture.title[language]
+                }
+                description={
+                  data.learningObjectives.objectives.culture.description[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-red-50 to-pink-50"
+                borderColor="border-red-100"
+              />
             </div>
-          </div>
+          </ServiceSection>
 
           {/* Japanese Language Club */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-green-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">🌸</span>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-gray-800">
-                  {data.japaneseLanguageClub.title[language]}
-                </h2>
-                <p className="text-lg font-medium text-green-600 mt-1">
-                  {data.japaneseLanguageClub.subtitle[language]}
-                </p>
-              </div>
-            </div>
-
+          <ServiceSection
+            icon="🌸"
+            iconBgColor="bg-green-100"
+            title={data.japaneseLanguageClub.title[language]}
+            subtitle={data.japaneseLanguageClub.subtitle[language]}
+          >
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl border border-green-100 mb-6">
               <p className="text-gray-700 leading-relaxed text-lg mb-4">
                 {data.japaneseLanguageClub.description[language]}
@@ -362,33 +330,25 @@ const JapaneseLanguageCourse = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ServiceSection>
 
           {/* How It Works */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-indigo-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">🎓</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.howItWorks.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="🎓"
+            iconBgColor="bg-indigo-100"
+            title={data.howItWorks.title[language]}
+          >
             <p className="text-gray-600 leading-relaxed text-lg">
               {data.howItWorks.description[language]}
             </p>
-          </div>
+          </ServiceSection>
 
           {/* Example Class Flow */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-orange-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">📚</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.exampleClassFlow.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="📚"
+            iconBgColor="bg-orange-100"
+            title={data.exampleClassFlow.title[language]}
+          >
             <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-2xl border border-orange-100 mb-6">
               <h3 className="font-semibold text-gray-800 mb-2">
                 {data.exampleClassFlow.week[language]}
@@ -419,23 +379,21 @@ const JapaneseLanguageCourse = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ServiceSection>
 
           {/* Why Choose Us */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-purple-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">⭐</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.whyChooseUs.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="⭐"
+            iconBgColor="bg-purple-100"
+            title={data.whyChooseUs.title[language]}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {data.whyChooseUs.features.map((reason, index) => (
-                <div
+                <ServiceInfoCard
                   key={index}
-                  className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl border border-purple-100"
+                  title=""
+                  bgGradient="bg-gradient-to-r from-purple-50 to-pink-50"
+                  borderColor="border-purple-100"
                 >
                   <div className="flex items-start">
                     <div className="bg-purple-100 w-8 h-8 rounded-full flex items-center justify-center text-purple-600 font-bold text-sm mr-4 mt-1">
@@ -445,26 +403,24 @@ const JapaneseLanguageCourse = () => {
                       {reason[language]}
                     </p>
                   </div>
-                </div>
+                </ServiceInfoCard>
               ))}
             </div>
-          </div>
+          </ServiceSection>
 
           {/* What's Included */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-green-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">✅</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.whatsIncluded.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="✅"
+            iconBgColor="bg-green-100"
+            title={data.whatsIncluded.title[language]}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {data.whatsIncluded.includes.map((item, index) => (
-                <div
+                <ServiceInfoCard
                   key={index}
-                  className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl border border-green-100"
+                  title=""
+                  bgGradient="bg-gradient-to-r from-green-50 to-emerald-50"
+                  borderColor="border-green-100"
                 >
                   <div className="flex items-start">
                     <div className="bg-green-100 w-6 h-6 rounded-full flex items-center justify-center text-green-600 text-sm mr-4 mt-1">
@@ -474,30 +430,27 @@ const JapaneseLanguageCourse = () => {
                       {item[language]}
                     </p>
                   </div>
-                </div>
+                </ServiceInfoCard>
               ))}
             </div>
-          </div>
+          </ServiceSection>
 
           {/* Important Dates */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="bg-yellow-100 p-3 rounded-2xl mr-4">
-                <span className="text-2xl">📆</span>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-800">
-                {data.feesAndEnrollment.importantDates.title[language]}
-              </h2>
-            </div>
+          <ServiceSection
+            icon="📆"
+            iconBgColor="bg-yellow-100"
+            title={data.feesAndEnrollment.importantDates.title[language]}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {
-                    data.feesAndEnrollment.importantDates.courseStart.title[
-                      language
-                    ]
-                  }
-                </h3>
+              <ServiceInfoCard
+                title={
+                  data.feesAndEnrollment.importantDates.courseStart.title[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-blue-50 to-indigo-50"
+                borderColor="border-blue-100"
+              >
                 <p className="text-sm text-blue-600 font-medium">
                   {
                     data.feesAndEnrollment.importantDates.courseStart.date[
@@ -505,14 +458,16 @@ const JapaneseLanguageCourse = () => {
                     ]
                   }
                 </p>
-              </div>
-              <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl border border-yellow-100">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {
-                    data.feesAndEnrollment.importantDates.discountDeadline
-                      .title[language]
-                  }
-                </h3>
+              </ServiceInfoCard>
+              <ServiceInfoCard
+                title={
+                  data.feesAndEnrollment.importantDates.discountDeadline.title[
+                    language
+                  ]
+                }
+                bgGradient="bg-gradient-to-r from-yellow-50 to-orange-50"
+                borderColor="border-yellow-100"
+              >
                 <p className="text-sm text-yellow-600 font-medium">
                   {
                     data.feesAndEnrollment.importantDates.discountDeadline.date[
@@ -520,37 +475,31 @@ const JapaneseLanguageCourse = () => {
                     ]
                   }
                 </p>
-              </div>
+              </ServiceInfoCard>
             </div>
-          </div>
+          </ServiceSection>
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              {language === "en"
-                ? "Ready to Start Your Japanese Journey?"
+        <ServiceCTA
+          title={
+            language === "en"
+              ? "Ready to Start Your Japanese Journey?"
+              : language === "jp"
+              ? "日本語の旅を始める準備はできましたか？"
+              : "আপনার জাপানি ভাষার যাত্রা শুরু করার জন্য প্রস্তুত?"
+          }
+          description={data.feesAndEnrollment.seatBooking.description[language]}
+          primaryButton={{
+            text:
+              language === "en"
+                ? "Apply Now"
                 : language === "jp"
-                ? "日本語の旅を始める準備はできましたか？"
-                : "আপনার জাপানি ভাষার যাত্রা শুরু করার জন্য প্রস্তুত?"}
-            </h3>
-            <p className="text-xl mb-8 opacity-90">
-              {data.feesAndEnrollment.seatBooking.description[language]}
-            </p>
-            <div className="flex justify-center">
-              <Link to="/apply/language-course-form">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition-colors shadow-lg">
-                  {language === "en"
-                    ? "Apply Now"
-                    : language === "jp"
-                    ? "今すぐ申し込む"
-                    : "এখনই আবেদন করুন"}
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
+                ? "今すぐ申し込む"
+                : "এখনই আবেদন করুন",
+            link: "/apply/language-course-form",
+          }}
+        />
       </div>
     </div>
   );
