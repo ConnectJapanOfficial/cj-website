@@ -11,7 +11,7 @@ export interface INavigation {
   navigation: {
     home: Record<LanguageType, string>;
     services: Record<LanguageType, string>;
-    achievements: Record<LanguageType, string>;
+    schools: Record<LanguageType, string>;
     guides: Record<LanguageType, string>;
     about: Record<LanguageType, string>;
     apply: Record<LanguageType, string>;
@@ -99,7 +99,7 @@ export interface IFooter {
   navigation: {
     home: Record<LanguageType, string>;
     services: Record<LanguageType, string>;
-    achievements: Record<LanguageType, string>;
+    schools: Record<LanguageType, string>;
     guides: Record<LanguageType, string>;
     about: Record<LanguageType, string>;
     apply: Record<LanguageType, string>;

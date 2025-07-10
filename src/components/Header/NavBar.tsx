@@ -59,8 +59,8 @@ const NavBar = () => {
       <NavLink to={"/services"} className={navLinkClassName}>
         {getTranslation("services")}
       </NavLink>
-      <NavLink to={"/achievements"} className={navLinkClassName}>
-        {getTranslation("achievements")}
+      <NavLink to={"/schools"} className={navLinkClassName}>
+        {getTranslation("schools")}
       </NavLink>
       <NavLink to={"/guides"} className={navLinkClassName}>
         {getTranslation("guides")}

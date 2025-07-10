@@ -8,7 +8,7 @@ export const DEFAULT_NAVIGATION: INavigation = {
       bn: "সেবা ও ফি",
       jp: "サービス・料金",
     },
-    achievements: { en: "Achievements", bn: "অর্জন", jp: "実績" },
+    schools: { en: "Schools", bn: "স্কুল", jp: "学校" },
     guides: { en: "Guides", bn: "গাইড", jp: "ガイド" },
     about: {
       en: "About Us",
@@ -38,7 +38,7 @@ export const DEFAULT_FOOTER: IFooter = {
   navigation: {
     home: { en: "Home", bn: "হোম", jp: "ホーム" },
     services: { en: "Services & Fees", bn: "সেবা ও ফি", jp: "サービス・料金" },
-    achievements: { en: "Achievements", bn: "অর্জন", jp: "実績" },
+    schools: { en: "Schools", bn: "স্কুল", jp: "学校" },
     guides: { en: "Guides", bn: "গাইড", jp: "ガイド" },
     about: { en: "About Us", bn: "আমাদের সম্পর্কে", jp: "会社概要" },
     apply: { en: "Apply", bn: "আবেদন", jp: "申し込み" },

@@ -1,9 +1,9 @@
 import ComingSoon from "../components/ComingSoon/ComingSoon";
 import { usePageTitle } from "../utilities/hooks";
 
-const Achievements = () => {
+const Schools = () => {
 
-    usePageTitle("Achievements");
+    usePageTitle("Schools");
 
     return (
         <div>
@@ -12,4 +12,4 @@ const Achievements = () => {
     );
 };
 
-export default Achievements;
+export default Schools;

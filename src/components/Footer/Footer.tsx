@@ -83,7 +83,7 @@ const Footer = () => {
       </NavLink>
       <NavLink to={"/achievements"} className={navLinkClassName}>
         <span className="relative">
-          {getTranslation("achievements")}
+          {getTranslation("schools")}
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
         </span>
       </NavLink>

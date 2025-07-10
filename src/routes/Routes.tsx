@@ -9,7 +9,6 @@ import JapaneseLanguageCourse from "../components/Services/JapaneseLanguageCours
 import JapaneseLanguageSchool from "../components/Services/JapaneseLanguageSchool";
 import UniversityApplication from "../components/Services/UniversityApplication";
 import About from "../pages/About";
-import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
 import ErrorPage from "../pages/ErrorPage";
 import Guides from "../pages/Guides";
@@ -26,6 +25,7 @@ import {
   termsOfServicesLoader,
   universityApplicationLoader,
 } from "../utilities/loaders";
+import Schools from "../pages/Schools";
 
 const routes = createBrowserRouter([
   {
@@ -84,8 +84,8 @@ const routes = createBrowserRouter([
       },
 
       {
-        path: "achievements",
-        Component: Achievements,
+        path: "schools",
+        Component: Schools,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },
