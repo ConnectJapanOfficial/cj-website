@@ -82,12 +82,12 @@ const Service = ({ service, seeDetailsText }: IServiceProps) => {
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-blue-50 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-blue-100">
+    <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-blue-50 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-blue-100 h-full">
       {/* Gradient overlay for visual appeal */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Content */}
-      <div className="relative p-8">
+      <div className="relative p-8 h-full flex flex-col">
         {/* Service icon area */}
         <div className="mb-6 flex justify-center">
           <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -101,12 +101,12 @@ const Service = ({ service, seeDetailsText }: IServiceProps) => {
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 text-center mb-8 leading-relaxed min-h-[3rem]">
+        <p className="text-gray-600 text-center mb-8 leading-relaxed flex-grow">
           {service.description}
         </p>
 
         {/* CTA Button */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-auto">
           <Link to={`/${service.path}`} className="w-full">
             <button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
               {seeDetailsText}
