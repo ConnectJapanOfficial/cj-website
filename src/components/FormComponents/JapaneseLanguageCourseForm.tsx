@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Spinner from "../Loaders/Spinner";
+import { usePageTitle } from "../../utilities/hooks";
 
 const JapaneseLanguageCourseForm = () => {
   const [selectedLanguage, setSelectedLanguage] = useState<string>("");
@@ -7,6 +8,14 @@ const JapaneseLanguageCourseForm = () => {
   const handleLanguageSelect = (language: string) => {
     setSelectedLanguage(language);
   };
+
+  usePageTitle(
+    selectedLanguage === "bangla"
+      ? "জাপানি ভাষা কোর্স আবেদন"
+      : selectedLanguage === "english"
+      ? "Japanese Language Course Application"
+      : "Japanese Language Course Form"
+  );
 
   const renderForm = () => {
     if (selectedLanguage === "bangla") {
