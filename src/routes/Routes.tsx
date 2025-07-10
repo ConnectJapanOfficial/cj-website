@@ -3,11 +3,11 @@ import JapaneseLanguageCourseForm from "../components/FormComponents/JapaneseLan
 import JapaneseLanguageSchoolForm from "../components/FormComponents/JapaneseLanguageSchoolForm";
 import UniversityApplicationForm from "../components/FormComponents/UniversityApplicationForm";
 import Bars from "../components/Loaders/Bars";
-import PrivacyPolicy from "../components/PrivacyPolicy/PrivacyPolicy";
+import PrivacyPolicy from "../components/Rules/PrivacyPolicy/PrivacyPolicy";
+import TermsServices from "../components/Rules/Terms of Services/TermsServices";
 import JapaneseLanguageCourse from "../components/Services/JapaneseLanguageCourse";
 import JapaneseLanguageSchool from "../components/Services/JapaneseLanguageSchool";
 import UniversityApplication from "../components/Services/UniversityApplication";
-import TermsServices from "../components/Terms of Services/TermsServices";
 import About from "../pages/About";
 import Achievements from "../pages/Achievements";
 import Apply from "../pages/Apply";
