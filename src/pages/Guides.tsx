@@ -1,15 +1,16 @@
+
 import ComingSoon from "../components/ComingSoon/ComingSoon";
 import { usePageTitle } from "../utilities/hooks";
 
 const Guides = () => {
 
-    usePageTitle("Guides");
-    
-    return (
-        <div>
-            <ComingSoon/>
-        </div>
-    );
+
+  usePageTitle("Guides");
+  
+
+  return (
+    <ComingSoon/>
+  );
 };
 
 export default Guides;
