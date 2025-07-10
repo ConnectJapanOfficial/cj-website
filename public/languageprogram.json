@@ -1,172 +1,415 @@
 {
-  "languagePrograms": {
-    "en": {
-      "title": "Survival Japanese: Your First Step Toward JLPT N5",
-      "description": "Comprehensive Japanese language learning program designed for beginners",
-      "courseLevel": "JLPT N5 / Beginner",
-      "duration": "4 Months",
-      "durationDetails": "3 Months of Classes + 1 Month Mock Prep",
-      "classSchedule": {
-        "batch1": {
-          "name": "Batch 1",
-          "days": "Saturday, Monday, Thursday",
-          "time": "3:00 PM – 4:30 PM"
-        },
-        "batch2": {
-          "name": "Batch 2",
-          "days": "Saturday, Monday, Thursday",
-          "time": "5:00 PM – 6:30 PM"
-        },
-        "club": {
-          "name": "Japanese Language Club",
-          "days": "Saturday",
-          "time": "4:00 PM - 5:00 PM"
-        }
-      },
-      "learningObjectives": {
-        "grammar": "Basic sentence structure, verb conjugations",
-        "vocabulary": "600–700 essential words",
-        "kanji": "100 beginner-level characters",
-        "skills": "Listening, Speaking, Reading, Writing",
-        "culture": "Japanese etiquette, honorifics, and daily-life phrases"
-      },
-      "whyChooseUs": [
-        "Native or experienced instructors",
-        "JLPT-focused structured curriculum",
-        "Personalized support for doubt clearing",
-        "Flexible joining — even mid-batch",
-        "Google Classroom access (notes, recordings, homework)",
-        "Regular mock tests and performance tracking",
-        "Additional guidance for studying in Japan"
-      ],
-      "fees": {
-        "courseFee": "15,000 BDT",
-        "earlyBirdDiscount": "10,000 BDT",
-        "earlyBirdDeadline": "Available until 25th July",
-        "seatBooking": "Pay 1,000 BDT via Bkash to confirm your seat"
-      },
-      "importantDates": {
-        "courseStarts": "1st August (Batch 1 & 2)",
-        "discountDeadline": "25th July"
-      },
-      "whatsIncluded": [
-        "Free learning materials (PDFs, vocab lists, worksheets)",
-        "Access to recorded classes (when available)",
-        "Weekly practice tests & JLPT-style mock exams",
-        "Dedicated Google Classroom access"
-      ]
+  "courseOverview": {
+    "courseName": {
+      "en": "Survival Japanese: Your First Step Toward JLPT N5",
+      "jp": "サバイバル日本語：JLPT N5への最初の一歩",
+      "bn": "সারভাইভাল জাপানিজ: JLPT N5 এর দিকে আপনার প্রথম পদক্ষেপ"
     },
-    "jp": {
-      "title": "サバイバル日本語：JLPT N5への第一歩",
-      "description": "初心者向けの総合的な日本語学習プログラム",
-      "courseLevel": "JLPT N5 / 初級",
-      "duration": "4ヶ月",
-      "durationDetails": "3ヶ月の授業 + 1ヶ月の模擬試験準備",
-      "classSchedule": {
-        "batch1": {
-          "name": "バッチ1",
-          "days": "土曜日、月曜日、木曜日",
-          "time": "午後3:00 – 午後4:30"
-        },
-        "batch2": {
-          "name": "バッチ2",
-          "days": "土曜日、月曜日、木曜日",
-          "time": "午後5:00 – 午後6:30"
-        },
-        "club": {
-          "name": "日本語クラブ",
-          "days": "土曜日",
-          "time": "午後4:00 - 午後5:00"
-        }
-      },
-      "learningObjectives": {
-        "grammar": "基本的な文構造、動詞の活用",
-        "vocabulary": "600-700の必須単語",
-        "kanji": "100の初級レベル漢字",
-        "skills": "聞く、話す、読む、書く",
-        "culture": "日本のエチケット、敬語、日常生活フレーズ"
-      },
-      "whyChooseUs": [
-        "ネイティブまたは経験豊富な講師",
-        "JLPT重視の構造化カリキュラム",
-        "疑問解決のための個別サポート",
-        "柔軟な参加（途中参加も可能）",
-        "Google Classroomアクセス（ノート、録画、宿題）",
-        "定期的な模擬テストと成績追跡",
-        "日本留学のための追加指導"
-      ],
-      "fees": {
-        "courseFee": "15,000 BDT",
-        "earlyBirdDiscount": "10,000 BDT",
-        "earlyBirdDeadline": "7月25日まで利用可能",
-        "seatBooking": "Bkashで1,000 BDTを支払って席を確保"
-      },
-      "importantDates": {
-        "courseStarts": "8月1日（バッチ1・2）",
-        "discountDeadline": "7月25日"
-      },
-      "whatsIncluded": [
-        "無料学習教材（PDF、語彙リスト、ワークシート）",
-        "録画授業へのアクセス（利用可能な場合）",
-        "週次練習テストとJLPT形式模擬試験",
-        "専用Google Classroomアクセス"
-      ]
+    "courseLevel": {
+      "en": "JLPT N5 / Beginner",
+      "jp": "JLPT N5 / 初級",
+      "bn": "JLPT N5 / প্রাথমিক"
     },
-    "bn": {
-      "title": "সারভাইভাল জাপানিজ: JLPT N5 এর প্রথম ধাপ",
-      "description": "নতুনদের জন্য জাপানি ভাষা শিক্ষা প্রোগ্রাম",
-      "courseLevel": "JLPT N5 / প্রাথমিক",
-      "duration": "৪ মাস",
-      "durationDetails": "৩ মাসের ক্লাস + ১ মাসের মক প্রস্তুতি",
-      "classSchedule": {
-        "batch1": {
-          "name": "ব্যাচ ১",
-          "days": "শনিবার, সোমবার, বৃহস্পতিবার",
-          "time": "বিকাল ৩:০০ – ৪:৩০"
-        },
-        "batch2": {
-          "name": "ব্যাচ ২",
-          "days": "শনিবার, সোমবার, বৃহস্পতিবার",
-          "time": "বিকাল ৫:০০ – ৬:৩০"
-        },
-        "club": {
-          "name": "জাপানি ভাষা ক্লাব",
-          "days": "শনিবার",
-          "time": "বিকাল ৪:০০ - ৫:০০"
-        }
-      },
-      "learningObjectives": {
-        "grammar": "মৌলিক বাক্য গঠন, ক্রিয়া পরিবর্তন",
-        "vocabulary": "৬০০-৭০০ প্রয়োজনীয় শব্দ",
-        "kanji": "১০০ প্রাথমিক স্তরের কাঞ্জি",
-        "skills": "শ্রবণ, কথা বলা, পড়া, লেখা",
-        "culture": "জাপানি শিষ্টাচার, সম্মানসূচক শব্দ এবং দৈনন্দিন জীবনের বাক্য"
-      },
-      "whyChooseUs": [
-        "নেটিভ বা অভিজ্ঞ শিক্ষকগণ",
-        "JLPT-কেন্দ্রিক কাঠামোবদ্ধ পাঠ্যক্রম",
-        "সন্দেহ নিরসনের জন্য ব্যক্তিগত সহায়তা",
-        "ফ্লেক্সিবল যোগদান — এমনকি মাঝপথে",
-        "Google Classroom অ্যাক্সেস (নোট, রেকর্ডিং, হোমওয়ার্ক)",
-        "নিয়মিত মক টেস্ট এবং পারফরম্যান্স ট্র্যাকিং",
-        "জাপানে অধ্যয়নের জন্য অতিরিক্ত নির্দেশনা"
-      ],
-      "fees": {
-        "courseFee": "১৫,০০০ টাকা",
-        "earlyBirdDiscount": "১০,০০০ টাকা",
-        "earlyBirdDeadline": "২৫ জুলাই পর্যন্ত ছাড়",
-        "seatBooking": "আপনার আসন নিশ্চিত করতে বিকাশের মাধ্যমে ১,০০০ টাকা পরিশোধ করুন"
-      },
-      "importantDates": {
-        "courseStarts": "১ আগস্ট (ব্যাচ ১ ও ২)",
-        "discountDeadline": "২৫ জুলাই"
-      },
-      "whatsIncluded": [
-        "বিনামূল্যে শিক্ষা উপকরণ (PDF, শব্দভাণ্ডার তালিকা, ওয়ার্কশিট)",
-        "রেকর্ডকৃত ক্লাসে অ্যাক্সেস (উপলব্ধ থাকলে)",
-        "সাপ্তাহিক অনুশীলন পরীক্ষা এবং JLPT-স্টাইল মক পরীক্ষা",
-        "ডেডিকেটেড Google Classroom অ্যাক্সেস"
-      ]
+    "duration": {
+      "en": "4 Months",
+      "jp": "4か月",
+      "bn": "৪ মাস"
+    },
+    "durationDetails": {
+      "en": "3 Months of Classes + 1 Month Mock Prep",
+      "jp": "3か月のクラス + 1か月のモック準備",
+      "bn": "৩ মাস ক্লাস + ১ মাস মক প্রস্তুতি"
     }
+  },
+  "classSchedule": {
+    "title": {
+      "en": "Class Schedule",
+      "jp": "クラススケジュール",
+      "bn": "ক্লাসের সময়সূচী"
+    },
+    "batches": {
+      "batch1": {
+        "name": {
+          "en": "Batch 1",
+          "jp": "バッチ1",
+          "bn": "ব্যাচ ১"
+        },
+        "schedule": {
+          "en": "Saturday (2:30 PM – 4:00 PM), Monday & Thursday (3:00 PM – 4:30 PM)",
+          "jp": "土曜日（午後2時30分〜午後4時）、月曜日と木曜日（午後3時〜午後4時30分）",
+          "bn": "শনিবার (দুপুর ২:৩০ – ৪:০০), সোমবার ও বৃহস্পতিবার (দুপুর ৩:০০ – ৪:৩০)"
+        }
+      },
+      "batch2": {
+        "name": {
+          "en": "Batch 2",
+          "jp": "バッチ2",
+          "bn": "ব্যাচ ২"
+        },
+        "schedule": {
+          "en": "Saturday, Monday, Thursday — 5:00 PM – 6:30 PM",
+          "jp": "土曜日、月曜日、木曜日 — 午後5時〜午後6時30分",
+          "bn": "শনিবার, সোমবার, বৃহস্পতিবার — সন্ধ্যা ৫:০০ – ৬:৩০"
+        }
+      },
+      "languageClub": {
+        "name": {
+          "en": "Japanese Language Club",
+          "jp": "日本語クラブ",
+          "bn": "জাপানিজ ল্যাঙ্গুয়েজ ক্লাব"
+        },
+        "schedule": {
+          "en": "Saturday (4:00 PM - 5:00 PM)",
+          "jp": "土曜日（午後4時〜午後5時）",
+          "bn": "শনিবার (বিকাল ৪:০০ - ৫:০০)"
+        }
+      }
+    },
+    "note": {
+      "en": "Choose your preferred batch during registration",
+      "jp": "登録時に希望するバッチを選択してください",
+      "bn": "নিবন্ধনের সময় আপনার পছন্দের ব্যাচ বেছে নিন"
+    }
+  },
+  "learningObjectives": {
+    "title": {
+      "en": "Learning Objectives",
+      "jp": "学習目標",
+      "bn": "শেখার উদ্দেশ্য"
+    },
+    "objectives": {
+      "grammar": {
+        "title": {
+          "en": "Grammar",
+          "jp": "文法",
+          "bn": "ব্যাকরণ"
+        },
+        "description": {
+          "en": "Basic sentence structure, verb conjugations",
+          "jp": "基本的な文構造、動詞の活用",
+          "bn": "মৌলিক বাক্য গঠন, ক্রিয়ার রূপান্তর"
+        }
+      },
+      "vocabulary": {
+        "title": {
+          "en": "Vocabulary",
+          "jp": "語彙",
+          "bn": "শব্দভাণ্ডার"
+        },
+        "description": {
+          "en": "600–700 essential words",
+          "jp": "600〜700の必須語彙",
+          "bn": "৬০০-৭০০ টি প্রয়োজনীয় শব্দ"
+        }
+      },
+      "kanji": {
+        "title": {
+          "en": "Kanji",
+          "jp": "漢字",
+          "bn": "কাঞ্জি"
+        },
+        "description": {
+          "en": "100 beginner-level characters",
+          "jp": "100の初級レベルの文字",
+          "bn": "১০০টি প্রাথমিক স্তরের অক্ষর"
+        }
+      },
+      "skills": {
+        "title": {
+          "en": "Skills",
+          "jp": "技能",
+          "bn": "দক্ষতা"
+        },
+        "description": {
+          "en": "Listening, Speaking, Reading, Writing",
+          "jp": "聞く、話す、読む、書く",
+          "bn": "শোনা, বলা, পড়া, লেখা"
+        }
+      },
+      "culture": {
+        "title": {
+          "en": "Culture",
+          "jp": "文化",
+          "bn": "সংস্কৃতি"
+        },
+        "description": {
+          "en": "Japanese etiquette, honorifics, and daily-life phrases",
+          "jp": "日本のエチケット、敬語、日常会話のフレーズ",
+          "bn": "জাপানিজ শিষ্টাচার, সম্মানসূচক ভাষা এবং দৈনন্দিন জীবনের বাক্য"
+        }
+      }
+    }
+  },
+  "howItWorks": {
+    "title": {
+      "en": "How It Works",
+      "jp": "どのように機能するか",
+      "bn": "এটি কিভাবে কাজ করে"
+    },
+    "description": {
+      "en": "Our classes aren't just about memorizing words. They're designed to be interactive, immersive, and fun. Here's how each session helps you learn, practice, and apply Japanese in real life.",
+      "jp": "私たちのクラスは単語を暗記するだけではありません。インタラクティブで没入感があり、楽しくなるように設計されています。各セッションが実生活で日本語を学び、練習し、応用するのにどのように役立つかをご紹介します。",
+      "bn": "আমাদের ক্লাসগুলো শুধু শব্দ মুখস্থ করার জন্য নয়। এগুলো ইন্টারঅ্যাক্টিভ, নিমগ্ন এবং মজাদার হওয়ার জন্য ডিজাইন করা হয়েছে। প্রতিটি সেশন কিভাবে আপনাকে বাস্তব জীবনে জাপানিজ শিখতে, অনুশীলন করতে এবং প্রয়োগ করতে সাহায্য করে তা এখানে দেখুন।"
+    }
+  },
+  "exampleClassFlow": {
+    "title": {
+      "en": "Example Class Flow",
+      "jp": "クラスの流れの例",
+      "bn": "ক্লাসের উদাহরণ প্রবাহ"
+    },
+    "week": {
+      "en": "Week 4 (Session 12)",
+      "jp": "第4週（セッション12）",
+      "bn": "সপ্তাহ ৪ (সেশন ১২)"
+    },
+    "sessionTitle": {
+      "en": "Ordering Food at a Japanese Restaurant",
+      "jp": "日本のレストランで食べ物を注文する",
+      "bn": "জাপানিজ রেস্তোরাঁয় খাবার অর্ডার করা"
+    },
+    "goal": {
+      "en": "Learn useful phrases for menus, asking prices, and making polite requests",
+      "jp": "メニュー、価格の尋ね方、丁寧なお願いの仕方に役立つフレーズを学ぶ",
+      "bn": "মেনু, দাম জিজ্ঞাসা এবং ভদ্র অনুরোধের জন্য দরকারী বাক্য শেখা"
+    },
+    "activities": [
+      {
+        "en": "Watch a short video clip from a Japanese anime scene",
+        "jp": "日本のアニメシーンの短いビデオクリップを見る",
+        "bn": "জাপানিজ অ্যানিমে দৃশ্যের একটি ছোট ভিডিও ক্লিপ দেখা"
+      },
+      {
+        "en": "Vocabulary practice with flashcards & voice repetition",
+        "jp": "フラッシュカードと音声反復による語彙練習",
+        "bn": "ফ্ল্যাশকার্ড ও কণ্ঠস্বর পুনরাবৃত্তির সাথে শব্দভাণ্ডার অনুশীলন"
+      },
+      {
+        "en": "Role play: Dialogue building in pairs: \"すみません、ラーメンをください。\"",
+        "jp": "ロールプレイ：ペアでの対話構築：「すみません、ラーメンをください。」",
+        "bn": "ভূমিকা পালন: জোড়ায় সংলাপ তৈরি: \"すみません、ラーメンをください।\" (দুঃখিত, রামেন দিন)"
+      },
+      {
+        "en": "Game time: Japanese Food Bingo, Memory Card Match",
+        "jp": "ゲームタイム：日本の食べ物ビンゴ、メモリーカードマッチ",
+        "bn": "গেম টাইম: জাপানিজ ফুড বিঙ্গো, মেমোরি কার্ড ম্যাচ"
+      },
+      {
+        "en": "Cultural tip: When not to tip in Japan",
+        "jp": "文化のヒント：日本でチップを渡さない時",
+        "bn": "সাংস্কৃতিক টিপস: জাপানে কখন টিপ দিতে হয় না"
+      },
+      {
+        "en": "Fun Kahoot quiz to end the session",
+        "jp": "セッション終了のための楽しいKahootクイズ",
+        "bn": "সেশন শেষ করার জন্য মজাদার কাহুট কুইজ"
+      }
+    ],
+    "homework": {
+      "en": "Record a short voice or video of you acting as the customer with conditions of using 3 polite expressions and upload the recording to Google Classroom.",
+      "jp": "3つの丁寧な表現を使って顧客として行動する短い音声またはビデオを録音し、その録音をGoogle Classroomにアップロードしてください。",
+      "bn": "৩টি ভদ্র অভিব্যক্তি ব্যবহার করে গ্রাহক হিসেবে অভিনয় করার একটি ছোট ভয়েস বা ভিডিও রেকর্ড করুন এবং গুগল ক্লাসরুমে আপলোড করুন।"
+    }
+  },
+  "japaneseLanguageClub": {
+    "title": {
+      "en": "Japanese Language Club",
+      "jp": "日本語クラブ",
+      "bn": "জাপানিজ ল্যাঙ্গুয়েজ ক্লাব"
+    },
+    "subtitle": {
+      "en": "Where Learning Meets Real Life!",
+      "jp": "学習と実生活が出会う場所！",
+      "bn": "যেখানে শেখা এবং বাস্তব জীবন মিলিত হয়!"
+    },
+    "description": {
+      "en": "Step into our Japanese Language Club — an immersive space to practice real conversations, explore culture, and have fun using Japanese beyond the textbook.",
+      "jp": "日本語クラブに参加してください—教科書を超えて、実際の会話を練習し、文化を探求し、日本語を使って楽しむ没入型の空間です。",
+      "bn": "আমাদের জাপানিজ ল্যাঙ্গুয়েজ ক্লাবে যোগ দিন — বাস্তব কথোপকথন অনুশীলন, সংস্কৃতি অন্বেষণ এবং পাঠ্যবইয়ের বাইরে জাপানিজ ব্যবহার করে মজা করার একটি নিমগ্ন পরিবেশ।"
+    },
+    "activities": [
+      {
+        "en": "Speak only in Japanese — practice polite & casual talk",
+        "jp": "日本語のみで話す—丁寧語とカジュアルな話し方の練習",
+        "bn": "কেবল জাপানিজে কথা বলুন — ভদ্র ও নৈমিত্তিক কথোপকথনের অনুশীলন"
+      },
+      {
+        "en": "Watch movies, anime, vlogs & share short summaries",
+        "jp": "映画、アニメ、ブログを見て、短い要約を共有する",
+        "bn": "সিনেমা, অ্যানিমে, ভিলগ দেখুন এবং সংক্ষিপ্ত সারাংশ শেয়ার করুন"
+      },
+      {
+        "en": "Listen to podcasts for natural listening skills",
+        "jp": "自然なリスニングスキルのためにポッドキャストを聞く",
+        "bn": "প্রাকৃতিক শোনার দক্ষতার জন্য পডকাস্ট শুনুন"
+      },
+      {
+        "en": "Chat about daily life, hobbies, food & travel",
+        "jp": "日常生活、趣味、食べ物、旅行について話す",
+        "bn": "দৈনন্দিন জীবন, শখ, খাবার ও ভ্রমণ নিয়ে আড্ডা দিন"
+      },
+      {
+        "en": "Explore Japanese culture through fun activities",
+        "jp": "楽しい活動を通して日本文化を探求する",
+        "bn": "মজাদার কার্যক্রমের মাধ্যমে জাপানিজ সংস্কৃতি অন্বেষণ করুন"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": {
+      "en": "Why Choose Us?",
+      "jp": "なぜ私たちを選ぶのか？",
+      "bn": "কেন আমাদের বেছে নিবেন?"
+    },
+    "features": [
+      {
+        "en": "Native or experienced instructors",
+        "jp": "ネイティブまたは経験豊富な講師",
+        "bn": "নেটিভ বা অভিজ্ঞ প্রশিক্ষক"
+      },
+      {
+        "en": "JLPT-focused structured curriculum",
+        "jp": "JLPT重視の構造化されたカリキュラム",
+        "bn": "JLPT-কেন্দ্রিক কাঠামোবদ্ধ পাঠ্যক্রম"
+      },
+      {
+        "en": "Personalized support for doubt clearing",
+        "jp": "疑問解決のための個別サポート",
+        "bn": "সন্দেহ নিরসনের জন্য ব্যক্তিগত সহায়তা"
+      },
+      {
+        "en": "Flexible joining — even mid-batch",
+        "jp": "柔軟な参加—バッチの途中でも可能",
+        "bn": "নমনীয় যোগদান — এমনকি মধ্য-ব্যাচেও"
+      },
+      {
+        "en": "Google Classroom access (notes, recordings, homework)",
+        "jp": "Google Classroomアクセス（ノート、録画、宿題）",
+        "bn": "গুগল ক্লাসরুম অ্যাক্সেস (নোট, রেকর্ডিং, হোমওয়ার্ক)"
+      },
+      {
+        "en": "Regular mock tests and performance tracking",
+        "jp": "定期的な模擬試験とパフォーマンス追跡",
+        "bn": "নিয়মিত মক টেস্ট এবং পারফরমেন্স ট্র্যাকিং"
+      },
+      {
+        "en": "Real speaking time in every class",
+        "jp": "毎クラスでの実際の会話時間",
+        "bn": "প্রতিটি ক্লাসে প্রকৃত কথা বলার সময়"
+      },
+      {
+        "en": "Videos, games, and roleplays, not just textbooks",
+        "jp": "教科書だけでなく、ビデオ、ゲーム、ロールプレイ",
+        "bn": "শুধু পাঠ্যবই নয়, ভিডিও, গেম এবং ভূমিকা পালন"
+      }
+    ]
+  },
+  "feesAndEnrollment": {
+    "title": {
+      "en": "Fees & Enrollment",
+      "jp": "料金と登録",
+      "bn": "ফি এবং ভর্তি"
+    },
+    "courseFee": {
+      "title": {
+        "en": "Course Fee",
+        "jp": "コース料金",
+        "bn": "কোর্স ফি"
+      },
+      "amount": {
+        "en": "15,000 BDT",
+        "jp": "15,000 タカ",
+        "bn": "১৫,০০০ টাকা"
+      }
+    },
+    "earlyBirdDiscount": {
+      "title": {
+        "en": "Early Bird Discount",
+        "jp": "早期割引",
+        "bn": "আর্লি বার্ড ছাড়"
+      },
+      "amount": {
+        "en": "10,000 BDT",
+        "jp": "10,000 タカ",
+        "bn": "১০,০০০ টাকা"
+      },
+      "validity": {
+        "en": "Available until 25th July",
+        "jp": "7月25日まで利用可能",
+        "bn": "২৫শে জুলাই পর্যন্ত উপলব্ধ"
+      }
+    },
+    "seatBooking": {
+      "title": {
+        "en": "Seat Booking",
+        "jp": "座席予約",
+        "bn": "সিট বুকিং"
+      },
+      "description": {
+        "en": "Pay 1,000 BDT via Bkash to confirm your seat",
+        "jp": "座席確保のためにBkash経由で1,000タカをお支払いください",
+        "bn": "আপনার সিট নিশ্চিত করতে বিকাশের মাধ্যমে ১,০০০ টাকা পেমেন্ট করুন"
+      }
+    },
+    "importantDates": {
+      "title": {
+        "en": "Important Dates",
+        "jp": "重要な日程",
+        "bn": "গুরুত্বপূর্ণ তারিখ"
+      },
+      "courseStart": {
+        "title": {
+          "en": "Course Starts",
+          "jp": "コース開始",
+          "bn": "কোর্স শুরু"
+        },
+        "date": {
+          "en": "1st August (Batch 1 & 2)",
+          "jp": "8月1日（バッチ1と2）",
+          "bn": "১লা আগস্ট (ব্যাচ ১ ও ২)"
+        }
+      },
+      "discountDeadline": {
+        "title": {
+          "en": "Discount Deadline",
+          "jp": "割引期限",
+          "bn": "ছাড়ের শেষ তারিখ"
+        },
+        "date": {
+          "en": "25th July",
+          "jp": "7月25日",
+          "bn": "২৫শে জুলাই"
+        }
+      }
+    }
+  },
+  "whatsIncluded": {
+    "title": {
+      "en": "What's Included",
+      "jp": "含まれるもの",
+      "bn": "যা অন্তর্ভুক্ত রয়েছে"
+    },
+    "includes": [
+      {
+        "en": "Free learning materials (PDFs, vocab lists, worksheets)",
+        "jp": "無料学習教材（PDF、語彙リスト、ワークシート）",
+        "bn": "বিনামূল্যে শেখার উপকরণ (পিডিএফ, শব্দের তালিকা, ওয়ার্কশিট)"
+      },
+      {
+        "en": "Access to recorded classes (when available)",
+        "jp": "録画されたクラスへのアクセス（利用可能な場合）",
+        "bn": "রেকর্ড করা ক্লাসের অ্যাক্সেস (যখন উপলব্ধ)"
+      },
+      {
+        "en": "Weekly practice tests & JLPT-style mock exams",
+        "jp": "週次練習テストとJLPTスタイルの模擬試験",
+        "bn": "সাপ্তাহিক অনুশীলন পরীক্ষা এবং JLPT-স্টাইলের মক পরীক্ষা"
+      },
+      {
+        "en": "Dedicated Google Classroom access",
+        "jp": "専用Google Classroomアクセス",
+        "bn": "ডেডিকেটেড গুগল ক্লাসরুম অ্যাক্সেস"
+      }
+    ]
   }
 }

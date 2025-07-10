@@ -237,49 +237,94 @@ export interface IPolicyTermsData {
 }
 
 export interface ILanguageProgramSchedule {
-  name: string;
-  days: string;
-  time: string;
+  name: Record<LanguageType, string>;
+  schedule: Record<LanguageType, string>;
+}
+
+export interface ILanguageProgramObjective {
+  title: Record<LanguageType, string>;
+  description: Record<LanguageType, string>;
 }
 
 export interface ILanguageProgramObjectives {
-  grammar: string;
-  vocabulary: string;
-  kanji: string;
-  skills: string;
-  culture: string;
+  grammar: ILanguageProgramObjective;
+  vocabulary: ILanguageProgramObjective;
+  kanji: ILanguageProgramObjective;
+  skills: ILanguageProgramObjective;
+  culture: ILanguageProgramObjective;
 }
 
 export interface ILanguageProgramFees {
-  courseFee: string;
-  earlyBirdDiscount: string;
-  earlyBirdDeadline: string;
-  seatBooking: string;
-}
-
-export interface ILanguageProgramDates {
-  courseStarts: string;
-  discountDeadline: string;
-}
-
-export interface ILanguageProgramContent {
-  title: string;
-  description: string;
-  courseLevel: string;
-  duration: string;
-  durationDetails: string;
-  classSchedule: {
-    batch1: ILanguageProgramSchedule;
-    batch2: ILanguageProgramSchedule;
-    club: ILanguageProgramSchedule;
-  };
-  learningObjectives: ILanguageProgramObjectives;
-  whyChooseUs: string[];
-  fees: ILanguageProgramFees;
-  importantDates: ILanguageProgramDates;
-  whatsIncluded: string[];
+  title: Record<LanguageType, string>;
+  amount: Record<LanguageType, string>;
 }
 
 export interface ILanguageProgramData {
-  languagePrograms: Record<LanguageType, ILanguageProgramContent>;
+  courseOverview: {
+    courseName: Record<LanguageType, string>;
+    courseLevel: Record<LanguageType, string>;
+    duration: Record<LanguageType, string>;
+    durationDetails: Record<LanguageType, string>;
+  };
+  classSchedule: {
+    title: Record<LanguageType, string>;
+    batches: {
+      batch1: ILanguageProgramSchedule;
+      batch2: ILanguageProgramSchedule;
+      languageClub: ILanguageProgramSchedule;
+    };
+    note: Record<LanguageType, string>;
+  };
+  learningObjectives: {
+    title: Record<LanguageType, string>;
+    objectives: ILanguageProgramObjectives;
+  };
+  howItWorks: {
+    title: Record<LanguageType, string>;
+    description: Record<LanguageType, string>;
+  };
+  exampleClassFlow: {
+    title: Record<LanguageType, string>;
+    week: Record<LanguageType, string>;
+    sessionTitle: Record<LanguageType, string>;
+    goal: Record<LanguageType, string>;
+    activities: Record<LanguageType, string>[];
+    homework: Record<LanguageType, string>;
+  };
+  japaneseLanguageClub: {
+    title: Record<LanguageType, string>;
+    subtitle: Record<LanguageType, string>;
+    description: Record<LanguageType, string>;
+    activities: Record<LanguageType, string>[];
+  };
+  whyChooseUs: {
+    title: Record<LanguageType, string>;
+    features: Record<LanguageType, string>[];
+  };
+  feesAndEnrollment: {
+    title: Record<LanguageType, string>;
+    courseFee: ILanguageProgramFees;
+    earlyBirdDiscount: ILanguageProgramFees & {
+      validity: Record<LanguageType, string>;
+    };
+    seatBooking: {
+      title: Record<LanguageType, string>;
+      description: Record<LanguageType, string>;
+    };
+    importantDates: {
+      title: Record<LanguageType, string>;
+      courseStart: {
+        title: Record<LanguageType, string>;
+        date: Record<LanguageType, string>;
+      };
+      discountDeadline: {
+        title: Record<LanguageType, string>;
+        date: Record<LanguageType, string>;
+      };
+    };
+  };
+  whatsIncluded: {
+    title: Record<LanguageType, string>;
+    includes: Record<LanguageType, string>[];
+  };
 }
