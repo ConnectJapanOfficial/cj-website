@@ -20,6 +20,7 @@ import type {
   IFooter,
   IHomepage,
   ILanguageData,
+  ILanguageProgramData,
   INavigation,
   IServiceData,
   IUniversityApplicationData,
@@ -156,5 +157,22 @@ export const appDataLoader: LoaderFunction = async (): Promise<IAppData> => {
       navigations: DEFAULT_NAVIGATION,
       footerData: DEFAULT_FOOTER,
     } as IAppData;
+  }
+};
+
+// Language Program loader
+export const languageProgramLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/languageprogram.json");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch language program data: ${response.status}`
+      );
+    }
+    const data: ILanguageProgramData = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching language program data:", error);
+    throw error;
   }
 };

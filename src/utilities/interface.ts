@@ -235,3 +235,51 @@ export interface IPolicyTermsData {
   title: string;
   sections: IPolicyTermsSection[];
 }
+
+export interface ILanguageProgramSchedule {
+  name: string;
+  days: string;
+  time: string;
+}
+
+export interface ILanguageProgramObjectives {
+  grammar: string;
+  vocabulary: string;
+  kanji: string;
+  skills: string;
+  culture: string;
+}
+
+export interface ILanguageProgramFees {
+  courseFee: string;
+  earlyBirdDiscount: string;
+  earlyBirdDeadline: string;
+  seatBooking: string;
+}
+
+export interface ILanguageProgramDates {
+  courseStarts: string;
+  discountDeadline: string;
+}
+
+export interface ILanguageProgramContent {
+  title: string;
+  description: string;
+  courseLevel: string;
+  duration: string;
+  durationDetails: string;
+  classSchedule: {
+    batch1: ILanguageProgramSchedule;
+    batch2: ILanguageProgramSchedule;
+    club: ILanguageProgramSchedule;
+  };
+  learningObjectives: ILanguageProgramObjectives;
+  whyChooseUs: string[];
+  fees: ILanguageProgramFees;
+  importantDates: ILanguageProgramDates;
+  whatsIncluded: string[];
+}
+
+export interface ILanguageProgramData {
+  languagePrograms: Record<LanguageType, ILanguageProgramContent>;
+}

@@ -20,6 +20,7 @@ import {
   appDataLoader,
   applicationLoader,
   homepageLoader,
+  languageProgramLoader,
   privacyPolicyLoader,
   servicesLoader,
   termsOfServicesLoader,
@@ -69,6 +70,7 @@ const routes = createBrowserRouter([
           {
             path: "language-course",
             Component: JapaneseLanguageCourse,
+            loader: languageProgramLoader,
             errorElement: <ErrorPage />,
             HydrateFallback: Bars,
           },

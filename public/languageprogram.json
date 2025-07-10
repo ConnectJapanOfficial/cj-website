@@ -1,0 +1,172 @@
+{
+  "languagePrograms": {
+    "en": {
+      "title": "Survival Japanese: Your First Step Toward JLPT N5",
+      "description": "Comprehensive Japanese language learning program designed for beginners",
+      "courseLevel": "JLPT N5 / Beginner",
+      "duration": "4 Months",
+      "durationDetails": "3 Months of Classes + 1 Month Mock Prep",
+      "classSchedule": {
+        "batch1": {
+          "name": "Batch 1",
+          "days": "Saturday, Monday, Thursday",
+          "time": "3:00 PM – 4:30 PM"
+        },
+        "batch2": {
+          "name": "Batch 2",
+          "days": "Saturday, Monday, Thursday",
+          "time": "5:00 PM – 6:30 PM"
+        },
+        "club": {
+          "name": "Japanese Language Club",
+          "days": "Saturday",
+          "time": "4:00 PM - 5:00 PM"
+        }
+      },
+      "learningObjectives": {
+        "grammar": "Basic sentence structure, verb conjugations",
+        "vocabulary": "600–700 essential words",
+        "kanji": "100 beginner-level characters",
+        "skills": "Listening, Speaking, Reading, Writing",
+        "culture": "Japanese etiquette, honorifics, and daily-life phrases"
+      },
+      "whyChooseUs": [
+        "Native or experienced instructors",
+        "JLPT-focused structured curriculum",
+        "Personalized support for doubt clearing",
+        "Flexible joining — even mid-batch",
+        "Google Classroom access (notes, recordings, homework)",
+        "Regular mock tests and performance tracking",
+        "Additional guidance for studying in Japan"
+      ],
+      "fees": {
+        "courseFee": "15,000 BDT",
+        "earlyBirdDiscount": "10,000 BDT",
+        "earlyBirdDeadline": "Available until 25th July",
+        "seatBooking": "Pay 1,000 BDT via Bkash to confirm your seat"
+      },
+      "importantDates": {
+        "courseStarts": "1st August (Batch 1 & 2)",
+        "discountDeadline": "25th July"
+      },
+      "whatsIncluded": [
+        "Free learning materials (PDFs, vocab lists, worksheets)",
+        "Access to recorded classes (when available)",
+        "Weekly practice tests & JLPT-style mock exams",
+        "Dedicated Google Classroom access"
+      ]
+    },
+    "jp": {
+      "title": "サバイバル日本語：JLPT N5への第一歩",
+      "description": "初心者向けの総合的な日本語学習プログラム",
+      "courseLevel": "JLPT N5 / 初級",
+      "duration": "4ヶ月",
+      "durationDetails": "3ヶ月の授業 + 1ヶ月の模擬試験準備",
+      "classSchedule": {
+        "batch1": {
+          "name": "バッチ1",
+          "days": "土曜日、月曜日、木曜日",
+          "time": "午後3:00 – 午後4:30"
+        },
+        "batch2": {
+          "name": "バッチ2",
+          "days": "土曜日、月曜日、木曜日",
+          "time": "午後5:00 – 午後6:30"
+        },
+        "club": {
+          "name": "日本語クラブ",
+          "days": "土曜日",
+          "time": "午後4:00 - 午後5:00"
+        }
+      },
+      "learningObjectives": {
+        "grammar": "基本的な文構造、動詞の活用",
+        "vocabulary": "600-700の必須単語",
+        "kanji": "100の初級レベル漢字",
+        "skills": "聞く、話す、読む、書く",
+        "culture": "日本のエチケット、敬語、日常生活フレーズ"
+      },
+      "whyChooseUs": [
+        "ネイティブまたは経験豊富な講師",
+        "JLPT重視の構造化カリキュラム",
+        "疑問解決のための個別サポート",
+        "柔軟な参加（途中参加も可能）",
+        "Google Classroomアクセス（ノート、録画、宿題）",
+        "定期的な模擬テストと成績追跡",
+        "日本留学のための追加指導"
+      ],
+      "fees": {
+        "courseFee": "15,000 BDT",
+        "earlyBirdDiscount": "10,000 BDT",
+        "earlyBirdDeadline": "7月25日まで利用可能",
+        "seatBooking": "Bkashで1,000 BDTを支払って席を確保"
+      },
+      "importantDates": {
+        "courseStarts": "8月1日（バッチ1・2）",
+        "discountDeadline": "7月25日"
+      },
+      "whatsIncluded": [
+        "無料学習教材（PDF、語彙リスト、ワークシート）",
+        "録画授業へのアクセス（利用可能な場合）",
+        "週次練習テストとJLPT形式模擬試験",
+        "専用Google Classroomアクセス"
+      ]
+    },
+    "bn": {
+      "title": "সারভাইভাল জাপানিজ: JLPT N5 এর প্রথম ধাপ",
+      "description": "নতুনদের জন্য জাপানি ভাষা শিক্ষা প্রোগ্রাম",
+      "courseLevel": "JLPT N5 / প্রাথমিক",
+      "duration": "৪ মাস",
+      "durationDetails": "৩ মাসের ক্লাস + ১ মাসের মক প্রস্তুতি",
+      "classSchedule": {
+        "batch1": {
+          "name": "ব্যাচ ১",
+          "days": "শনিবার, সোমবার, বৃহস্পতিবার",
+          "time": "বিকাল ৩:০০ – ৪:৩০"
+        },
+        "batch2": {
+          "name": "ব্যাচ ২",
+          "days": "শনিবার, সোমবার, বৃহস্পতিবার",
+          "time": "বিকাল ৫:০০ – ৬:৩০"
+        },
+        "club": {
+          "name": "জাপানি ভাষা ক্লাব",
+          "days": "শনিবার",
+          "time": "বিকাল ৪:০০ - ৫:০০"
+        }
+      },
+      "learningObjectives": {
+        "grammar": "মৌলিক বাক্য গঠন, ক্রিয়া পরিবর্তন",
+        "vocabulary": "৬০০-৭০০ প্রয়োজনীয় শব্দ",
+        "kanji": "১০০ প্রাথমিক স্তরের কাঞ্জি",
+        "skills": "শ্রবণ, কথা বলা, পড়া, লেখা",
+        "culture": "জাপানি শিষ্টাচার, সম্মানসূচক শব্দ এবং দৈনন্দিন জীবনের বাক্য"
+      },
+      "whyChooseUs": [
+        "নেটিভ বা অভিজ্ঞ শিক্ষকগণ",
+        "JLPT-কেন্দ্রিক কাঠামোবদ্ধ পাঠ্যক্রম",
+        "সন্দেহ নিরসনের জন্য ব্যক্তিগত সহায়তা",
+        "ফ্লেক্সিবল যোগদান — এমনকি মাঝপথে",
+        "Google Classroom অ্যাক্সেস (নোট, রেকর্ডিং, হোমওয়ার্ক)",
+        "নিয়মিত মক টেস্ট এবং পারফরম্যান্স ট্র্যাকিং",
+        "জাপানে অধ্যয়নের জন্য অতিরিক্ত নির্দেশনা"
+      ],
+      "fees": {
+        "courseFee": "১৫,০০০ টাকা",
+        "earlyBirdDiscount": "১০,০০০ টাকা",
+        "earlyBirdDeadline": "২৫ জুলাই পর্যন্ত ছাড়",
+        "seatBooking": "আপনার আসন নিশ্চিত করতে বিকাশের মাধ্যমে ১,০০০ টাকা পরিশোধ করুন"
+      },
+      "importantDates": {
+        "courseStarts": "১ আগস্ট (ব্যাচ ১ ও ২)",
+        "discountDeadline": "২৫ জুলাই"
+      },
+      "whatsIncluded": [
+        "বিনামূল্যে শিক্ষা উপকরণ (PDF, শব্দভাণ্ডার তালিকা, ওয়ার্কশিট)",
+        "রেকর্ডকৃত ক্লাসে অ্যাক্সেস (উপলব্ধ থাকলে)",
+        "সাপ্তাহিক অনুশীলন পরীক্ষা এবং JLPT-স্টাইল মক পরীক্ষা",
+        "ডেডিকেটেড Google Classroom অ্যাক্সেস"
+      ]
+    }
+  }
+}
