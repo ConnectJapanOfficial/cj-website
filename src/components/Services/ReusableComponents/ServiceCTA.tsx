@@ -1,19 +1,5 @@
-import type { ReactNode } from "react";
 import { Link } from "react-router";
-
-interface ServiceCTAProps {
-  title: string;
-  description: string;
-  primaryButton: {
-    text: string;
-    link: string;
-  };
-  secondaryButton?: {
-    text: string;
-    onClick?: () => void;
-  };
-  children?: ReactNode;
-}
+import type { IServiceCTAProps } from "../../../utilities/interface";
 
 const ServiceCTA = ({
   title,
@@ -21,7 +7,7 @@ const ServiceCTA = ({
   primaryButton,
   secondaryButton,
   children,
-}: ServiceCTAProps) => {
+}: IServiceCTAProps) => {
   return (
     <div className="mt-12 text-center">
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 text-white">
@@ -37,7 +23,7 @@ const ServiceCTA = ({
           {secondaryButton && (
             <button
               onClick={secondaryButton.onClick}
-              className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-blue-600 transition-colors "
             >
               {secondaryButton.text}
             </button>
