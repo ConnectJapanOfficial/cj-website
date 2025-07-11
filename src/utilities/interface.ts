@@ -484,3 +484,15 @@ export interface IServiceCTAProps {
   };
   children?: React.ReactNode;
 }
+
+export interface IFormConfig {
+  banglaUrl: string;
+  englishUrl: string;
+  banglaTitle: string;
+  englishTitle: string;
+  defaultTitle: string;
+}
+
+export interface ISharedLanguageFormProps {
+  config: IFormConfig;
+}
