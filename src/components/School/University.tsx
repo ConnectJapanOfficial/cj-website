@@ -31,7 +31,7 @@ const University = ({ university }: { university: ISchoolUniversity }) => {
         </h3>
 
         {/* CTA Button */}
-        <a href={`http://${university.website}`} target="_blank" rel="noopener noreferrer">
+        <a href={`${university.website}`} target="_blank" rel="noopener noreferrer">
           <button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
             See Details
             <svg
