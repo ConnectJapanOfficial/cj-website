@@ -195,9 +195,9 @@
       "bn": "সকল বিশ্ববিদ্যালয় দেখতে চান?"
     },
     "description": {
-      "en": "Join our University Application Program to access the complete list of partner universities and get personalized guidance.",
-      "jp": "大学申請プログラムに参加して、提携大学の完全なリストにアクセスし、個人的なガイダンスを受けてください。",
-      "bn": "আমাদের বিশ্ববিদ্যালয় আবেদন প্রোগ্রামে যোগ দিন এবং সম্পূর্ণ অংশীদার বিশ্ববিদ্যালয়ের তালিকা এবং ব্যক্তিগত গাইডেন্স পান।"
+      "en": "Join our University Application Program to access the complete list of universities and get personalized guidance.",
+      "jp": "大学申請プログラムに参加して、大学の完全なリストにアクセスし、個別のガイダンスを受けましょう。",
+      "bn": "বিশ্ববিদ্যালয় আবেদন প্রোগ্রামে যোগ দিন এবং বিশ্ববিদ্যালয়ের সম্পূর্ণ তালিকা অ্যাক্সেস করুন এবং ব্যক্তিগতকৃত নির্দেশিকা পান।"
     },
     "buttonText": {
       "en": "Join University Application Program",
