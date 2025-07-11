@@ -354,3 +354,18 @@ export interface IServiceCTABtn {
   buttonText: Record<LanguageType, string>;
   onButtonClick: () => void;
 }
+
+export interface IGuideHeader {
+  title: Record<LanguageType, string>;
+  description: Record<LanguageType, string>;
+}
+
+export interface IGuideButtons {
+  blogs: Record<LanguageType, string>;
+  videos: Record<LanguageType, string>;
+}
+
+export interface IGuideData {
+  guideHeader: IGuideHeader;
+  guideButtons: IGuideButtons;
+}

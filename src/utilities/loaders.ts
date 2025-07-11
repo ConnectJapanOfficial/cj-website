@@ -19,6 +19,7 @@ import type {
   IApplicationData,
   ICommunity,
   IFooter,
+  IGuideData,
   IHomepage,
   ILanguageData,
   ILanguageProgramData,
@@ -190,6 +191,21 @@ export const languageProgramLoader: LoaderFunction = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching language program data:", error);
+    throw error;
+  }
+};
+
+// Guide loader
+export const guideLoader: LoaderFunction = async (): Promise<IGuideData> => {
+  try {
+    const response = await fetch("/guide.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch guide data: ${response.status}`);
+    }
+    const data: IGuideData = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching guide data:", error);
     throw error;
   }
 };

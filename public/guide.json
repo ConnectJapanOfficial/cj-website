@@ -1,0 +1,26 @@
+{
+  "guideHeader": {
+    "title": {
+      "en": "Guides & Resources",
+      "bn": "গাইড এবং রিসোর্স",
+      "jp": "ガイドとリソース"
+    },
+    "description": {
+      "en": "Explore our comprehensive collection of blogs and videos to help you navigate your journey to studying in Japan.",
+      "bn": "জাপানে অধ্যয়নের জন্য আপনার যাত্রায় সহায়তা করতে আমাদের ব্লগ এবং ভিডিওগুলির বিস্তৃত সংগ্রহ অন্বেষণ করুন।",
+      "jp": "日本留学への道のりをサポートするため、包括的なブログやビデオのコレクションをお探しください。"
+    }
+  },
+  "guideButtons": {
+    "blogs": {
+      "en": "Blogs",
+      "bn": "ব্লগ",
+      "jp": "ブログ"
+    },
+    "videos": {
+      "en": "Videos",
+      "bn": "ভিডিও",
+      "jp": "ビデオ"
+    }
+  }
+}
