@@ -13,14 +13,14 @@ const GuidesButtons = ({ guideButtons }: IGuidesButtonsProps) => {
   return (
     <div className="flex justify-center items-center gap-4">
       <Link to="/blogs">
-        <div className="bg-blue-100 p-3 rounded-lg">
+        <div className="bg-blue-100 p-3 rounded-lg hover:bg-blue-200 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg">
           <span className="text-2xl font-bold">
             📝 {guideButtons.blogs[language] || guideButtons.blogs["en"]}
           </span>
         </div>
       </Link>
       <Link to="/videos">
-        <div className="bg-red-100 p-3 rounded-lg">
+        <div className="bg-red-100 p-3 rounded-lg hover:bg-red-200 hover:scale-105 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg">
           <span className="text-2xl font-bold">
             🎥 {guideButtons.videos[language] || guideButtons.videos["en"]}
           </span>
