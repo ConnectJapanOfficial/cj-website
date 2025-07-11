@@ -348,6 +348,77 @@ export interface ISchools {
   };
 }
 
+export interface IAboutUsEntity {
+  flag: string;
+  name: string;
+  details: string;
+  location: string;
+}
+
+export interface IAboutUsIntroduction {
+  text: string;
+  entities: IAboutUsEntity[];
+  note: string;
+}
+
+export interface IAboutUsWhatMakesUsDifferent {
+  title: string;
+  points: string[];
+  communityLink: {
+    text: string;
+    description: string;
+  };
+}
+
+export interface IAboutUsService {
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface IAboutUsCoreServices {
+  title: string;
+  services: IAboutUsService[];
+}
+
+export interface IAboutUsContactDetail {
+  label: string;
+  value: string;
+}
+
+export interface IAboutUsOfficeContactInfo {
+  title: string;
+  details: IAboutUsContactDetail[];
+}
+
+export interface IAboutUsGetInTouch {
+  title: string;
+  forStudents: {
+    title: string;
+    subtitle: string;
+    options: string[];
+  };
+  forInstitutions: {
+    title: string;
+    description: string;
+  };
+}
+
+export interface IAboutUsContent {
+  title: string;
+  introduction: IAboutUsIntroduction;
+  whatMakesUsDifferent: IAboutUsWhatMakesUsDifferent;
+  coreServices: IAboutUsCoreServices;
+  officeContactInfo: IAboutUsOfficeContactInfo;
+  getInTouch: IAboutUsGetInTouch;
+}
+
+export interface IAboutUsData {
+  en: IAboutUsContent;
+  jp: IAboutUsContent;
+  bn: IAboutUsContent;
+}
+
 export interface IServiceCTABtn {
   title: Record<LanguageType, string>;
   description: Record<LanguageType, string>;

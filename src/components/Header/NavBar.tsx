@@ -65,7 +65,7 @@ const NavBar = () => {
       <NavLink to={"/guides"} className={navLinkClassName}>
         {getTranslation("guides")}
       </NavLink>
-      <NavLink to={"/about"} className={navLinkClassName}>
+      <NavLink to={"/about-us"} className={navLinkClassName}>
         {getTranslation("about")}
       </NavLink>
       <button className="btn btn-md lg:btn-lg rounded-3xl bg-(--primaryBlue) text-white">

@@ -13,6 +13,21 @@ export const termsOfServicesLoader: LoaderFunction = async () => {
   }
 };
 
+// About Us loader (returns all translations)
+export const aboutUsLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/aboutus.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch about us data: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching about us data:", error);
+    throw error;
+  }
+};
+
 import type { LoaderFunction } from "react-router";
 import type {
   IAppData,
