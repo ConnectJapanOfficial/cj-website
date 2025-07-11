@@ -6,15 +6,15 @@
         "description": "Details about the university application process.",
         "path": "service/university-application"
       },
+        {
+        "title": "Japanese Language Course",
+        "description": "Details about the Japanese language course.",
+        "path": "service/language-course"
+      },
       {
         "title": "Japanese Language School",
         "description": "Information on the Japanese language school.",
         "path": "service/language-school"
-      },
-      {
-        "title": "Japanese Language Course",
-        "description": "Details about the Japanese language course.",
-        "path": "service/language-course"
       }
     ],
     "jp": [
@@ -24,14 +24,14 @@
         "path": "service/university-application"
       },
       {
-        "title": "日本語学校",
-        "description": "日本語学校に関する情報。",
-        "path": "service/language-school"
-      },
-      {
         "title": "日本語コース",
         "description": "日本語コースの詳細",
         "path": "service/language-course"
+      },
+      {
+        "title": "日本語学校",
+        "description": "日本語学校に関する情報。",
+        "path": "service/language-school"
       }
     ],
     "bn": [
@@ -39,16 +39,15 @@
         "title": "বিশ্ববিদ্যালয়ে আবেদন",
         "description": "বিশ্ববিদ্যালয়ে আবেদন প্রক্রিয়া সম্পর্কে বিস্তারিত।",
         "path": "service/university-application"
+      },{
+        "title": "জাপানি ভাষা কোর্স",
+        "description": "জাপানি ভাষা কোর্স সম্পর্কে বিস্তারিত।",
+        "path": "service/language-course"
       },
       {
         "title": "জাপানি ভাষা স্কুল",
         "description": "জাপানি ভাষা স্কুল সম্পর্কে তথ্য।",
         "path": "service/language-school"
-      },
-      {
-        "title": "জাপানি ভাষা কোর্স",
-        "description": "জাপানি ভাষা কোর্স সম্পর্কে বিস্তারিত।",
-        "path": "service/language-course"
       }
     ]
   },
