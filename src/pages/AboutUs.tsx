@@ -1,56 +1,21 @@
-import { Suspense, useContext, useState } from "react";
+import { BD, JP } from "country-flag-icons/react/3x2";
+import { Suspense, useContext } from "react";
 import { useLoaderData } from "react-router";
 import Bars from "../components/Loaders/Bars";
 import { LanguageContext } from "../contexts/LanguageContext";
+import { SocialMediaContext } from "../contexts/SocialMediaContext";
 import { usePageTitle } from "../utilities/hooks";
 import type { IAboutUsData } from "../utilities/interface";
 
 const AboutUs = () => {
   const aboutUsData = useLoaderData() as IAboutUsData;
   const { language } = useContext(LanguageContext);
-  const [activeSection, setActiveSection] = useState<string>("introduction");
+
+  const { facebookGroup } = useContext(SocialMediaContext);
 
   usePageTitle("About Us");
 
   const currentData = aboutUsData[language] || aboutUsData.en;
-
-  const navigationItems: Record<
-    string,
-    Array<{ id: string; label: string }>
-  > = {
-    en: [
-      { id: "introduction", label: "Introduction" },
-      { id: "difference", label: "What Makes Us Different" },
-      { id: "services", label: "Our Services" },
-      { id: "contact", label: "Contact Info" },
-      { id: "get-in-touch", label: "Get in Touch" },
-    ],
-    jp: [
-      { id: "introduction", label: "はじめに" },
-      { id: "difference", label: "私たちの特徴" },
-      { id: "services", label: "私たちのサービス" },
-      { id: "contact", label: "連絡先情報" },
-      { id: "get-in-touch", label: "お問い合わせ" },
-    ],
-    bn: [
-      { id: "introduction", label: "পরিচিতি" },
-      { id: "difference", label: "আমরা কি আলাদা" },
-      { id: "services", label: "আমাদের সেবাসমূহ" },
-      { id: "contact", label: "যোগাযোগের তথ্য" },
-      { id: "get-in-touch", label: "যোগাযোগ করুন" },
-    ],
-  };
-
-  const currentNavigationItems =
-    navigationItems[language] || navigationItems.en;
-
-  const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <Suspense fallback={<Bars />}>
@@ -73,19 +38,15 @@ const AboutUs = () => {
         {/* Navigation Tabs */}
         <div className="sticky top-0 z-40 bg-white shadow-md border-b">
           <div className="container mx-auto px-4">
-            <nav className="flex overflow-x-auto scrollbar-hide">
-              {currentNavigationItems.map((item) => (
-                <button
+            <nav className="flex overflow-x-auto scrollbar-hide justify-center-safe">
+              {currentData.navigationItems.map((item) => (
+                <a
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`whitespace-nowrap px-6 py-4 font-medium transition-all duration-300 border-b-2 ${
-                    activeSection === item.id
-                      ? "text-blue-600 border-blue-600 bg-blue-50"
-                      : "text-gray-600 border-transparent hover:text-blue-600 hover:bg-gray-50"
-                  }`}
+                  href={`#${item.id}`}
+                  className="nav-link whitespace-nowrap px-6 py-4 font-medium transition-all duration-300 border-b-2 text-gray-600 border-transparent hover:text-blue-600 hover:bg-gray-50 hover:border-blue-300 focus:text-blue-600 focus:bg-blue-50 focus:border-blue-600 active:text-blue-600 active:bg-blue-50 active:border-blue-600 "
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
             </nav>
           </div>
@@ -107,7 +68,12 @@ const AboutUs = () => {
                     className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 hover:shadow-md transition-shadow duration-300"
                   >
                     <div className="flex items-center mb-4">
-                      <span className="text-3xl mr-3">{entity.flag}</span>
+                      {entity.flag === "BD" ? (
+                        <BD className="w-16 h-16 mr-3" />
+                      ) : (
+                        <JP className="w-16 h-16 mr-3" />
+                      )}
+
                       <div>
                         <h3 className="text-xl font-semibold text-gray-800">
                           {entity.name}
@@ -146,29 +112,27 @@ const AboutUs = () => {
                     <span className="text-green-600 font-semibold text-lg">
                       ✓
                     </span>
-                    <p className="text-gray-700 leading-relaxed">
-                      {point.replace("✅ ", "")}
-                    </p>
+                    <p className="text-gray-700 leading-relaxed">{point}</p>
                   </div>
                 ))}
               </div>
 
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-6 text-center">
                 <h3 className="text-xl font-semibold mb-2">
-                  {currentData.whatMakesUsDifferent.communityLink.text.replace(
-                    "🔗 ",
-                    ""
-                  )}
+                  {currentData.whatMakesUsDifferent.communityLink.text}
                 </h3>
                 <p className="opacity-90">
-                  {currentData.whatMakesUsDifferent.communityLink.description.replace(
-                    "💬 ",
-                    ""
-                  )}
+                  {currentData.whatMakesUsDifferent.communityLink.description}
                 </p>
-                <button className="mt-4 bg-white text-blue-600 font-semibold px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                  Join Community
-                </button>
+                <a
+                  href={facebookGroup}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="mt-4 bg-white text-blue-600 font-semibold px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 hover:scale-105">
+                    Join Community
+                  </button>
+                </a>
               </div>
             </div>
           </section>
@@ -212,18 +176,95 @@ const AboutUs = () => {
                 {currentData.officeContactInfo.title}
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                {currentData.officeContactInfo.details.map((detail, index) => (
-                  <div
-                    key={index}
-                    className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300"
-                  >
-                    <h3 className="font-semibold text-gray-800 mb-2 text-lg">
-                      {detail.label}
-                    </h3>
-                    <p className="text-gray-700">{detail.value}</p>
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Contact Details */}
+                <div className="space-y-6">
+                  {currentData.officeContactInfo.details.map(
+                    (detail, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start space-x-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                          {index === 0 && (
+                            <svg
+                              className="w-6 h-6"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          )}
+                          {index === 1 && (
+                            <svg
+                              className="w-6 h-6"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                              />
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                              />
+                            </svg>
+                          )}
+                          {index === 2 && (
+                            <svg
+                              className="w-6 h-6"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                              />
+                            </svg>
+                          )}
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="font-semibold text-gray-800 mb-1 text-lg">
+                            {detail.label}
+                          </h3>
+                          <p className="text-gray-700 leading-relaxed">
+                            {detail.value}
+                          </p>
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+
+                {/* Google Maps */}
+                <div className="space-y-4">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                    <iframe
+                      src={aboutUsData.googleMapsUrl}
+                      width="100%"
+                      height="375"
+                      className="border-0"
+                      allowFullScreen={true}
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="ConnectJapan Office Location"
+                    ></iframe>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </section>
@@ -252,9 +293,7 @@ const AboutUs = () => {
                           className="flex items-center space-x-3 p-3 bg-white rounded-lg border border-green-200 hover:bg-green-50 transition-colors duration-300"
                         >
                           <span className="text-green-600">📱</span>
-                          <span className="text-gray-700">
-                            {option.replace("🔹 ", "")}
-                          </span>
+                          <span className="text-gray-700">{option}</span>
                         </div>
                       )
                     )}
@@ -269,9 +308,12 @@ const AboutUs = () => {
                   <p className="text-gray-700 leading-relaxed">
                     {currentData.getInTouch.forInstitutions.description}
                   </p>
-                  <button className="mt-4 bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-300 w-full">
+                  <a
+                    href={`mailto:${aboutUsData.contactEmail}?subject=${aboutUsData.subject}&body=${aboutUsData.emailBody}`}
+                    className="mt-4 bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-300 w-full inline-block text-center"
+                  >
                     Send Partnership Inquiry
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -281,7 +323,7 @@ const AboutUs = () => {
         {/* Floating Action Button */}
         <div className="fixed bottom-8 right-8 z-50">
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => window.scrollTo({ top: 0 })}
             className="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 group"
             title="Scroll to top"
             aria-label="Scroll to top"

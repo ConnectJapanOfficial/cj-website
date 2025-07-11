@@ -348,6 +348,11 @@ export interface ISchools {
   };
 }
 
+export interface IAboutUsNavigationItem {
+  id: string;
+  label: string;
+}
+
 export interface IAboutUsEntity {
   flag: string;
   name: string;
@@ -406,6 +411,7 @@ export interface IAboutUsGetInTouch {
 
 export interface IAboutUsContent {
   title: string;
+  navigationItems: IAboutUsNavigationItem[];
   introduction: IAboutUsIntroduction;
   whatMakesUsDifferent: IAboutUsWhatMakesUsDifferent;
   coreServices: IAboutUsCoreServices;
@@ -417,6 +423,10 @@ export interface IAboutUsData {
   en: IAboutUsContent;
   jp: IAboutUsContent;
   bn: IAboutUsContent;
+  googleMapsUrl: string;
+  contactEmail: string;
+  subject: string;
+  emailBody: string;
 }
 
 export interface IServiceCTABtn {
