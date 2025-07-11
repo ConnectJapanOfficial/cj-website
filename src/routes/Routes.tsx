@@ -14,6 +14,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Guides from "../pages/Guides";
 import Home from "../pages/Home";
 import Root from "../pages/Root";
+import Schools from "../pages/Schools";
 import ServicesDetails from "../pages/ServicesDetails";
 import {
   appDataLoader,
@@ -21,11 +22,11 @@ import {
   homepageLoader,
   languageProgramLoader,
   privacyPolicyLoader,
+  schoolsLoader,
   servicesLoader,
   termsOfServicesLoader,
   universityApplicationLoader,
 } from "../utilities/loaders";
-import Schools from "../pages/Schools";
 
 const routes = createBrowserRouter([
   {
@@ -86,6 +87,7 @@ const routes = createBrowserRouter([
       {
         path: "schools",
         Component: Schools,
+        loader: schoolsLoader,
         errorElement: <ErrorPage />,
         HydrateFallback: Bars,
       },

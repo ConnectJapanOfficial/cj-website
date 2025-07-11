@@ -12,6 +12,7 @@ export const termsOfServicesLoader: LoaderFunction = async () => {
     throw error;
   }
 };
+
 import type { LoaderFunction } from "react-router";
 import type {
   IAppData,
@@ -22,6 +23,7 @@ import type {
   ILanguageData,
   ILanguageProgramData,
   INavigation,
+  ISchools,
   IServiceData,
   IUniversityApplicationData,
 } from "./interface";
@@ -37,6 +39,21 @@ export const privacyPolicyLoader: LoaderFunction = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching privacy policy:", error);
+    throw error;
+  }
+};
+
+// Schools loader
+export const schoolsLoader: LoaderFunction = async (): Promise<ISchools> => {
+  try {
+    const response = await fetch("/schools.json");
+    if (!response.ok) {
+      throw new Error(`Failed to fetch schools: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching schools:", error);
     throw error;
   }
 };

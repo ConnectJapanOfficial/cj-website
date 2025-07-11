@@ -1,0 +1,208 @@
+{
+  "universities": {
+    "title": {
+      "en": "Universities",
+      "bn": "বিশ্ববিদ্যালয়",
+      "jp": "大学"
+    },
+    "list": [
+      {
+        "id": "hokkaido",
+        "name": {
+          "en": "Hokkaido University",
+          "bn": "হোক্কাইদো বিশ্ববিদ্যালয়",
+          "jp": "北海道大学"
+        },
+        "logo": "/src/assets/universities/hokkaidou.png",
+        "website": "https://www.hokudai.ac.jp/"
+      },
+      {
+        "id": "icla",
+        "name": {
+          "en": "International Christian University Liberal Arts",
+          "bn": "ইন্টারন্যাশনাল ক্রিশ্চিয়ান ইউনিভার্সিটি লিবারেল আর্টস",
+          "jp": "国際基督教大学リベラルアーツ"
+        },
+        "logo": "/src/assets/universities/icla.png",
+        "website": "https://www.icu.ac.jp/en/academics/undergraduate/liberal-arts/"
+      },
+      {
+        "id": "icu",
+        "name": {
+          "en": "International Christian University",
+          "bn": "ইন্টারন্যাশনাল ক্রিশ্চিয়ান ইউনিভার্সিটি",
+          "jp": "国際基督教大学"
+        },
+        "logo": "/src/assets/universities/icu.png",
+        "website": "https://www.icu.ac.jp/"
+      },
+      {
+        "id": "kuas",
+        "name": {
+          "en": "Kyoto University of Advanced Science",
+          "bn": "কিয়োটো ইউনিভার্সিটি অফ অ্যাডভান্সড সায়েন্স",
+          "jp": "京都先端科学大学"
+        },
+        "logo": "/src/assets/universities/kuas.jpg",
+        "website": "https://www.kuas.ac.jp/"
+      },
+      {
+        "id": "kyoto",
+        "name": {
+          "en": "Kyoto University",
+          "bn": "কিয়োটো বিশ্ববিদ্যালয়",
+          "jp": "京都大学"
+        },
+        "logo": "/src/assets/universities/kyotou.png",
+        "website": "https://www.kyoto-u.ac.jp/"
+      },
+      {
+        "id": "musashino",
+        "name": {
+          "en": "Musashino University",
+          "bn": "মুসাশিনো বিশ্ববিদ্যালয়",
+          "jp": "武蔵野大学"
+        },
+        "logo": "/src/assets/universities/musashinou.png",
+        "website": "https://www.musashino-u.ac.jp/"
+      },
+      {
+        "id": "nagoya",
+        "name": {
+          "en": "Nagoya University",
+          "bn": "নাগোয়া বিশ্ববিদ্যালয়",
+          "jp": "名古屋大学"
+        },
+        "logo": "/src/assets/universities/nagoyau.png",
+        "website": "https://www.nagoya-u.ac.jp/"
+      },
+      {
+        "id": "rikkyo",
+        "name": {
+          "en": "Ritsumeikan Asia Pacific University",
+          "bn": "রিৎসুমেইকান এশিয়া প্যাসিফিক ইউনিভার্সিটি",
+          "jp": "立命館アジア太平洋大学"
+        },
+        "logo": "/src/assets/universities/rapu.png",
+        "website": "https://en.apu.ac.jp/"
+      },
+      {
+        "id": "ritsumeikan",
+        "name": {
+          "en": "Ritsumeikan University",
+          "bn": "রিৎসুমেইকান বিশ্ববিদ্যালয়",
+          "jp": "立命館大学"
+        },
+        "logo": "/src/assets/universities/ru.png",
+        "website": "https://www.ritsumei.ac.jp/"
+      },
+      {
+        "id": "sophia",
+        "name": {
+          "en": "Sophia University",
+          "bn": "সোফিয়া বিশ্ববিদ্যালয়",
+          "jp": "上智大学"
+        },
+        "logo": "/src/assets/universities/sophia.png",
+        "website": "https://www.sophia.ac.jp/"
+      },
+      {
+        "id": "tiu",
+        "name": {
+          "en": "Tokyo International University",
+          "bn": "টোকিও ইন্টারন্যাশনাল ইউনিভার্সিটি",
+          "jp": "東京国際大学"
+        },
+        "logo": "/src/assets/universities/tiu.png",
+        "website": "https://www.tiu.ac.jp/"
+      },
+      {
+        "id": "tohoku",
+        "name": {
+          "en": "Tohoku University",
+          "bn": "তোহোকু বিশ্ববিদ্যালয়",
+          "jp": "東北大学"
+        },
+        "logo": "/src/assets/universities/tohuku.png",
+        "website": "https://www.tohoku.ac.jp/"
+      },
+      {
+        "id": "tokyo-tech",
+        "name": {
+          "en": "Tokyo Institute of Technology",
+          "bn": "টোকিও ইনস্টিটিউট অফ টেকনোলজি",
+          "jp": "東京工業大学"
+        },
+        "logo": "/src/assets/universities/tokyotech.png",
+        "website": "https://www.titech.ac.jp/"
+      },
+      {
+        "id": "aizu",
+        "name": {
+          "en": "University of Aizu",
+          "bn": "আইজু বিশ্ববিদ্যালয়",
+          "jp": "会津大学"
+        },
+        "logo": "/src/assets/universities/uaizu.png",
+        "website": "https://www.u-aizu.ac.jp/"
+      },
+      {
+        "id": "keio",
+        "name": {
+          "en": "Keio University",
+          "bn": "কেইও বিশ্ববিদ্যালয়",
+          "jp": "慶應義塾大学"
+        },
+        "logo": "/src/assets/universities/ukeio.png",
+        "website": "https://www.keio.ac.jp/"
+      },
+      {
+        "id": "osaka",
+        "name": {
+          "en": "Osaka University",
+          "bn": "ওসাকা বিশ্ববিদ্যালয়",
+          "jp": "大阪大学"
+        },
+        "logo": "/src/assets/universities/uosaka.png",
+        "website": "https://www.osaka-u.ac.jp/"
+      },
+      {
+        "id": "tokyo",
+        "name": {
+          "en": "University of Tokyo",
+          "bn": "টোকিও বিশ্ববিদ্যালয়",
+          "jp": "東京大学"
+        },
+        "logo": "/src/assets/universities/utokyo.png",
+        "website": "https://www.u-tokyo.ac.jp/"
+      },
+      {
+        "id": "waseda",
+        "name": {
+          "en": "Waseda University",
+          "bn": "ওয়াসেদা বিশ্ববিদ্যালয়",
+          "jp": "早稲田大学"
+        },
+        "logo": "/src/assets/universities/waseda.png",
+        "website": "https://www.waseda.jp/"
+      }
+    ]
+  },
+  "cta": {
+    "title": {
+      "en": "Want to see all universities?",
+      "jp": "すべての大学を見たいですか？",
+      "bn": "সব বিশ্ববিদ্যালয় দেখতে চান?"
+    },
+    "description": {
+      "en": "Join our University Application Program to access the complete list of partner universities and get personalized guidance.",
+      "jp": "大学申請プログラムに参加して、提携大学の完全なリストにアクセスし、個人的なガイダンスを受けてください。",
+      "bn": "আমাদের বিশ্ববিদ্যালয় আবেদন প্রোগ্রামে যোগ দিন এবং সম্পূর্ণ অংশীদার বিশ্ববিদ্যালয়ের তালিকা এবং ব্যক্তিগত গাইডেন্স পান।"
+    },
+    "buttonText": {
+      "en": "Join University Application Program",
+      "jp": "大学申請プログラムに参加する",
+      "bn": "বিশ্ববিদ্যালয় আবেদন প্রোগ্রামে যোগ দিন"
+    }
+  }
+}

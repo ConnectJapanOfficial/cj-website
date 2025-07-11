@@ -328,3 +328,29 @@ export interface ILanguageProgramData {
     includes: Record<LanguageType, string>[];
   };
 }
+
+export interface ISchoolUniversity {
+  id: string;
+  name: Record<LanguageType, string>;
+  logo: string;
+  website: string;
+}
+
+export interface ISchools {
+  universities: {
+    title: Record<LanguageType, string>;
+    list: ISchoolUniversity[];
+  };
+  cta: {
+    title: Record<LanguageType, string>;
+    description: Record<LanguageType, string>;
+    buttonText: Record<LanguageType, string>;
+  };
+}
+
+export interface IServiceCTABtn {
+  title: Record<LanguageType, string>;
+  description: Record<LanguageType, string>;
+  buttonText: Record<LanguageType, string>;
+  onButtonClick: () => void;
+}
