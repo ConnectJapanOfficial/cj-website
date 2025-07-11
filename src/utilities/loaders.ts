@@ -127,6 +127,23 @@ export const universityApplicationLoader: LoaderFunction = async () => {
   }
 };
 
+// Japanese Language School loader
+export const languageSchoolLoader: LoaderFunction = async () => {
+  try {
+    const response = await fetch("/languageschool.json");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch language school data: ${response.status}`
+      );
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching language school data:", error);
+    throw error;
+  }
+};
+
 // Community loader
 export const communityLoader: LoaderFunction = async () => {
   try {

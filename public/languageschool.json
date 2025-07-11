@@ -1,0 +1,92 @@
+{
+  "en": {
+    "badge": "Japanese Language School Program",
+    "title": "Japanese Language School Admission Program",
+    "description": "This program is designed for students who want to study Japanese in Japan through accredited, high-quality language schools. HSC pass, undergraduate pass, or master's pass students are eligible to apply for a 2-year Japanese language school program on a student visa. We provide complete support from application to arrival in Japan. For more information, feel free to contact us.",
+    "totalCost": {
+      "title": "Total Cost:",
+      "costs": [
+        "50,000 BDT (File opening charge)",
+        "50,000 BDT (After visa approval)"
+      ]
+    },
+    "package": {
+      "title": "What's Included in the Package:",
+      "items": [
+        "ConnectJapan Premium N5 Japanese Language Course (Worth 15,000 BDT – FREE for our students)",
+        "Japanese N5 Language Certificate",
+        "Guidance for Arranging Financial Documents for Bank Statement (for COE)",
+        "Official Translation of All Required Documents (by native Japanese professionals)",
+        "Document Checking and Verification by both our Japan and Bangladesh teams",
+        "Guaranteed Admission to Top Japanese Language Schools (We only work with A-category schools across Japan)",
+        "Interview Preparation with Native Japanese Instructors",
+        "Interview Conducted at Our Office in Uttara, Dhaka",
+        "Step-by-Step Support for COE (Certificate of Eligibility) Issuance",
+        "Visa Application Guidance",
+        "Assistance with Booking Your Flight to Japan",
+        "Help Finding Accommodation in Japan",
+        "Advice and Support for Finding Part-Time Jobs in Japan"
+      ]
+    }
+  },
+  "bn": {
+    "badge": "জাপানিজ ল্যাঙ্গুয়েজ স্কুল প্রোগ্রাম",
+    "title": "জাপানিজ ভাষা বিদ্যালয় ভর্তি প্রোগ্রাম",
+    "description": "এই প্রোগ্রামটি সেই সব শিক্ষার্থীদের জন্য ডিজাইন করা হয়েছে যারা জাপানে স্বীকৃত, উচ্চমানের ভাষা বিদ্যালয়ের মাধ্যমে জাপানি ভাষা অধ্যয়ন করতে চান। এইচএসসি পাস, স্নাতক পাস, বা স্নাতকোত্তর পাস শিক্ষার্থীরা শিক্ষার্থী ভিসায় ২ বছরের জাপানি ভাষা বিদ্যালয় প্রোগ্রামের জন্য আবেদন করতে পারেন। আমরা আবেদন থেকে জাপানে পৌঁছানো পর্যন্ত সম্পূর্ণ সহায়তা প্রদান করি। আরও তথ্যের জন্য, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করুন।",
+    "totalCost": {
+      "title": "মোট খরচ:",
+      "costs": [
+        "৫০,০০০ টাকা (ফাইল খোলার চার্জ)",
+        "৫০,০০০ টাকা (ভিসা অনুমোদনের পর)"
+      ]
+    },
+    "package": {
+      "title": "প্যাকেজে যা অন্তর্ভুক্ত:",
+      "items": [
+        "কানেক্ট জাপান প্রিমিয়াম এন৫ জাপানি ভাষা কোর্স (১৫,০০০ টাকা মূল্য - আমাদের শিক্ষার্থীদের জন্য বিনামূল্যে)",
+        "জাপানি এন৫ ভাষা সার্টিফিকেট",
+        "ব্যাংক স্টেটমেন্টের জন্য আর্থিক নথি প্রস্তুতির নির্দেশনা (সিওই এর জন্য)",
+        "প্রয়োজনীয় সব নথির অফিসিয়াল অনুবাদ (নেটিভ জাপানি পেশাদারদের দ্বারা)",
+        "আমাদের জাপান এবং বাংলাদেশ উভয় দলের দ্বারা নথি পরীক্ষা ও যাচাইকরণ",
+        "শীর্ষ জাপানি ভাষা বিদ্যালয়ে গ্যারান্টিযুক্ত ভর্তি (আমরা শুধুমাত্র জাপান জুড়ে এ-ক্যাটাগরি স্কুলের সাথে কাজ করি)",
+        "নেটিভ জাপানি প্রশিক্ষকদের সাথে ইন্টারভিউ প্রস্তুতি",
+        "উত্তরা, ঢাকায় আমাদের অফিসে ইন্টারভিউ পরিচালনা",
+        "সিওই (যোগ্যতার সার্টিফিকেট) প্রদানের জন্য ধাপে ধাপে সহায়তা",
+        "ভিসা আবেদনের নির্দেশনা",
+        "জাপানে আপনার ফ্লাইট বুকিং এ সহায়তা",
+        "জাপানে বাসস্থান খুঁজে পেতে সাহায্য",
+        "জাপানে খণ্ডকালীন চাকরি খুঁজে পেতে পরামর্শ ও সহায়তা"
+      ]
+    }
+  },
+  "jp": {
+    "badge": "日本語学校プログラム",
+    "title": "日本語学校入学プログラム",
+    "description": "このプログラムは、認定された高品質な語学学校を通じて日本で日本語を学びたい学生のために設計されています。高等学校卒業、学士課程修了、または修士課程修了の学生は、学生ビザで2年間の日本語学校プログラムに申請することができます。申請から日本到着まで完全なサポートを提供いたします。詳しい情報については、お気軽にお問い合わせください。",
+    "totalCost": {
+      "title": "総費用：",
+      "costs": [
+        "50,000バングラデシュタカ（ファイル開設料）",
+        "50,000バングラデシュタカ（ビザ承認後）"
+      ]
+    },
+    "package": {
+      "title": "パッケージに含まれるもの：",
+      "items": [
+        "コネクトジャパン プレミアム N5 日本語コース（15,000バングラデシュタカ相当 - 当校の学生は無料）",
+        "日本語N5レベル認定証",
+        "在留資格認定証明書（COE）のための銀行残高証明書作成ガイダンス",
+        "必要書類の公式翻訳（ネイティブ日本人専門家による）",
+        "日本とバングラデシュの両チームによる書類確認・検証",
+        "トップクラス日本語学校への確実な入学保証（日本全国のAカテゴリー校のみと提携）",
+        "ネイティブ日本人講師による面接準備",
+        "ダッカ・ウッタラの当社オフィスでの面接実施",
+        "在留資格認定証明書（COE）発行の段階的サポート",
+        "ビザ申請ガイダンス",
+        "日本行き航空券予約のサポート",
+        "日本での宿泊先探しのお手伝い",
+        "日本でのアルバイト探しのアドバイスとサポート"
+      ]
+    }
+  }
+}

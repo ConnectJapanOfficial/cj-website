@@ -24,6 +24,7 @@ import {
   guideLoader,
   homepageLoader,
   languageProgramLoader,
+  languageSchoolLoader,
   privacyPolicyLoader,
   schoolsLoader,
   servicesLoader,
@@ -81,6 +82,7 @@ const routes = createBrowserRouter([
           {
             path: "language-school",
             Component: JapaneseLanguageSchool,
+            loader: languageSchoolLoader,
             errorElement: <ErrorPage />,
             HydrateFallback: Bars,
           },

@@ -450,3 +450,37 @@ export interface IGuideData {
   guideHeader: IGuideHeader;
   guideButtons: IGuideButtons;
 }
+
+export interface ILanguageSchoolContent {
+  badge: string;
+  title: string;
+  description: string;
+  totalCost: {
+    title: string;
+    costs: string[];
+  };
+  package: {
+    title: string;
+    items: string[];
+  };
+}
+
+export interface ILanguageSchoolData {
+  en: ILanguageSchoolContent;
+  bn: ILanguageSchoolContent;
+  jp: ILanguageSchoolContent;
+}
+
+export interface IServiceCTAProps {
+  title: string;
+  description: string;
+  primaryButton: {
+    text: string;
+    link: string;
+  };
+  secondaryButton?: {
+    text: string;
+    onClick?: () => void;
+  };
+  children?: React.ReactNode;
+}
