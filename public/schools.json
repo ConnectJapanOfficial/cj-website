@@ -14,7 +14,7 @@
           "jp": "北海道大学"
         },
         "logo": "/src/assets/universities/hokkaidou.png",
-        "website": "https://www.hokudai.ac.jp/"
+        "website": "https://www.global.hokudai.ac.jp/"
       },
       {
         "id": "icla",
@@ -24,7 +24,7 @@
           "jp": "国際基督教大学リベラルアーツ"
         },
         "logo": "/src/assets/universities/icla.png",
-        "website": "https://www.icu.ac.jp/en/academics/undergraduate/liberal-arts/"
+        "website": "https://www.icla.ygu.ac.jp/en/"
       },
       {
         "id": "icu",
@@ -34,7 +34,7 @@
           "jp": "国際基督教大学"
         },
         "logo": "/src/assets/universities/icu.png",
-        "website": "https://www.icu.ac.jp/"
+        "website": "https://www.icu.ac.jp/en/"
       },
       {
         "id": "kuas",
@@ -44,7 +44,7 @@
           "jp": "京都先端科学大学"
         },
         "logo": "/src/assets/universities/kuas.jpg",
-        "website": "https://www.kuas.ac.jp/"
+        "website": "https://www.kuas.ac.jp/en/"
       },
       {
         "id": "kyoto",
@@ -54,7 +54,7 @@
           "jp": "京都大学"
         },
         "logo": "/src/assets/universities/kyotou.png",
-        "website": "https://www.kyoto-u.ac.jp/"
+        "website": "https://www.kyoto-u.ac.jp/en"
       },
       {
         "id": "musashino",
@@ -64,7 +64,7 @@
           "jp": "武蔵野大学"
         },
         "logo": "/src/assets/universities/musashinou.png",
-        "website": "https://www.musashino-u.ac.jp/"
+        "website": "https://www.musashino-u.ac.jp/english/"
       },
       {
         "id": "nagoya",
@@ -74,17 +74,17 @@
           "jp": "名古屋大学"
         },
         "logo": "/src/assets/universities/nagoyau.png",
-        "website": "https://www.nagoya-u.ac.jp/"
+        "website": "https://en.nagoya-u.ac.jp/"
       },
       {
-        "id": "rikkyo",
+        "id": "rapu",
         "name": {
           "en": "Ritsumeikan Asia Pacific University",
           "bn": "রিৎসুমেইকান এশিয়া প্যাসিফিক ইউনিভার্সিটি",
           "jp": "立命館アジア太平洋大学"
         },
         "logo": "/src/assets/universities/rapu.png",
-        "website": "https://en.apu.ac.jp/"
+        "website": "https://en.apu.ac.jp/home/"
       },
       {
         "id": "ritsumeikan",
@@ -94,7 +94,7 @@
           "jp": "立命館大学"
         },
         "logo": "/src/assets/universities/ru.png",
-        "website": "https://www.ritsumei.ac.jp/"
+        "website": "https://en.ritsumei.ac.jp/"
       },
       {
         "id": "sophia",
@@ -104,7 +104,7 @@
           "jp": "上智大学"
         },
         "logo": "/src/assets/universities/sophia.png",
-        "website": "https://www.sophia.ac.jp/"
+        "website": "https://www.sophia.ac.jp/eng/"
       },
       {
         "id": "tiu",
@@ -114,7 +114,7 @@
           "jp": "東京国際大学"
         },
         "logo": "/src/assets/universities/tiu.png",
-        "website": "https://www.tiu.ac.jp/"
+        "website": "https://www.tiu.ac.jp/etrack/"
       },
       {
         "id": "tohoku",
@@ -124,7 +124,7 @@
           "jp": "東北大学"
         },
         "logo": "/src/assets/universities/tohuku.png",
-        "website": "https://www.tohoku.ac.jp/"
+        "website": "https://www.tohoku.ac.jp/en/"
       },
       {
         "id": "tokyo-tech",
@@ -134,7 +134,7 @@
           "jp": "東京工業大学"
         },
         "logo": "/src/assets/universities/tokyotech.png",
-        "website": "https://www.titech.ac.jp/"
+        "website": "https://www.titech.ac.jp/english"
       },
       {
         "id": "aizu",
@@ -144,7 +144,7 @@
           "jp": "会津大学"
         },
         "logo": "/src/assets/universities/uaizu.png",
-        "website": "https://www.u-aizu.ac.jp/"
+        "website": "https://u-aizu.ac.jp/en/"
       },
       {
         "id": "keio",
@@ -164,7 +164,7 @@
           "jp": "大阪大学"
         },
         "logo": "/src/assets/universities/uosaka.png",
-        "website": "https://www.osaka-u.ac.jp/"
+        "website": "https://www.osaka-u.ac.jp/en"
       },
       {
         "id": "tokyo",
@@ -174,7 +174,7 @@
           "jp": "東京大学"
         },
         "logo": "/src/assets/universities/utokyo.png",
-        "website": "https://www.u-tokyo.ac.jp/"
+        "website": "https://www.u-tokyo.ac.jp/en/"
       },
       {
         "id": "waseda",
@@ -184,15 +184,15 @@
           "jp": "早稲田大学"
         },
         "logo": "/src/assets/universities/waseda.png",
-        "website": "https://www.waseda.jp/"
+        "website": "https://www.waseda.jp/top/en/"
       }
     ]
   },
   "cta": {
     "title": {
       "en": "Want to see all universities?",
-      "jp": "すべての大学を見たいですか？",
-      "bn": "সব বিশ্ববিদ্যালয় দেখতে চান?"
+      "jp": "すべての大学をご覧になりたい方はこちら",
+      "bn": "সকল বিশ্ববিদ্যালয় দেখতে চান?"
     },
     "description": {
       "en": "Join our University Application Program to access the complete list of partner universities and get personalized guidance.",
